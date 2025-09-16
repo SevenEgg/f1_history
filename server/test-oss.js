@@ -3,11 +3,11 @@ require('dotenv').config();
 
 // 阿里云OSS配置
 const ossConfig = {
-  region: process.env.OSS_REGION || 'oss-cn-shenzhen',
-  accessKeyId: process.env.OSS_ACCESS_KEY_ID || 'LTAI5t6SLsZpVUJ87LwuFmsyk',
-  accessKeySecret: process.env.OSS_ACCESS_KEY_SECRET || 'fG3uPybtED35Kp7UKBntiODmjCiaAX',
-  bucket: process.env.OSS_BUCKET || 'anna1994',
-  endpoint: process.env.OSS_ENDPOINT || 'https://oss-cn-shenzhen.aliyuncs.com'
+  region: process.env.OSS_REGION || 'oss-cn-hangzhou',
+  accessKeyId: process.env.OSS_ACCESS_KEY_ID || 'your-access-key-id',
+  accessKeySecret: process.env.OSS_ACCESS_KEY_SECRET || 'your-access-key-secret',
+  bucket: process.env.OSS_BUCKET || 'your-bucket-name',
+  endpoint: process.env.OSS_ENDPOINT || 'https://oss-cn-hangzhou.aliyuncs.com'
 };
 
 console.log('=== OSS配置测试 ===');

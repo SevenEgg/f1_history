@@ -57,7 +57,7 @@
 1. 进入"对象存储OSS"
 2. 点击"创建Bucket"
 3. 填写Bucket信息：
-   - Bucket名称：`anna1994`（或您喜欢的名称）
+   - Bucket名称：`your-bucket-name`（或您喜欢的名称）
    - 区域：`华南1（深圳）`
    - 读写权限：`公共读`
 4. 点击"确定"
@@ -76,7 +76,7 @@
 OSS_REGION=oss-cn-shenzhen
 OSS_ACCESS_KEY_ID=您的AccessKeyID
 OSS_ACCESS_KEY_SECRET=您的AccessKeySecret
-OSS_BUCKET=anna1994
+OSS_BUCKET=your-bucket-name
 OSS_ENDPOINT=https://oss-cn-shenzhen.aliyuncs.com
 
 # 服务器配置
