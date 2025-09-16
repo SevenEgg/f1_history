@@ -1,0 +1,274 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>中文文件名上传测试</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+            background-color: #f5f5f5;
+        }
+        .container {
+            background: white;
+            padding: 30px;
+            border-radius: 8px;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+        }
+        h1 {
+            color: #333;
+            text-align: center;
+            margin-bottom: 30px;
+        }
+        .upload-area {
+            border: 2px dashed #ddd;
+            border-radius: 8px;
+            padding: 40px;
+            text-align: center;
+            margin-bottom: 20px;
+            background-color: #fafafa;
+        }
+        .upload-area.dragover {
+            border-color: #1890ff;
+            background-color: #f0f8ff;
+        }
+        input[type="file"] {
+            margin: 20px 0;
+        }
+        button {
+            background-color: #1890ff;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            border-radius: 4px;
+            cursor: pointer;
+            font-size: 16px;
+        }
+        button:hover {
+            background-color: #40a9ff;
+        }
+        button:disabled {
+            background-color: #ccc;
+            cursor: not-allowed;
+        }
+        .result {
+            margin-top: 20px;
+            padding: 15px;
+            border-radius: 4px;
+            background-color: #f6ffed;
+            border: 1px solid #b7eb8f;
+        }
+        .error {
+            background-color: #fff2f0;
+            border-color: #ffccc7;
+        }
+        .file-list {
+            margin-top: 15px;
+        }
+        .file-item {
+            padding: 8px;
+            margin: 5px 0;
+            background-color: #f0f0f0;
+            border-radius: 4px;
+            font-family: monospace;
+        }
+        .filename-original {
+            color: #666;
+            font-size: 12px;
+        }
+        .filename-fixed {
+            color: #52c41a;
+            font-weight: bold;
+        }
+        .test-files {
+            margin-top: 20px;
+            padding: 15px;
+            background-color: #f0f8ff;
+            border-radius: 4px;
+        }
+        .test-file {
+            margin: 5px 0;
+            padding: 5px;
+            background-color: white;
+            border-radius: 3px;
+            cursor: pointer;
+            border: 1px solid #ddd;
+        }
+        .test-file:hover {
+            background-color: #e6f7ff;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>中文文件名上传测试</h1>
+        
+        <div class="upload-area" id="uploadArea">
+            <p>拖拽文件到此处或点击选择文件</p>
+            <input type="file" id="fileInput" multiple accept="image/*">
+            <br>
+            <button id="uploadBtn" disabled>上传文件</button>
+        </div>
+
+        <div class="test-files">
+            <h3>测试文件列表（点击文件名进行测试）：</h3>
+            <div class="test-file" onclick="createTestFile('测试图片.jpg')">测试图片.jpg</div>
+            <div class="test-file" onclick="createTestFile('F1赛车照片.png')">F1赛车照片.png</div>
+            <div class="test-file" onclick="createTestFile('汉密尔顿夺冠.gif')">汉密尔顿夺冠.gif</div>
+            <div class="test-file" onclick="createTestFile('维斯塔潘2023.webp')">维斯塔潘2023.webp</div>
+            <div class="test-file" onclick="createTestFile('法拉利车队.jpeg')">法拉利车队.jpeg</div>
+        </div>
+
+        <div id="result" style="display: none;"></div>
+    </div>
+
+    <script>
+        const uploadArea = document.getElementById('uploadArea');
+        const fileInput = document.getElementById('fileInput');
+        const uploadBtn = document.getElementById('uploadBtn');
+        const result = document.getElementById('result');
+
+        let selectedFiles = [];
+
+        // 拖拽功能
+        uploadArea.addEventListener('dragover', (e) => {
+            e.preventDefault();
+            uploadArea.classList.add('dragover');
+        });
+
+        uploadArea.addEventListener('dragleave', () => {
+            uploadArea.classList.remove('dragover');
+        });
+
+        uploadArea.addEventListener('drop', (e) => {
+            e.preventDefault();
+            uploadArea.classList.remove('dragover');
+            handleFiles(e.dataTransfer.files);
+        });
+
+        // 文件选择
+        fileInput.addEventListener('change', (e) => {
+            handleFiles(e.target.files);
+        });
+
+        // 处理文件
+        function handleFiles(files) {
+            selectedFiles = Array.from(files);
+            uploadBtn.disabled = selectedFiles.length === 0;
+            
+            if (selectedFiles.length > 0) {
+                showFileList();
+            }
+        }
+
+        // 显示文件列表
+        function showFileList() {
+            const fileList = selectedFiles.map(file => `
+                <div class="file-item">
+                    <div class="filename-original">原始文件名: ${file.name}</div>
+                    <div>文件大小: ${(file.size / 1024).toFixed(2)} KB</div>
+                    <div>文件类型: ${file.type}</div>
+                </div>
+            `).join('');
+
+            result.innerHTML = `
+                <h3>选择的文件：</h3>
+                <div class="file-list">${fileList}</div>
+            `;
+            result.style.display = 'block';
+        }
+
+        // 上传文件
+        uploadBtn.addEventListener('click', async () => {
+            if (selectedFiles.length === 0) return;
+
+            uploadBtn.disabled = true;
+            uploadBtn.textContent = '上传中...';
+
+            const formData = new FormData();
+            selectedFiles.forEach(file => {
+                formData.append('images', file);
+            });
+
+            try {
+                const response = await fetch('http://localhost:3001/api/upload', {
+                    method: 'POST',
+                    body: formData
+                });
+
+                const data = await response.json();
+                
+                if (data.success) {
+                    showUploadResult(data.files);
+                } else {
+                    showError(data.error || '上传失败');
+                }
+            } catch (error) {
+                showError('网络错误: ' + error.message);
+            } finally {
+                uploadBtn.disabled = false;
+                uploadBtn.textContent = '上传文件';
+            }
+        });
+
+        // 显示上传结果
+        function showUploadResult(files) {
+            const fileResults = files.map(file => {
+                if (file.error) {
+                    return `
+                        <div class="file-item error">
+                            <div class="filename-original">原始文件名: ${file.originalName}</div>
+                            <div style="color: #ff4d4f;">错误: ${file.error}</div>
+                        </div>
+                    `;
+                } else {
+                    return `
+                        <div class="file-item">
+                            <div class="filename-original">原始文件名: ${file.originalName}</div>
+                            <div class="filename-fixed">修复后文件名: ${file.originalName}</div>
+                            <div>存储文件名: ${file.fileName}</div>
+                            <div>访问URL: <a href="${file.url}" target="_blank">${file.url}</a></div>
+                        </div>
+                    `;
+                }
+            }).join('');
+
+            result.innerHTML = `
+                <h3>上传结果：</h3>
+                <div class="file-list">${fileResults}</div>
+            `;
+            result.className = 'result';
+            result.style.display = 'block';
+        }
+
+        // 显示错误
+        function showError(message) {
+            result.innerHTML = `
+                <h3>上传失败：</h3>
+                <div style="color: #ff4d4f;">${message}</div>
+            `;
+            result.className = 'result error';
+            result.style.display = 'block';
+        }
+
+        // 创建测试文件
+        function createTestFile(filename) {
+            // 创建一个简单的测试图片（1x1像素的PNG）
+            const canvas = document.createElement('canvas');
+            canvas.width = 1;
+            canvas.height = 1;
+            const ctx = canvas.getContext('2d');
+            ctx.fillStyle = '#000000';
+            ctx.fillRect(0, 0, 1, 1);
+            
+            canvas.toBlob((blob) => {
+                const file = new File([blob], filename, { type: 'image/png' });
+                handleFiles([file]);
+            }, 'image/png');
+        }
+    </script>
+</body>
+</html>
