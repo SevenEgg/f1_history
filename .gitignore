@@ -22,11 +22,6 @@
 .env
 server/.env
 
-# 数据库文件
-*.db
-*.sqlite
-*.sqlite3
-
 # 上传文件
 server/uploads/
 

@@ -15,7 +15,7 @@ const ossConfig = {
 };
 
 // 打印配置信息（调试用）
-console.log('存储配置信息:');
+console.log('存储配置信息:',ossConfig);
 if (USE_LOCAL_STORAGE) {
   console.log('✅ 使用本地存储模式');
 } else {

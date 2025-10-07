@@ -9,7 +9,8 @@ import {
   Typography,
   Divider,
   message,
-  Card
+  Card,
+  Select
 } from 'antd';
 import {
   SaveOutlined,
@@ -53,6 +54,8 @@ function PostForm({ visible, onClose, postId, onSuccess }) {
   const [initialLoading, setInitialLoading] = useState(false);
   const [recordsEn, setRecordsEn] = useState([]);
   const [recordsCn, setRecordsCn] = useState([]);
+  const [deaths, setDeaths] = useState([]);
+  const [champions, setChampions] = useState([]);
 
   const isEdit = !!postId;
 
@@ -73,6 +76,8 @@ function PostForm({ visible, onClose, postId, onSuccess }) {
 
       setRecordsEn(post.records_en || []);
       setRecordsCn(post.records_cn || []);
+      setDeaths(post.deaths || []);
+      setChampions(post.champions || []);
     } catch (error) {
       message.error('获取帖子信息失败');
       console.error('Error fetching post:', error);
@@ -123,10 +128,44 @@ function PostForm({ visible, onClose, postId, onSuccess }) {
     setRecords(newRecords);
   };
 
+  // Deaths 管理函数
+  const addDeath = () => {
+    setDeaths([...deaths, { type: 'driver', name_en: '', name_cn: '', entity_id: '' }]);
+  };
+
+  const removeDeath = (index) => {
+    const newDeaths = deaths.filter((_, i) => i !== index);
+    setDeaths(newDeaths);
+  };
+
+  const updateDeath = (index, field, value) => {
+    const newDeaths = [...deaths];
+    newDeaths[index] = { ...newDeaths[index], [field]: value };
+    setDeaths(newDeaths);
+  };
+
+  // Champion 管理函数
+  const addChampion = () => {
+    setChampions([...champions, { type: 'driver', name_en: '', name_cn: '', entity_id: '' }]);
+  };
+
+  const removeChampion = (index) => {
+    const newChampions = champions.filter((_, i) => i !== index);
+    setChampions(newChampions);
+  };
+
+  const updateChampion = (index, field, value) => {
+    const newChampions = [...champions];
+    newChampions[index] = { ...newChampions[index], [field]: value };
+    setChampions(newChampions);
+  };
+
   const handleClose = () => {
     form.resetFields();
     setRecordsEn([]);
     setRecordsCn([]);
+    setDeaths([]);
+    setChampions([]);
     setLoading(false);
     setInitialLoading(false);
     onClose();
@@ -136,18 +175,69 @@ function PostForm({ visible, onClose, postId, onSuccess }) {
     setLoading(true);
     try {
       const currentYear = new Date().getFullYear();
+      const postDate = `${currentYear}-${values.date.format('MM-DD')}`;
       const postData = {
         summary: values.summary,
-        date: `${currentYear}-${values.date.format('MM-DD')}`,
+        date: postDate,
         records_en: recordsEn.filter(record => record.year && record.content),
         records_cn: recordsCn.filter(record => record.year && record.content)
       };
 
       if (isEdit) {
         await superagent.put(`/api/posts/${postId}`).send(postData);
+        
+        // 编辑模式下，先删除原有的 Deaths 和 Champion 记录，再添加新的
+        // 获取原有记录
+        const postResponse = await superagent.get(`/api/posts/${postId}`);
+        const existingPost = postResponse.body;
+        
+        // 删除原有的 Deaths 记录
+        for (const death of existingPost.deaths || []) {
+          await superagent.delete(`/api/deaths/${death.id}`);
+        }
+        
+        // 删除原有的 Champion 记录
+        for (const champion of existingPost.champions || []) {
+          await superagent.delete(`/api/champions/${champion.id}`);
+        }
+        
+        // 添加新的 Deaths 记录
+        for (const death of deaths.filter(d => d.name_en && d.name_cn && d.entity_id)) {
+          await superagent.post('/api/deaths').send({
+            ...death,
+            date: postDate
+          });
+        }
+
+        // 添加新的 Champion 记录
+        for (const champion of champions.filter(c => c.name_en && c.name_cn && c.entity_id)) {
+          await superagent.post('/api/champions').send({
+            ...champion,
+            date: postDate
+          });
+        }
+        
         message.success('帖子更新成功');
       } else {
-        await superagent.post('/api/posts').send(postData);
+        const response = await superagent.post('/api/posts').send(postData);
+        const newPostId = response.body.id;
+        
+        // 保存 Deaths 记录
+        for (const death of deaths.filter(d => d.name_en && d.name_cn && d.entity_id)) {
+          await superagent.post('/api/deaths').send({
+            ...death,
+            date: postDate
+          });
+        }
+
+        // 保存 Champion 记录
+        for (const champion of champions.filter(c => c.name_en && c.name_cn && c.entity_id)) {
+          await superagent.post('/api/champions').send({
+            ...champion,
+            date: postDate
+          });
+        }
+        
         message.success('帖子添加成功');
       }
 
@@ -203,6 +293,60 @@ function PostForm({ visible, onClose, postId, onSuccess }) {
             <ImageUpload
               value={record.images || []}
               onChange={(images) => updateRecordImages(records, setRecords, index, images)}
+            />
+          </div>
+        </Card>
+      ))}
+    </RecordSection>
+  );
+
+  const renderCategorySection = (items, setItems, addItem, removeItem, updateItem, title, color) => (
+    <RecordSection>
+      <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', marginBottom: 16 }}>
+        <Title level={4} style={{ margin: 0, color }}>{title}</Title>
+        <Button
+          type="dashed"
+          icon={<PlusOutlined />}
+          onClick={addItem}
+        >
+          添加{title}
+        </Button>
+      </div>
+
+      {items.map((item, index) => (
+        <Card key={index} size="small" style={{ marginBottom: 16 }}>
+          <div style={{ display: 'flex', gap: 16, marginBottom: 16 }}>
+            <Select
+              value={item.type}
+              onChange={(value) => updateItem(index, 'type', value)}
+              style={{ width: 100 }}
+            >
+              <Select.Option value="driver">车手</Select.Option>
+              <Select.Option value="team">车队</Select.Option>
+            </Select>
+            <Input
+              placeholder="英文名"
+              value={item.name_en}
+              onChange={(e) => updateItem(index, 'name_en', e.target.value)}
+              style={{ flex: 1 }}
+            />
+            <Input
+              placeholder="中文名"
+              value={item.name_cn}
+              onChange={(e) => updateItem(index, 'name_cn', e.target.value)}
+              style={{ flex: 1 }}
+            />
+            <Input
+              placeholder="实体ID"
+              value={item.entity_id}
+              onChange={(e) => updateItem(index, 'entity_id', e.target.value)}
+              style={{ flex: 1 }}
+            />
+            <Button
+              type="text"
+              danger
+              icon={<DeleteOutlined />}
+              onClick={() => removeItem(index)}
             />
           </div>
         </Card>
@@ -293,6 +437,28 @@ function PostForm({ visible, onClose, postId, onSuccess }) {
           updateRecordCn,
           '中文记录',
           '#52c41a'
+        )}
+
+        <Divider />
+
+        {renderCategorySection(
+          deaths,
+          setDeaths,
+          addDeath,
+          removeDeath,
+          updateDeath,
+          '车手/车队',
+          '#ff4d4f'
+        )}
+
+        {renderCategorySection(
+          champions,
+          setChampions,
+          addChampion,
+          removeChampion,
+          updateChampion,
+          '车手/车队冠军',
+          '#faad14'
         )}
       </Form>
     </Drawer>

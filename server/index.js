@@ -57,6 +57,28 @@ db.serialize(() => {
     images TEXT,
     FOREIGN KEY (post_id) REFERENCES posts (id) ON DELETE CASCADE
   )`);
+
+  // Deaths 表
+  db.run(`CREATE TABLE IF NOT EXISTS deaths (
+    id INTEGER PRIMARY KEY AUTOINCREMENT,
+    date TEXT NOT NULL,
+    type TEXT NOT NULL CHECK (type IN ('driver', 'team')),
+    name_en TEXT NOT NULL,
+    name_cn TEXT NOT NULL,
+    entity_id TEXT NOT NULL,
+    created_at DATETIME DEFAULT CURRENT_TIMESTAMP
+  )`);
+
+  // Champion 表
+  db.run(`CREATE TABLE IF NOT EXISTS champions (
+    id INTEGER PRIMARY KEY AUTOINCREMENT,
+    date TEXT NOT NULL,
+    type TEXT NOT NULL CHECK (type IN ('driver', 'team')),
+    name_en TEXT NOT NULL,
+    name_cn TEXT NOT NULL,
+    entity_id TEXT NOT NULL,
+    created_at DATETIME DEFAULT CURRENT_TIMESTAMP
+  )`);
 });
 
 // 添加帖子接口
@@ -241,22 +263,48 @@ app.get('/api/posts', (req, res) => {
                   return;
                 }
 
-                resolve({
-                  id: row.id,
-                  summary: row.summary,
-                  date: row.date,
-                  created_at: row.created_at,
-                  records_en: recordsEn.map(record => ({
-                    year: record.year,
-                    content: record.content,
-                    images: record.images ? JSON.parse(record.images) : []
-                  })),
-                  records_cn: recordsCn.map(record => ({
-                    year: record.year,
-                    content: record.content,
-                    images: record.images ? JSON.parse(record.images) : []
-                  }))
-                });
+                // 获取 deaths 记录
+                db.all(
+                  'SELECT * FROM deaths WHERE date = ? ORDER BY created_at',
+                  [row.date],
+                  (err, deaths) => {
+                    if (err) {
+                      reject(err);
+                      return;
+                    }
+
+                    // 获取 champions 记录
+                    db.all(
+                      'SELECT * FROM champions WHERE date = ? ORDER BY created_at',
+                      [row.date],
+                      (err, champions) => {
+                        if (err) {
+                          reject(err);
+                          return;
+                        }
+
+                        resolve({
+                          id: row.id,
+                          summary: row.summary,
+                          date: row.date,
+                          created_at: row.created_at,
+                          records_en: recordsEn.map(record => ({
+                            year: record.year,
+                            content: record.content,
+                            images: record.images ? JSON.parse(record.images) : []
+                          })),
+                          records_cn: recordsCn.map(record => ({
+                            year: record.year,
+                            content: record.content,
+                            images: record.images ? JSON.parse(record.images) : []
+                          })),
+                          deaths: deaths,
+                          champions: champions
+                        });
+                      }
+                    );
+                  }
+                );
               }
             );
           }
@@ -304,11 +352,35 @@ app.get('/api/posts/:id', (req, res) => {
             images: r.images ? JSON.parse(r.images) : []
           }));
 
-          res.json({
-            ...post,
-            records_en,
-            records_cn
-          });
+          // 获取 deaths 记录
+          db.all(
+            'SELECT * FROM deaths WHERE date = ? ORDER BY created_at',
+            [post.date],
+            (err, deaths) => {
+              if (err) {
+                return res.status(500).json({ error: err.message });
+              }
+
+              // 获取 champions 记录
+              db.all(
+                'SELECT * FROM champions WHERE date = ? ORDER BY created_at',
+                [post.date],
+                (err, champions) => {
+                  if (err) {
+                    return res.status(500).json({ error: err.message });
+                  }
+
+                  res.json({
+                    ...post,
+                    records_en,
+                    records_cn,
+                    deaths,
+                    champions
+                  });
+                }
+              );
+            }
+          );
         }
       );
     }
@@ -393,6 +465,294 @@ app.delete('/api/posts/:id', (req, res) => {
     }
 
     res.json({ message: '帖子删除成功' });
+  });
+});
+
+// ==================== Deaths API ====================
+
+// 添加 Deaths 记录接口
+app.post('/api/deaths', (req, res) => {
+  const { date, type, name_en, name_cn, entity_id } = req.body;
+
+  if (!date || !type || !name_en || !name_cn || !entity_id) {
+    return res.status(400).json({ error: '所有字段都不能为空' });
+  }
+
+  if (!['driver', 'team'].includes(type)) {
+    return res.status(400).json({ error: '类型必须是 driver 或 team' });
+  }
+
+  db.run(
+    'INSERT INTO deaths (date, type, name_en, name_cn, entity_id) VALUES (?, ?, ?, ?, ?)',
+    [date, type, name_en, name_cn, entity_id],
+    function(err) {
+      if (err) {
+        return res.status(500).json({ error: err.message });
+      }
+
+      res.json({ id: this.lastID, message: 'Deaths 记录添加成功' });
+    }
+  );
+});
+
+// 获取 Deaths 记录列表接口
+app.get('/api/deaths', (req, res) => {
+  const { year, month, date, type, name } = req.query;
+  
+  let query = 'SELECT * FROM deaths WHERE 1=1';
+  const conditions = [];
+  const params = [];
+
+  if (year) {
+    conditions.push('date LIKE ?');
+    params.push(`${year}%`);
+  }
+
+  if (month && date) {
+    const monthStr = month.padStart(2, '0');
+    const dateStr = date.padStart(2, '0');
+    conditions.push('date LIKE ?');
+    params.push(`%-${monthStr}-${dateStr}`);
+  } else if (month) {
+    const monthStr = month.padStart(2, '0');
+    conditions.push('date LIKE ?');
+    params.push(`%-${monthStr}-%`);
+  } else if (date) {
+    const dateStr = date.padStart(2, '0');
+    conditions.push('date LIKE ?');
+    params.push(`%-${dateStr}`);
+  }
+
+  if (type) {
+    conditions.push('type = ?');
+    params.push(type);
+  }
+
+  if (name) {
+    conditions.push('(name_en LIKE ? OR name_cn LIKE ?)');
+    params.push(`%${name}%`, `%${name}%`);
+  }
+
+  if (conditions.length > 0) {
+    query += ' AND ' + conditions.join(' AND ');
+  }
+
+  query += ' ORDER BY date DESC';
+
+  db.all(query, params, (err, rows) => {
+    if (err) {
+      return res.status(500).json({ error: err.message });
+    }
+
+    res.json(rows);
+  });
+});
+
+// 获取单个 Deaths 记录详情
+app.get('/api/deaths/:id', (req, res) => {
+  const { id } = req.params;
+
+  db.get('SELECT * FROM deaths WHERE id = ?', [id], (err, row) => {
+    if (err) {
+      return res.status(500).json({ error: err.message });
+    }
+
+    if (!row) {
+      return res.status(404).json({ error: '记录不存在' });
+    }
+
+    res.json(row);
+  });
+});
+
+// 更新 Deaths 记录接口
+app.put('/api/deaths/:id', (req, res) => {
+  const { id } = req.params;
+  const { date, type, name_en, name_cn, entity_id } = req.body;
+
+  if (!date || !type || !name_en || !name_cn || !entity_id) {
+    return res.status(400).json({ error: '所有字段都不能为空' });
+  }
+
+  if (!['driver', 'team'].includes(type)) {
+    return res.status(400).json({ error: '类型必须是 driver 或 team' });
+  }
+
+  db.run(
+    'UPDATE deaths SET date = ?, type = ?, name_en = ?, name_cn = ?, entity_id = ? WHERE id = ?',
+    [date, type, name_en, name_cn, entity_id, id],
+    function(err) {
+      if (err) {
+        return res.status(500).json({ error: err.message });
+      }
+
+      if (this.changes === 0) {
+        return res.status(404).json({ error: '记录不存在' });
+      }
+
+      res.json({ message: 'Deaths 记录更新成功' });
+    }
+  );
+});
+
+// 删除 Deaths 记录接口
+app.delete('/api/deaths/:id', (req, res) => {
+  const { id } = req.params;
+
+  db.run('DELETE FROM deaths WHERE id = ?', [id], function(err) {
+    if (err) {
+      return res.status(500).json({ error: err.message });
+    }
+
+    if (this.changes === 0) {
+      return res.status(404).json({ error: '记录不存在' });
+    }
+
+    res.json({ message: 'Deaths 记录删除成功' });
+  });
+});
+
+// ==================== Champion API ====================
+
+// 添加 Champion 记录接口
+app.post('/api/champions', (req, res) => {
+  const { date, type, name_en, name_cn, entity_id } = req.body;
+
+  if (!date || !type || !name_en || !name_cn || !entity_id) {
+    return res.status(400).json({ error: '所有字段都不能为空' });
+  }
+
+  if (!['driver', 'team'].includes(type)) {
+    return res.status(400).json({ error: '类型必须是 driver 或 team' });
+  }
+
+  db.run(
+    'INSERT INTO champions (date, type, name_en, name_cn, entity_id) VALUES (?, ?, ?, ?, ?)',
+    [date, type, name_en, name_cn, entity_id],
+    function(err) {
+      if (err) {
+        return res.status(500).json({ error: err.message });
+      }
+
+      res.json({ id: this.lastID, message: 'Champion 记录添加成功' });
+    }
+  );
+});
+
+// 获取 Champion 记录列表接口
+app.get('/api/champions', (req, res) => {
+  const { year, month, date, type, name } = req.query;
+  
+  let query = 'SELECT * FROM champions WHERE 1=1';
+  const conditions = [];
+  const params = [];
+
+  if (year) {
+    conditions.push('date LIKE ?');
+    params.push(`${year}%`);
+  }
+
+  if (month && date) {
+    const monthStr = month.padStart(2, '0');
+    const dateStr = date.padStart(2, '0');
+    conditions.push('date LIKE ?');
+    params.push(`%-${monthStr}-${dateStr}`);
+  } else if (month) {
+    const monthStr = month.padStart(2, '0');
+    conditions.push('date LIKE ?');
+    params.push(`%-${monthStr}-%`);
+  } else if (date) {
+    const dateStr = date.padStart(2, '0');
+    conditions.push('date LIKE ?');
+    params.push(`%-${dateStr}`);
+  }
+
+  if (type) {
+    conditions.push('type = ?');
+    params.push(type);
+  }
+
+  if (name) {
+    conditions.push('(name_en LIKE ? OR name_cn LIKE ?)');
+    params.push(`%${name}%`, `%${name}%`);
+  }
+
+  if (conditions.length > 0) {
+    query += ' AND ' + conditions.join(' AND ');
+  }
+
+  query += ' ORDER BY date DESC';
+
+  db.all(query, params, (err, rows) => {
+    if (err) {
+      return res.status(500).json({ error: err.message });
+    }
+
+    res.json(rows);
+  });
+});
+
+// 获取单个 Champion 记录详情
+app.get('/api/champions/:id', (req, res) => {
+  const { id } = req.params;
+
+  db.get('SELECT * FROM champions WHERE id = ?', [id], (err, row) => {
+    if (err) {
+      return res.status(500).json({ error: err.message });
+    }
+
+    if (!row) {
+      return res.status(404).json({ error: '记录不存在' });
+    }
+
+    res.json(row);
+  });
+});
+
+// 更新 Champion 记录接口
+app.put('/api/champions/:id', (req, res) => {
+  const { id } = req.params;
+  const { date, type, name_en, name_cn, entity_id } = req.body;
+
+  if (!date || !type || !name_en || !name_cn || !entity_id) {
+    return res.status(400).json({ error: '所有字段都不能为空' });
+  }
+
+  if (!['driver', 'team'].includes(type)) {
+    return res.status(400).json({ error: '类型必须是 driver 或 team' });
+  }
+
+  db.run(
+    'UPDATE champions SET date = ?, type = ?, name_en = ?, name_cn = ?, entity_id = ? WHERE id = ?',
+    [date, type, name_en, name_cn, entity_id, id],
+    function(err) {
+      if (err) {
+        return res.status(500).json({ error: err.message });
+      }
+
+      if (this.changes === 0) {
+        return res.status(404).json({ error: '记录不存在' });
+      }
+
+      res.json({ message: 'Champion 记录更新成功' });
+    }
+  );
+});
+
+// 删除 Champion 记录接口
+app.delete('/api/champions/:id', (req, res) => {
+  const { id } = req.params;
+
+  db.run('DELETE FROM champions WHERE id = ?', [id], function(err) {
+    if (err) {
+      return res.status(500).json({ error: err.message });
+    }
+
+    if (this.changes === 0) {
+      return res.status(404).json({ error: '记录不存在' });
+    }
+
+    res.json({ message: 'Champion 记录删除成功' });
   });
 });
 

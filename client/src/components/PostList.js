@@ -357,6 +357,32 @@ function PostList({ onEditPost }) {
                  ))}
                </div>
              )}
+
+            {selectedPost.deaths && selectedPost.deaths.length > 0 && (
+              <div style={{ marginTop: 16 }}>
+                <Title level={5}>去世：</Title>
+                {selectedPost.deaths.map((item) => (
+                  <RecordItem key={`death-${item.id}`}>
+                    <RecordYear color="red">{item.type === 'driver' ? '车手' : '车队'}</RecordYear>
+                    <Text>{item.name_cn} ({item.name_en})</Text>
+                    <Text style={{ marginLeft: 8, color: '#999' }}>ID: {item.entity_id}</Text>
+                  </RecordItem>
+                ))}
+              </div>
+            )}
+
+            {selectedPost.champions && selectedPost.champions.length > 0 && (
+              <div style={{ marginTop: 16 }}>
+                <Title level={5}>冠军：</Title>
+                {selectedPost.champions.map((item) => (
+                  <RecordItem key={`champ-${item.id}`}>
+                    <RecordYear color="gold">{item.type === 'driver' ? '车手' : '车队'}</RecordYear>
+                    <Text>{item.name_cn} ({item.name_en})</Text>
+                    <Text style={{ marginLeft: 8, color: '#999' }}>ID: {item.entity_id}</Text>
+                  </RecordItem>
+                ))}
+              </div>
+            )}
           </div>
         )}
       </Modal>
