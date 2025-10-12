@@ -25,14 +25,13 @@ import {
 import styled from 'styled-components';
 import superagent from 'superagent';
 import dayjs from 'dayjs';
+import { PlusOutlined } from '@ant-design/icons';
 
 const { Text, Title } = Typography;
 
 const StyledCard = styled(Card)`
   margin-bottom: 24px;
 `;
-
-
 
 const RecordItem = styled.div`
   margin-bottom: 12px;
@@ -55,9 +54,20 @@ const RecordYear = styled(Tag)`
   border-radius: 4px;
 `;
 
+const HeaderButton = styled(Button)`
+  background: #1890ff;
+  border-color: #1890ff;
+  color: white;
+  
+  &:hover {
+    background: #40a9ff !important;
+    border-color: #40a9ff !important;
+    color: white !important;
+  }
+`;
 
 
-function PostList({ onEditPost }) {
+function PostList({ onEditPost, onAddPost }) {
   const [posts, setPosts] = useState([]);
   const [loading, setLoading] = useState(false);
   const [searchParams, setSearchParams] = useState({
@@ -70,14 +80,14 @@ function PostList({ onEditPost }) {
   const [detailModalVisible, setDetailModalVisible] = useState(false);
   const [selectedPost, setSelectedPost] = useState(null);
 
-    const fetchPosts = async () => {
+  const fetchPosts = async () => {
     setLoading(true);
     try {
       const query = Object.keys(searchParams)
         .filter(key => searchParams[key])
         .map(key => `${key}=${encodeURIComponent(searchParams[key])}`)
         .join('&');
-      
+
       const response = await superagent.get(`/api/posts${query ? `?${query}` : ''}`);
       setPosts(response.body);
     } catch (error) {
@@ -193,9 +203,9 @@ function PostList({ onEditPost }) {
           >
             详情
           </Button>
-                    <Button 
-            type="default" 
-            size="small" 
+          <Button
+            type="default"
+            size="small"
             icon={<EditOutlined />}
             onClick={() => onEditPost(record.id)}
           >
@@ -225,7 +235,13 @@ function PostList({ onEditPost }) {
 
   return (
     <div>
-      <StyledCard title="搜索条件">
+      <StyledCard title="搜索条件" extra={<HeaderButton
+        type="primary"
+        icon={<PlusOutlined />}
+        onClick={onAddPost}
+      >
+        新增帖子
+      </HeaderButton>}>
         <Row gutter={16}>
           <Col span={4}>
             <Input
@@ -322,41 +338,41 @@ function PostList({ onEditPost }) {
               <Text>{selectedPost.summary}</Text>
             </div>
 
-                         {selectedPost.records_en && selectedPost.records_en.length > 0 && (
-               <div style={{ marginBottom: 16 }}>
-                 <Title level={5}>英文记录：</Title>
-                 {selectedPost.records_en.map((record, index) => (
-                   <RecordItem key={index}>
-                     <RecordYear color="blue">{record.year}</RecordYear>
-                     <Text>{record.content}</Text>
-                     {record.images && record.images.length > 0 && (
-                       <EnhancedImagePreview 
-                         images={record.images} 
-                         title={`英文记录 ${record.year} 年图片`}
-                       />
-                     )}
-                   </RecordItem>
-                 ))}
-               </div>
-             )}
-             
-             {selectedPost.records_cn && selectedPost.records_cn.length > 0 && (
-               <div>
-                 <Title level={5}>中文记录：</Title>
-                 {selectedPost.records_cn.map((record, index) => (
-                   <RecordItem key={index}>
-                     <RecordYear color="green">{record.year}</RecordYear>
-                     <Text>{record.content}</Text>
-                     {record.images && record.images.length > 0 && (
-                       <EnhancedImagePreview 
-                         images={record.images} 
-                         title={`中文记录 ${record.year} 年图片`}
-                       />
-                     )}
-                   </RecordItem>
-                 ))}
-               </div>
-             )}
+            {selectedPost.records_en && selectedPost.records_en.length > 0 && (
+              <div style={{ marginBottom: 16 }}>
+                <Title level={5}>英文记录：</Title>
+                {selectedPost.records_en.map((record, index) => (
+                  <RecordItem key={index}>
+                    <RecordYear color="blue">{record.year}</RecordYear>
+                    <Text>{record.content}</Text>
+                    {record.images && record.images.length > 0 && (
+                      <EnhancedImagePreview
+                        images={record.images}
+                        title={`英文记录 ${record.year} 年图片`}
+                      />
+                    )}
+                  </RecordItem>
+                ))}
+              </div>
+            )}
+
+            {selectedPost.records_cn && selectedPost.records_cn.length > 0 && (
+              <div>
+                <Title level={5}>中文记录：</Title>
+                {selectedPost.records_cn.map((record, index) => (
+                  <RecordItem key={index}>
+                    <RecordYear color="green">{record.year}</RecordYear>
+                    <Text>{record.content}</Text>
+                    {record.images && record.images.length > 0 && (
+                      <EnhancedImagePreview
+                        images={record.images}
+                        title={`中文记录 ${record.year} 年图片`}
+                      />
+                    )}
+                  </RecordItem>
+                ))}
+              </div>
+            )}
 
             {selectedPost.deaths && selectedPost.deaths.length > 0 && (
               <div style={{ marginTop: 16 }}>
