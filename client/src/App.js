@@ -1,60 +1,39 @@
 import React, { useState } from 'react';
-import { Layout } from 'antd';
-import styled from 'styled-components';
-import PostList from './components/PostList';
-import PostForm from './components/PostForm';
-import Header from './components/Header';
+import { Routes, Route, useLocation, Navigate } from 'react-router-dom';
+import { getLocalStorage } from './utils';
+import Headers from './comom/Header';
+import Siderbar from './comom/Siderbar';
+import PageContent from './comom/Content';
+import LoginPage from './pages/Login';
+import F1History from './pages/F1History';
 
-const { Content } = Layout;
-
-const StyledLayout = styled(Layout)`
-  min-height: 100vh;
-`;
-
-const StyledContent = styled(Content)`
-  padding: 24px;
-  background: #f0f2f5;
-`;
 
 function App() {
-  const [drawerVisible, setDrawerVisible] = useState(false);
-  const [editingPostId, setEditingPostId] = useState(null);
+  const location = useLocation();
+  const token = getLocalStorage('token');
 
-  const handleAddPost = () => {
-    setEditingPostId(null);
-    setDrawerVisible(true);
-  };
-
-  const handleEditPost = (postId) => {
-    setEditingPostId(postId);
-    setDrawerVisible(true);
-  };
-
-  const handleDrawerClose = () => {
-    setDrawerVisible(false);
-    setEditingPostId(null);
-  };
-
-  const handlePostSuccess = () => {
-    // 触发帖子列表刷新
-    if (window.refreshPostList) {
-      window.refreshPostList();
+  if (location.pathname === "/login") {
+    if (token) {
+      return <Navigate to="/" replace />;
     }
-  };
+    return <LoginPage />;
+  }
+
+  if (!token) {
+    return <Navigate to="/login" state={{ from: location }} replace />;
+  }
+
 
   return (
-    <StyledLayout>
-      <Header onAddPost={handleAddPost} />
-      <StyledContent>
-        <PostList onEditPost={handleEditPost} />
-      </StyledContent>
-      <PostForm
-        visible={drawerVisible}
-        postId={editingPostId}
-        onClose={handleDrawerClose}
-        onSuccess={handlePostSuccess}
-      />
-    </StyledLayout>
+    <div className="App">
+      <Headers />
+      <Siderbar />
+      <PageContent>
+        <Routes>
+          <Route path="/" element={<F1History />} />
+        </Routes>
+      </PageContent>
+    </div>
   );
 }
 
