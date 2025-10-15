@@ -1,6 +1,177 @@
 {
   "data": [
     {
+      "id": 80,
+      "slug": "kimi-antonelli-extends-mercedes-contract-emphasizes-growth-as-a-teammate-251015231016",
+      "cover_url": "https://anna1994.oss-cn-shenzhen.aliyuncs.com/f1-history/1760537416877-hgapsmw15gr.jpeg",
+      "news_source": "Racingnews365",
+      "title": "梅赛德斯续约安东内利：信任不减，新秀迈向成熟之路",
+      "summary": "安东内利与梅赛德斯续约2025赛季。尽管首个F1赛季充满挑战，他表示已成长为更强队友。车队看重其潜力，以应对未来竞争及2026年新规。",
+      "created_at": "2025-10-15 22:12:39"
+    },
+    {
+      "id": 79,
+      "slug": "f1-2026-driver-line-ups-confirmed-seats-and-remaining-openings-251015221017",
+      "cover_url": "https://anna1994.oss-cn-shenzhen.aliyuncs.com/f1-history/1760537104712-11tqk3ws0nsl.jpeg",
+      "news_source": "Racingnews365",
+      "title": "F1 2026赛季车手格局初定：梅赛德斯锁定双雄，红牛与Alpine成焦点",
+      "summary": "F1 2026赛季车手阵容格局初定。梅赛德斯官宣拉塞尔与安东内利，但红牛与Alpine仍有席位空缺。新规则与卡迪拉克加盟将使2026赛季更具看点。",
+      "created_at": "2025-10-15 22:09:46"
+    },
+    {
+      "id": 78,
+      "slug": "mercedes-confirms-russell-and-antonelli-for-2026-f1-season-251015221056",
+      "cover_url": "https://anna1994.oss-cn-shenzhen.aliyuncs.com/f1-history/1760536110093-phdy4rkgeu.jpeg",
+      "news_source": "motorsport",
+      "title": "梅赛德斯官宣：拉塞尔与安东内利将搭档征战2026赛季",
+      "summary": "梅赛德斯确认乔治·拉塞尔与基米·安东内利将为2026赛季效力，为迎接重大规则变革注入稳定性。此举聚焦长期投资，拉塞尔经验丰富，安东内利虽新秀赛季艰辛但潜力初显，车队将集中精力备战新时代。",
+      "created_at": "2025-10-15 21:49:37"
+    },
+    {
+      "id": 77,
+      "slug": "australian-racing-driver-accused-of-raping-michael-schumacher-s-nurse-251015221058",
+      "cover_url": "https://anna1994.oss-cn-shenzhen.aliyuncs.com/f1-history/1760535984684-iktpcudrlmk.webp",
+      "news_source": "PlanetF1",
+      "title": "澳籍赛车手被指控性侵舒马赫护士",
+      "summary": "一名澳籍赛车手被瑞士检方指控，涉嫌在2019年于舒马赫家中性侵了照顾他的护士。护士称其在昏迷时遭两次侵犯。此案因涉及F1传奇人物家庭而备受关注。",
+      "created_at": "2025-10-15 21:48:07"
+    },
+    {
+      "id": 76,
+      "slug": "f1-fans-see-mclaren-favoring-lando-norris-over-oscar-piastri-251015211016",
+      "cover_url": "https://anna1994.oss-cn-shenzhen.aliyuncs.com/f1-history/1760535878457-zvjrs2ehed.jpeg",
+      "news_source": "Racingnews365",
+      "title": "安德雷蒂批评迈凯伦偏袒诺里斯，车迷投票引发舆论风暴",
+      "summary": "近期F1车迷调查显示，高达90%的人认为迈凯伦车队在与奥斯卡·皮亚斯特里的竞争中偏袒兰多·诺里斯。此看法源于新加坡赛后的处理及马里奥·安德雷蒂的指责，引发了对车队公平性的担忧。",
+      "created_at": "2025-10-15 21:45:44"
+    },
+    {
+      "id": 75,
+      "slug": "vasseur-addresses-ferrari-angry-engineers-and-strained-relations-reports-251015211052",
+      "cover_url": "https://anna1994.oss-cn-shenzhen.aliyuncs.com/f1-history/1760535742174-xp2ioob2v58.webp",
+      "news_source": "PlanetF1",
+      "title": "瓦塞尔驳斥分歧传闻，法拉利力图在COTA重整士气",
+      "summary": "法拉利领队瓦塞尔驳斥了关于车队内部“工程师愤怒”和“关系紧张”的传闻。他强调车队团结，并表示将努力克服近期挑战，在美国大奖赛上重振旗鼓。",
+      "created_at": "2025-10-15 21:44:13"
+    },
+    {
+      "id": 74,
+      "slug": "why-f1-pitboards-endure-in-the-age-of-high-tech-radios-251015201049",
+      "cover_url": "https://anna1994.oss-cn-shenzhen.aliyuncs.com/f1-history/1760535461088-hpdvon0jvk.jpeg",
+      "news_source": "motorsport",
+      "title": "F1维修区指示牌：在高科技时代坚守的“低技术信任”",
+      "summary": "在F1高科技通讯盛行的今天，维修区指示牌因其极高的可靠性，依然是车手获取关键信息的低成本、防故障备份。它证明了简单技术在应对复杂系统失灵时的不可或缺性。",
+      "created_at": "2025-10-15 21:41:40"
+    },
+    {
+      "id": 73,
+      "slug": "mercedes-nears-100-biofuel-use-for-f1-logistics-hits-99-milestone-251015201055",
+      "cover_url": "https://anna1994.oss-cn-shenzhen.aliyuncs.com/f1-history/1760534646962-3nsons11c06.webp",
+      "news_source": "PlanetF1",
+      "title": "梅赛德斯F1车队物流近乎100%使用生物燃料，达成99%里程碑",
+      "summary": "梅赛德斯F1车队在可持续发展上迈出重要一步，2025欧洲赛季赛车及市场卡车物流99%使用HVO100生物燃料，较往年大幅提升。此举有助于F1实现净零排放目标，并推动行业绿色转型。",
+      "created_at": "2025-10-15 21:25:05"
+    },
+    {
+      "id": 72,
+      "slug": "vasseur-on-ferrari-s-struggles-and-media-pressure-251015201037",
+      "cover_url": "https://anna1994.oss-cn-shenzhen.aliyuncs.com/f1-history/1760534357820-ler3utb7bt.jpeg",
+      "news_source": "GP Blog",
+      "title": "瓦塞尔谈法拉利挣扎与媒体压力",
+      "summary": "法拉利领队瓦塞尔承认车队表现挣扎及面临媒体压力，强调了理解SF-25赛车、应对合规问题及内部稳定的重要性，以重拾竞争力。",
+      "created_at": "2025-10-15 21:21:11"
+    },
+    {
+      "id": 71,
+      "slug": "russell-s-mercedes-future-one-year-deal-amid-hamilton-comparison-and-verstappen-rumors-251015191052",
+      "cover_url": "https://anna1994.oss-cn-shenzhen.aliyuncs.com/f1-history/1760534032939-jzxm8hd7wtf.webp",
+      "news_source": "PlanetF1",
+      "title": "拉塞尔梅赛德斯未来：一年合同引热议，汉密尔顿对比与维斯塔潘传闻",
+      "summary": "乔治·拉塞尔2025赛季表现出色但2026年合同未定。传言与维斯塔潘有关，可能是一年合同，为他开启未来机会。梅赛德斯面临两难抉择，这关乎车队2026年新规则下的前景。",
+      "created_at": "2025-10-15 21:17:40"
+    },
+    {
+      "id": 70,
+      "slug": "nyck-de-vries-finds-enriching-passion-in-rebuilt-motorsport-career-251015191016",
+      "cover_url": "https://anna1994.oss-cn-shenzhen.aliyuncs.com/f1-history/1760533502007-1avdkkkleb6.jpeg",
+      "news_source": "Racingnews365",
+      "title": "尼克·德弗里斯：重塑赛车生涯，寻获“充实”热情",
+      "summary": "荷兰车手尼克·德弗里斯在F1失意后，成功重塑赛车生涯。他活跃于Formula E和WEC，并担任迈凯伦F1模拟器车手，找到“充实”的赛车热情，展现了赛车运动的坚韧与多元机遇。",
+      "created_at": "2025-10-15 21:08:30"
+    },
+    {
+      "id": 69,
+      "slug": "andretti-questions-vasseur-s-leadership-but-backs-ferrari-s-future-251015181051",
+      "cover_url": "https://anna1994.oss-cn-shenzhen.aliyuncs.com/f1-history/1760533082173-yv7qy2zqn4k.img",
+      "news_source": "F1i.com",
+      "title": "马里奥·安德雷蒂质疑瓦塞尔领导力，但看好法拉利未来",
+      "summary": "传奇车手马里奥·安德雷蒂对法拉利领队瓦塞尔的领导能力表示质疑，但对法拉利重返巅峰充满信心。他强调车队需明确领导，并看好2026年与凯迪拉克的合作。",
+      "created_at": "2025-10-15 21:04:39"
+    },
+    {
+      "id": 68,
+      "slug": "f1-rookies-fp1-costs-revealed-in-court-documents-25101518109",
+      "cover_url": "https://anna1994.oss-cn-shenzhen.aliyuncs.com/f1-history/1760532879007-peoutpnvpnf.jpeg",
+      "news_source": "Racingnews365",
+      "title": "法院文件揭露F1新秀车手FP1出场费",
+      "summary": "迈凯伦诉帕卢案文件曝光F1新秀车手支付巨额费用参加FP1练习赛。平川亮花费350万美元，这显示了F1的经济门槛和车队的收入模式，并引发了关于年轻车手培养和财务支持的讨论。",
+      "created_at": "2025-10-15 20:57:32"
+    },
+    {
+      "id": 67,
+      "slug": "f1-champion-mika-h-kkinen-sees-bright-future-for-daughter-ella-in-racing-251015181045",
+      "cover_url": "https://anna1994.oss-cn-shenzhen.aliyuncs.com/f1-history/1760532727086-kt8nkurhjs.jpeg",
+      "news_source": "GP Blog",
+      "title": "F1两届冠军哈基宁：女儿艾拉赛车天赋出众，未来一片光明",
+      "summary": "F1两届冠军米卡·哈基宁高度评价女儿艾拉的赛车天赋，并为其制定了堪比F1车手的严苛训练计划。他注重艾拉的全面发展和内在动力，以职业化的战略投资，铺就其通往赛车顶尖领域的道路。",
+      "created_at": "2025-10-15 20:53:34"
+    },
+    {
+      "id": 66,
+      "slug": "oscar-piastri-to-ferrari-rumors-potentially-a-red-bull-ploy-says-juan-pablo-montoya-251015181053",
+      "cover_url": "https://anna1994.oss-cn-shenzhen.aliyuncs.com/f1-history/1760532599084-uxvvuueswoi.webp",
+      "news_source": "PlanetF1",
+      "title": "蒙托亚：皮亚斯特转会法拉利传闻或为红牛扰乱迈凯伦之计",
+      "summary": "蒙托亚认为，关于奥斯卡·皮亚斯特转会法拉利的传闻，可能是红牛为动摇迈凯伦而散布的心理战，特别是在新加坡站与诺里斯发生碰撞后，皮亚斯特已显不满。",
+      "created_at": "2025-10-15 20:51:45"
+    },
+    {
+      "id": 65,
+      "slug": "f1-dream-scenario-horner-and-verstappen-to-reunite-at-aston-martin-251015181052",
+      "cover_url": "https://anna1994.oss-cn-shenzhen.aliyuncs.com/f1-history/1760532567782-pyfjwwqajxd.jpeg",
+      "news_source": "GP Blog",
+      "title": "F1梦想剧本：霍纳与维斯塔潘或将在阿斯顿·马丁重聚？",
+      "summary": "前F1车手帕特雷塞提出大胆设想：若霍纳加盟阿斯顿·马丁，或将带走维斯塔潘，重现舒马赫携团队助法拉利崛起的辉煌。此举或改变F1格局。",
+      "created_at": "2025-10-15 20:49:36"
+    },
+    {
+      "id": 64,
+      "slug": "aston-martin-dismisses-fernando-alonso-s-2027-retirement-speculation-251015171047",
+      "cover_url": "https://anna1994.oss-cn-shenzhen.aliyuncs.com/f1-history/1760531896575-6i5ozuqwb3p.jpeg",
+      "news_source": "motorsport",
+      "title": "阿斯顿·马丁否认关于阿隆索2027年退役的猜测",
+      "summary": "阿斯顿·马丁否认了关于费尔南多·阿隆索可能在2027年退役的猜测。车队领队安迪·考威尔表示，双方未讨论过退役计划，所有对话均聚焦于2026赛季及未来。阿隆索本人曾暗示其未来取决于车队表现，但这并不影响车队对2026年及以后赛车的专注。",
+      "created_at": "2025-10-15 20:42:12"
+    },
+    {
+      "id": 63,
+      "slug": "2025-us-gp-weather-forecast-will-rain-disrupt-the-weekend-251015171039",
+      "cover_url": "https://anna1994.oss-cn-shenzhen.aliyuncs.com/f1-history/1760530777285-8e2yboojftw.jpeg",
+      "news_source": "GP Blog",
+      "title": "2025美国大奖赛天气预报：雨水恐搅乱周末赛程",
+      "summary": "2025年美国大奖赛天气预报显示，周末可能出现高温干燥与零星阵雨。周六的冲刺赛和排位赛最易受天气影响，可能搅乱正赛策略和轮胎管理，为紧张的冠军争夺增添变数。车队需密切关注天气变化并做好应对准备。",
+      "created_at": "2025-10-15 20:21:05"
+    },
+    {
+      "id": 62,
+      "slug": "us-gp-2005-a-race-of-six-cars-251015171048",
+      "cover_url": "https://anna1994.oss-cn-shenzhen.aliyuncs.com/f1-history/1760530293051-zwwrhekj7b.jpeg",
+      "news_source": "GP Blog",
+      "title": "2005年美国大奖赛：F1历史上最黑暗的六车发车",
+      "summary": "2005年美国大奖赛因轮胎危机仅六车完赛，重创F1声誉。国际汽联拒绝安全解决方案，导致米其林车队罢赛，暴露规则僵化与安全隐患。事件促使F1加强安全合作，警示平衡竞技与安全。",
+      "created_at": "2025-10-15 20:12:00"
+    },
+    {
       "id": 60,
       "slug": "f1-champion-jacques-villeneuve-backs-max-verstappen-for-title-upset-25101516106",
       "cover_url": "https://anna1994.oss-cn-shenzhen.aliyuncs.com/f1-history/1760516109929-6hgd0kfze45.jpeg",
