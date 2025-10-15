@@ -33,79 +33,80 @@ const NavgtionLinks = [
         icon: <DashboardOutlined style={NavItemIconStyle} />
     },
     {
-        name: "发单中心",
+        name: "内容管理",
         type: "header"
     },
     {
-        path: "/postList",
-        name: "征稿管理",
-        type: "item",
-        icon: <FormOutlined style={NavItemIconStyle} />
-    },
-    {
-        path: "/approvedTasks",
-        name: "录用稿件",
+        path: "/contentFarm",
+        name: "内容农场",
         type: "item",
         icon: <DiffOutlined style={NavItemIconStyle} />
     },
     {
-        path: "/selectedTasks",
-        name: "精选稿件",
+        path: "/newsList",
+        name: "新闻列表",
         type: "item",
         icon: <OrderedListOutlined style={NavItemIconStyle} />
     },
     {
-        path: "/sentence",
-        name: "金句管理",
+        path: "/f1History",
+        name: "历史上的今天",
         type: "item",
         icon: <FontColorsOutlined style={NavItemIconStyle} />
     },
 
-    {
-        name: "学员管理",
-        type: "header"
-    },
-    {
-        path: "/userList",
-        name: "学员列表",
-        type: "item",
-        icon: <UserOutlined style={NavItemIconStyle} />
-    },
-    {
-        path: "/rankList",
-        name: "排行榜",
-        type: "item",
-        icon: <CrownOutlined style={NavItemIconStyle} />
-    },
-    {
-        name: "系统管理",
-        type: "header"
-    },
-    {
-        path: "/transactionRecord",
-        name: "流水记录",
-        type: "item",
-        icon: <BlockOutlined style={NavItemIconStyle} />
-    },
+    // {
+    //     path: "/sentence",
+    //     name: "金句管理",
+    //     type: "item",
+    //     icon: <FormOutlined style={NavItemIconStyle} />
+    // },
 
-    {
-        path: "/messageCentre",
-        name: "消息中心",
-        type: "item",
-        icon: <BlockOutlined style={NavItemIconStyle} />
-    },
-    {
-        path: "/alarmCentre",
-        name: "预警中心",
-        type: "item",
-        icon: <BlockOutlined style={NavItemIconStyle} />
-    },
-    {
-        path: "/privilegeManagement",
-        name: "系统用户",
-        type: "item",
-        icon: <ClusterOutlined style={NavItemIconStyle} />
-    },
+    // {
+    //     name: "学员管理",
+    //     type: "header"
+    // },
+    // {
+    //     path: "/userList",
+    //     name: "学员列表",
+    //     type: "item",
+    //     icon: <UserOutlined style={NavItemIconStyle} />
+    // },
+    // {
+    //     path: "/rankList",
+    //     name: "排行榜",
+    //     type: "item",
+    //     icon: <CrownOutlined style={NavItemIconStyle} />
+    // },
+    // {
+    //     name: "系统管理",
+    //     type: "header"
+    // },
+    // {
+    //     path: "/transactionRecord",
+    //     name: "流水记录",
+    //     type: "item",
+    //     icon: <BlockOutlined style={NavItemIconStyle} />
+    // },
+
+    // {
+    //     path: "/messageCentre",
+    //     name: "消息中心",
+    //     type: "item",
+    //     icon: <BlockOutlined style={NavItemIconStyle} />
+    // },
+    // {
+    //     path: "/alarmCentre",
+    //     name: "预警中心",
+    //     type: "item",
+    //     icon: <BlockOutlined style={NavItemIconStyle} />
+    // },
+    // {
+    //     path: "/privilegeManagement",
+    //     name: "系统用户",
+    //     type: "item",
+    //     icon: <ClusterOutlined style={NavItemIconStyle} />
+    // },
 
 ]
 

@@ -1,5 +1,6 @@
 const OSS = require('ali-oss');
 const path = require('path');
+const fs = require('fs');
 const { saveToLocal, deleteFromLocal } = require('./local-storage');
 
 // 检查是否使用本地存储
@@ -66,6 +67,43 @@ const uploadToOSS = async (file) => {
   }
 };
 
+// 以指定Key上传任意Buffer（支持JSON等非表单文件）
+const ensureLocalDir = (targetPath) => {
+  const dir = path.dirname(targetPath);
+  if (!fs.existsSync(dir)) {
+    fs.mkdirSync(dir, { recursive: true });
+  }
+};
+
+const uploadBufferWithKey = async (key, buffer, contentType = 'application/octet-stream') => {
+  if (USE_LOCAL_STORAGE || !ossClient) {
+    // 保存到本地 uploads 目录，维持与线上Key一致的相对路径
+    const uploadsRoot = path.join(__dirname, '..', 'uploads');
+    const localPath = path.join(uploadsRoot, key);
+    ensureLocalDir(localPath);
+    await fs.promises.writeFile(localPath, buffer);
+    return {
+      success: true,
+      url: `/uploads/${key}`,
+      fileName: key
+    };
+  }
+
+  try {
+    const putResult = await ossClient.put(key, buffer, {
+      headers: { 'Content-Type': contentType }
+    });
+    return {
+      success: true,
+      url: putResult.url,
+      fileName: key
+    };
+  } catch (error) {
+    console.error('以指定Key上传到OSS失败:', error.message);
+    return { success: false, error: error.message };
+  }
+};
+
 // 删除文件（智能选择存储方式）
 const deleteFromOSS = async (fileName) => {
   if (USE_LOCAL_STORAGE || !ossClient) {
@@ -86,6 +124,7 @@ const deleteFromOSS = async (fileName) => {
 module.exports = {
   ossClient,
   uploadToOSS,
+  uploadBufferWithKey,
   deleteFromOSS,
   generateFileName,
   USE_LOCAL_STORAGE

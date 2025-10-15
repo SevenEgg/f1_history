@@ -1,11 +1,14 @@
 import React, { useState } from 'react';
-import { Layout, Button } from 'antd';
+import { Layout, Button, Breadcrumb } from 'antd';
 import styled from 'styled-components';
 import PostList from '../../components/PostList';
 import PostForm from '../../components/PostForm';
 const { Content } = Layout;
 
 const StyledLayout = styled(Layout)`
+    .breadcrumb{
+        margin-bottom: 10px;
+    }
 `;
 
 const StyledContent = styled(Content)`
@@ -53,8 +56,15 @@ const F1History = () => {
     };
     return (
         <StyledLayout>
+            {/* 面包屑 */}
+            <Breadcrumb className='breadcrumb' items={[
+                { title: '首页' },
+                { title: '内容管理' },
+                { title: '历史上的今天' }
+            ]} />
+
             <StyledContent>
-                <PostList onEditPost={handleEditPost} onAddPost={handleAddPost}/>
+                <PostList onEditPost={handleEditPost} onAddPost={handleAddPost} />
             </StyledContent>
             <PostForm
                 visible={drawerVisible}
