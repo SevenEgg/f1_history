@@ -6,6 +6,8 @@ import Siderbar from './comom/Siderbar';
 import PageContent from './comom/Content';
 import LoginPage from './pages/Login';
 import F1History from './pages/F1History';
+import ContentFarm from './pages/ContentFarm';
+import NewsList from './pages/NewsList';
 
 
 function App() {
@@ -30,7 +32,10 @@ function App() {
       <Siderbar />
       <PageContent>
         <Routes>
-          <Route path="/" element={<F1History />} />
+          <Route path="/" element={<ContentFarm />} />
+          <Route path="/contentFarm" element={<ContentFarm />} />
+          <Route path="/newsList" element={<NewsList />} />
+          <Route path="/f1History" element={<F1History />} />
         </Routes>
       </PageContent>
     </div>

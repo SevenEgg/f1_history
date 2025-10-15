@@ -5,7 +5,20 @@ const bodyParser = require('body-parser');
 const sqlite3 = require('sqlite3').verbose();
 const path = require('path');
 const multer = require('multer');
-const { uploadToOSS, deleteFromOSS } = require('./config/oss');
+const axios = require('axios');
+const { uploadToOSS, deleteFromOSS, ossClient, generateFileName, uploadBufferWithKey } = require('./config/oss');
+const { encrypt, decrypt } = require('./config/cryptoExt');
+const fs = require('fs');
+
+// 获取中国时区的当前时间
+const getChinaTime = () => {
+  const now = new Date();
+  const chinaTime = new Date(now.getTime() + (8 * 60 * 60 * 1000)); // UTC+8
+  return chinaTime.toISOString().replace('T', ' ').substring(0, 19);
+};
+const os = require('os');
+const crypto = require('crypto');
+const mime = require('mime-types');
 
 const app = express();
 const PORT = process.env.PORT || 3001;
@@ -79,6 +92,55 @@ db.serialize(() => {
     entity_id TEXT NOT NULL,
     created_at DATETIME DEFAULT CURRENT_TIMESTAMP
   )`);
+
+  // 新闻状态管理表
+  db.run(`CREATE TABLE IF NOT EXISTS news_status (
+    id INTEGER PRIMARY KEY AUTOINCREMENT,
+    news_id TEXT NOT NULL UNIQUE,
+    title TEXT NOT NULL,
+    published_at TEXT NOT NULL,
+    cover_url TEXT,
+    news_source_name TEXT NOT NULL,
+    status TEXT NOT NULL CHECK (status IN ('adopted', 'rejected')) DEFAULT 'rejected',
+    created_at DATETIME,
+    updated_at DATETIME
+  )`);
+
+  // 新闻发布表
+  db.run(`CREATE TABLE IF NOT EXISTS published_news (
+    id INTEGER PRIMARY KEY AUTOINCREMENT,
+    slug TEXT NOT NULL UNIQUE,
+    cover_url TEXT,
+    published_at TEXT NOT NULL,
+    news_source TEXT NOT NULL,
+    news_source_link TEXT,
+    title TEXT NOT NULL,
+    summary TEXT NOT NULL,
+    content TEXT NOT NULL,
+    tags TEXT,
+    syncSta INTEGER DEFAULT 0,
+    created_at DATETIME,
+    updated_at DATETIME
+  )`);
+
+  // 迁移：为已存在的 published_news 表添加 syncSta 列（默认为 0/false）
+  db.get("PRAGMA table_info(published_news)", (e, row) => {});
+  db.all("PRAGMA table_info(published_news)", (err, columns) => {
+    if (err) {
+      console.error('检查 published_news 表结构失败:', err.message);
+      return;
+    }
+    const hasSyncSta = Array.isArray(columns) && columns.some(col => col.name === 'syncSta');
+    if (!hasSyncSta) {
+      db.run('ALTER TABLE published_news ADD COLUMN syncSta INTEGER DEFAULT 0', (alterErr) => {
+        if (alterErr) {
+          console.error('添加 syncSta 字段失败:', alterErr.message);
+        } else {
+          console.log('已为 published_news 表添加 syncSta 字段');
+        }
+      });
+    }
+  });
 });
 
 // 添加帖子接口
@@ -451,6 +513,44 @@ app.post('/api/upload', upload.array('images', 10), async (req, res) => {
   }
 });
 
+// 通过远程URL抓取图片并上传到OSS
+app.post('/api/upload-by-url', async (req, res) => {
+  try {
+    const { url } = req.body || {};
+    if (!url) {
+      return res.status(400).json({ error: '缺少图片URL' });
+    }
+
+    // 拉取远程图片为buffer
+    const response = await axios.get(url, { responseType: 'arraybuffer' });
+    const contentType = response.headers['content-type'] || 'application/octet-stream';
+    const ext = mime.extension(contentType) ? `.${mime.extension(contentType)}` : '';
+
+    // 构造上传所需file对象（与现有uploadToOSS兼容）
+    const originalBase = crypto.createHash('md5').update(url).digest('hex');
+    const originalname = `${originalBase}${ext || '.img'}`;
+    const fileBuffer = Buffer.from(response.data);
+
+    // 若OSS客户端可用，则直接走OSS，确保返回线上URL
+    if (ossClient) {
+      const fileName = generateFileName(originalname);
+      const putResult = await ossClient.put(fileName, fileBuffer);
+      return res.json({ success: true, url: putResult.url, fileName });
+    }
+
+    // 否则走现有上传逻辑（可能为本地存储）
+    const result = await uploadToOSS({ originalname, buffer: fileBuffer, mimetype: contentType });
+    if (!result || !result.success) {
+      return res.status(500).json({ error: result && result.error ? result.error : '上传失败' });
+    }
+
+    return res.json({ success: true, url: result.url, fileName: result.fileName });
+  } catch (error) {
+    console.error('通过URL上传失败:', error.message);
+    return res.status(500).json({ error: '通过URL上传失败' });
+  }
+});
+
 // 删除帖子接口
 app.delete('/api/posts/:id', (req, res) => {
   const { id } = req.params;
@@ -754,6 +854,515 @@ app.delete('/api/champions/:id', (req, res) => {
 
     res.json({ message: 'Champion 记录删除成功' });
   });
+});
+
+// ==================== News API ====================
+
+// 获取新闻列表接口（带分页）
+app.get('/api/news', async (req, res) => {
+  try {
+    const { page = 1, limit = 35 } = req.query;
+    const pageNum = parseInt(page);
+    const limitNum = parseInt(limit);
+    
+    // 请求外部API
+    const response = await axios.get('https://api.f1cosmos.com/news', {
+      params: {
+        page: pageNum,
+        limit: limitNum,
+        lang: 'zh',
+        source: 'latest'
+      }
+    });
+
+    const newsData = response.data;
+    
+    // 处理新闻数据，添加状态信息
+    const processedNews = await Promise.all(newsData.data.map(async (news) => {
+      // 查询数据库中该新闻的状态
+      return new Promise((resolve, reject) => {
+        db.get(
+          'SELECT status FROM news_status WHERE news_id = ?',
+          [news.slug],
+          (err, row) => {
+            if (err) {
+              reject(err);
+              return;
+            }
+            
+            resolve({
+              ...news,
+              status: row ? row.status : 'rejected' // 默认为未采用
+            });
+          }
+        );
+      });
+    }));
+
+    res.json({
+      ...newsData,
+      data: processedNews,
+      total: newsData.totalPage * limitNum, // 计算总记录数
+      currentPage: newsData.currentPage,
+      totalPage: newsData.totalPage,
+      hasNextPage: newsData.hasNextPage
+    });
+  } catch (error) {
+    console.error('获取新闻失败:', error);
+    res.status(500).json({ error: '获取新闻失败' });
+  }
+});
+
+// 更新新闻状态接口
+app.put('/api/news/:id/status', (req, res) => {
+  const { id } = req.params;
+  const { status, title, published_at, cover_url, news_source_name } = req.body;
+
+  if (!status || !['adopted', 'rejected'].includes(status)) {
+    return res.status(400).json({ error: '状态必须是 adopted 或 rejected' });
+  }
+
+  // 先尝试更新，如果不存在则插入
+  const chinaTime = getChinaTime();
+  db.run(
+    `INSERT OR REPLACE INTO news_status 
+     (news_id, title, published_at, cover_url, news_source_name, status, created_at, updated_at) 
+     VALUES (?, ?, ?, ?, ?, ?, ?, ?)`,
+    [id, title, published_at, cover_url, news_source_name, status, chinaTime, chinaTime],
+    function(err) {
+      if (err) {
+        return res.status(500).json({ error: err.message });
+      }
+
+      res.json({ message: '新闻状态更新成功' });
+    }
+  );
+});
+
+// 获取新闻详情接口
+app.get('/api/news/:slug', async (req, res) => {
+  try {
+    const { slug } = req.params;
+    
+    // 请求外部API获取新闻详情
+    const response = await axios.get(`https://api.f1cosmos.com/news/${slug}?lang=zh`);
+    
+    res.json(response.data);
+  } catch (error) {
+    console.error('获取新闻详情失败:', error);
+    res.status(500).json({ error: '获取新闻详情失败' });
+  }
+});
+
+// 发布新闻接口
+app.post('/api/news/publish', (req, res) => {
+  const { slug, cover_url, published_at, news_source, news_source_link, title, summary, content, tags } = req.body;
+
+  if (!slug || !title || !summary || !content || !published_at || !news_source) {
+    return res.status(400).json({ error: '必填字段不能为空' });
+  }
+
+  const tagsJson = tags ? JSON.stringify(tags) : null;
+
+  // 先发布新闻到published_news表
+  const chinaTime = getChinaTime();
+  db.run(
+    `INSERT OR REPLACE INTO published_news 
+     (slug, cover_url, published_at, news_source, news_source_link, title, summary, content, tags, created_at, updated_at) 
+     VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)`,
+    [slug, cover_url, published_at, news_source, news_source_link, title, summary, content, tagsJson, chinaTime, chinaTime],
+    function(err) {
+      if (err) {
+        return res.status(500).json({ error: err.message });
+      }
+
+      // 发布成功后，将该新闻标记为已采用
+      db.run(
+        `INSERT OR REPLACE INTO news_status 
+         (news_id, title, published_at, cover_url, news_source_name, status, created_at, updated_at) 
+         VALUES (?, ?, ?, ?, ?, 'adopted', ?, ?)`,
+        [slug, title, published_at, cover_url, news_source, chinaTime, chinaTime],
+        function(err2) {
+          if (err2) {
+            console.error('更新新闻状态失败:', err2);
+            // 即使状态更新失败，也返回发布成功
+          }
+          
+          res.json({ id: this.lastID, message: '新闻发布成功并已标记为采用' });
+        }
+      );
+    }
+  );
+});
+
+// 获取已发布新闻列表接口（带分页和搜索）
+app.get('/api/published-news', (req, res) => {
+  const { page = 1, limit = 10, search = '' } = req.query;
+  const pageNum = parseInt(page);
+  const limitNum = parseInt(limit);
+  const offset = (pageNum - 1) * limitNum;
+
+  // 构建查询条件
+  let whereClause = '';
+  let params = [];
+  
+  if (search) {
+    whereClause = 'WHERE title LIKE ? OR summary LIKE ?';
+    params = [`%${search}%`, `%${search}%`];
+  }
+
+  // 获取总数
+  const countQuery = `SELECT COUNT(*) as total FROM published_news ${whereClause}`;
+  
+  db.get(countQuery, params, (err, countResult) => {
+    if (err) {
+      return res.status(500).json({ error: err.message });
+    }
+
+    const total = countResult.total;
+    const totalPages = Math.ceil(total / limitNum);
+
+    // 获取分页数据
+    const dataQuery = `
+      SELECT 
+        id, slug, cover_url, published_at, news_source, news_source_link,
+        title, summary, content, tags, created_at, updated_at, syncSta
+      FROM published_news 
+      ${whereClause}
+      ORDER BY created_at DESC 
+      LIMIT ? OFFSET ?
+    `;
+
+    db.all(dataQuery, [...params, limitNum, offset], (err, rows) => {
+      if (err) {
+        return res.status(500).json({ error: err.message });
+      }
+
+      // 处理tags字段（JSON字符串转数组）
+      const processedRows = rows.map(row => ({
+        ...row,
+        tags: row.tags ? JSON.parse(row.tags) : []
+      }));
+
+      res.json({
+        data: processedRows,
+        pagination: {
+          current: pageNum,
+          pageSize: limitNum,
+          total: total,
+          totalPages: totalPages,
+          hasNextPage: pageNum < totalPages,
+          hasPrevPage: pageNum > 1
+        },
+        search: search
+      });
+    });
+  });
+});
+
+// 获取新闻状态统计接口
+app.get('/api/news/stats', (req, res) => {
+  db.all(
+    `SELECT 
+       status,
+       COUNT(*) as count
+     FROM news_status 
+     GROUP BY status`,
+    (err, rows) => {
+      if (err) {
+        return res.status(500).json({ error: err.message });
+      }
+
+      const stats = {
+        adopted: 0,
+        rejected: 0
+      };
+
+      rows.forEach(row => {
+        stats[row.status] = row.count;
+      });
+
+      res.json(stats);
+    }
+  );
+});
+
+// 发布新闻接口（从外部API获取并保存到published_news表）
+app.post('/api/published-news/publish', async (req, res) => {
+  const { slug } = req.body;
+
+  if (!slug) {
+    return res.status(400).json({ error: '新闻slug不能为空' });
+  }
+
+  try {
+    // 从外部API获取新闻详情
+    const response = await axios.get(`https://api.f1cosmos.com/news/${slug}?lang=zh`);
+    const newsData = response.data.data;
+
+    // 检查是否已存在
+    db.get('SELECT id FROM published_news WHERE slug = ?', [slug], (err, existingNews) => {
+      if (err) {
+        return res.status(500).json({ error: err.message });
+      }
+
+      if (existingNews) {
+        return res.status(400).json({ error: '该新闻已存在' });
+      }
+
+      // 插入到published_news表
+      const chinaTime = getChinaTime();
+      db.run(
+        `INSERT INTO published_news 
+         (slug, cover_url, published_at, news_source, news_source_link, title, summary, content, tags, created_at, updated_at) 
+         VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)`,
+        [
+          slug,
+          newsData.cover_url,
+          newsData.published_at,
+          newsData.news_source?.name || '',
+          newsData.link_url || '',
+          newsData.title,
+          newsData.summary,
+          newsData.content,
+          JSON.stringify(newsData.news_types?.map(type => type.name) || []),
+          chinaTime,
+          chinaTime
+        ],
+        function(err) {
+          if (err) {
+            return res.status(500).json({ error: err.message });
+          }
+
+          res.json({ id: this.lastID, message: '新闻发布成功' });
+        }
+      );
+    });
+  } catch (error) {
+    console.error('发布新闻失败:', error);
+    res.status(500).json({ error: '获取新闻详情失败' });
+  }
+});
+
+// 更新已发布新闻接口
+app.put('/api/published-news/:id', (req, res) => {
+  const { id } = req.params;
+  const { cover_url, published_at, news_source, news_source_link, title, summary, content, tags } = req.body;
+
+  if (!id) {
+    return res.status(400).json({ error: '新闻ID不能为空' });
+  }
+
+  if (!title || !summary || !content) {
+    return res.status(400).json({ error: '标题、摘要和内容不能为空' });
+  }
+
+  // 更新已发布新闻
+  const chinaTime = getChinaTime();
+  db.run(
+    `UPDATE published_news 
+     SET cover_url = ?, published_at = ?, news_source = ?, news_source_link = ?, 
+         title = ?, summary = ?, content = ?, tags = ?, updated_at = ?
+     WHERE id = ?`,
+    [cover_url, published_at, news_source, news_source_link, title, summary, content, JSON.stringify(tags || []), chinaTime, id],
+    function(err) {
+      if (err) {
+        return res.status(500).json({ error: err.message });
+      }
+
+      if (this.changes === 0) {
+        return res.status(404).json({ error: '新闻不存在' });
+      }
+
+      res.json({ message: '新闻更新成功' });
+    }
+  );
+});
+
+// 删除已发布新闻接口
+app.delete('/api/published-news/:id', (req, res) => {
+  const { id } = req.params;
+
+  if (!id) {
+    return res.status(400).json({ error: '新闻ID不能为空' });
+  }
+
+  // 先获取新闻的slug，用于检查采纳库
+  db.get('SELECT slug FROM published_news WHERE id = ?', [id], (err, news) => {
+    if (err) {
+      return res.status(500).json({ error: err.message });
+    }
+
+    if (!news) {
+      return res.status(404).json({ error: '新闻不存在' });
+    }
+
+    const newsSlug = news.slug;
+
+    // 删除已发布新闻
+    db.run('DELETE FROM published_news WHERE id = ?', [id], function(err) {
+      if (err) {
+        return res.status(500).json({ error: err.message });
+      }
+
+      if (this.changes === 0) {
+        return res.status(404).json({ error: '新闻不存在' });
+      }
+
+      // 检查并删除采纳库中的对应记录
+      db.run('DELETE FROM news_status WHERE news_id = ?', [newsSlug], function(err2) {
+        if (err2) {
+          console.error('删除采纳库记录失败:', err2);
+          // 即使删除采纳库记录失败，也返回成功，因为主要删除操作已完成
+        }
+
+        const deletedAdoptedCount = this.changes || 0;
+        let message = '新闻删除成功';
+        
+        if (deletedAdoptedCount > 0) {
+          message += '，并已同步删除采纳库中的相关记录';
+        }
+
+        res.json({ 
+          message: message,
+          deletedAdoptedCount: deletedAdoptedCount
+        });
+      });
+    });
+  });
+});
+
+// 导出所有已发布新闻为JSON并上传到OSS
+app.get('/api/newList', (req, res) => {
+  const query = `
+    SELECT id, slug, cover_url, news_source, title, summary, created_at
+    FROM published_news
+    ORDER BY id DESC
+  `;
+
+  db.all(query, [], async (err, rows) => {
+    if (err) {
+      return res.status(500).json({ error: err.message });
+    }
+
+    try {
+      // 确保 data 目录存在并写入文件
+      const dataDir = path.join(__dirname, 'data');
+      if (!fs.existsSync(dataDir)) {
+        fs.mkdirSync(dataDir, { recursive: true });
+      }
+      const filePath = path.join(dataDir, 'newsList.json');
+      const jsonBuffer = Buffer.from(JSON.stringify({ data: rows }, null, 2));
+      await fs.promises.writeFile(filePath, jsonBuffer);
+
+      // 上传到 OSS 指定目录 ChinaF1/newsList.json
+      const ossKey = 'ChinaF1/newsList.json';
+      const uploadResult = await uploadBufferWithKey(ossKey, jsonBuffer, 'application/json');
+      if (!uploadResult || !uploadResult.success) {
+        // 上传失败不阻塞本地导出，返回部分成功信息
+        return res.json({
+          success: true,
+          localPath: filePath,
+          oss: { success: false, error: uploadResult && uploadResult.error },
+          count: rows.length
+        });
+      }
+
+      res.json({
+        success: true,
+        localPath: filePath,
+        oss: { success: true, url: uploadResult.url, key: uploadResult.fileName },
+        count: rows.length
+      });
+    } catch (e) {
+      console.error('导出/上传 newsList 失败:', e);
+      return res.status(500).json({ error: '导出或上传失败' });
+    }
+  });
+});
+
+// 导出单条已发布新闻为 JSON 并上传到 OSS（按 slug）
+app.get('/api/newItem/:slug', (req, res) => {
+  const { slug } = req.params;
+  if (!slug) {
+    return res.status(400).json({ error: '缺少 slug 参数' });
+  }
+
+  const query = `
+    SELECT id, slug, cover_url, news_source, title, summary, content, tags, created_at, updated_at, syncSta
+    FROM published_news
+    WHERE slug = ?
+    LIMIT 1
+  `;
+
+  db.get(query, [slug], async (err, row) => {
+    if (err) {
+      return res.status(500).json({ error: err.message });
+    }
+    if (!row) {
+      return res.status(404).json({ error: '未找到对应的新闻' });
+    }
+
+    try {
+      const dataDir = path.join(__dirname, 'data', 'news');
+      if (!fs.existsSync(dataDir)) {
+        fs.mkdirSync(dataDir, { recursive: true });
+      }
+
+      row["content"] = encrypt(row["content"]);
+      row["summary"] = encrypt(row["summary"]);
+      row["title"] = encrypt(row["title"]);
+      row["cover_url"] = encrypt(row["cover_url"]);
+     
+      const fileName = `${slug}.json`;
+      const filePath = path.join(dataDir, fileName);
+      const jsonBuffer = Buffer.from(JSON.stringify(row, null, 2));
+      await fs.promises.writeFile(filePath, jsonBuffer);
+
+      // 上传到 OSS ChinaF1/news/${slug}.json
+      const ossKey = `ChinaF1/news/${fileName}`;
+      const uploadResult = await uploadBufferWithKey(ossKey, jsonBuffer, 'application/json');
+      if (!uploadResult || !uploadResult.success) {
+        return res.json({
+          success: true,
+          localPath: filePath,
+          oss: { success: false, error: uploadResult && uploadResult.error },
+        });
+      }
+
+      // 可选：标记该条已同步
+      db.run('UPDATE published_news SET syncSta = 1 WHERE slug = ?', [slug], (uErr) => {
+        if (uErr) {
+          console.error('更新 syncSta 失败:', uErr.message);
+        }
+      });
+
+      return res.json({ success: true, localPath: filePath, oss: { success: true, url: uploadResult.url, key: uploadResult.fileName } });
+    } catch (e) {
+      console.error('导出/上传单条 news 失败:', e);
+      return res.status(500).json({ error: '导出或上传失败' });
+    }
+  });
+});
+
+// 调试接口：重置 published_news 的 syncSta 为 0（需提供正确pwd）
+app.get('/api/debug/reset-sync', (req, res) => {
+  try {
+    const { pwd } = req.query;
+    if (pwd !== 'yali1990') {
+      return res.status(403).json({ success: false, error: 'Forbidden' });
+    }
+
+    db.run('UPDATE published_news SET syncSta = 0', function(err) {
+      if (err) {
+        return res.status(500).json({ success: false, error: err.message });
+      }
+      // this.changes 在 SQLite 的 UPDATE 中表示受影响的行数
+      return res.json({ success: true, updated: this.changes || 0 });
+    });
+  } catch (e) {
+    return res.status(500).json({ success: false, error: '重置失败' });
+  }
 });
 
 app.listen(PORT, () => {
