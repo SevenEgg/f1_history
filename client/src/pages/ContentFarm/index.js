@@ -128,7 +128,7 @@ const ContentFarm = () => {
             width: 300,
             ellipsis: true,
             render: (text) => (
-                <div style={{ maxWidth: 300, overflow: 'hidden', textOverflow: 'ellipsis', whiteSpace: 'nowrap' }}>
+                <div style={{ overflow: 'hidden', textOverflow: 'ellipsis', whiteSpace: 'nowrap' }}>
                     {text}
                 </div>
             )
