@@ -55,6 +55,26 @@ const NewsManage = ({ visible, onClose, newsData, onPublish, onStatusUpdate }) =
         }
     }, [visible, newsData?.slug]);
 
+    // 清理 body 样式，防止 Drawer 关闭后影响页面滚动
+    useEffect(() => {
+        return () => {
+            // 组件卸载时清理 body 样式
+            document.body.style.overflow = '';
+            document.body.style.paddingRight = '';
+        };
+    }, []);
+
+    // 监听 visible 变化，确保关闭时清理样式
+    useEffect(() => {
+        if (!visible) {
+            // Drawer 关闭时清理 body 样式
+            setTimeout(() => {
+                document.body.style.overflow = '';
+                document.body.style.paddingRight = '';
+            }, 100);
+        }
+    }, [visible]);
+
     // 编辑态下，等待 newsDetail 异步返回后，再次尝试为 cover_url 进行预填
     useEffect(() => {
         if (!isEditing) return;
@@ -333,44 +353,52 @@ const NewsManage = ({ visible, onClose, newsData, onPublish, onStatusUpdate }) =
     };
 
     return (
-        <Drawer
-            title={
-                <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center' }}>
-                    <span>{isEditing ? '编辑新闻' : '新闻详情'}</span>
-                    <Space>
-                        {isEditing ? (
-                            <>
-                                <Button onClick={handleCancel} icon={<CloseOutlined />}>
-                                    取消
+        <>
+            <Drawer
+                title={
+                    <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center' }}>
+                        <span>{isEditing ? '编辑新闻' : '新闻详情'}</span>
+                        <Space>
+                            {isEditing ? (
+                                <>
+                                    <Button onClick={handleCancel} icon={<CloseOutlined />}>
+                                        取消
+                                    </Button>
+                                    <Button type="primary" onClick={handlePublish} icon={<SendOutlined />}>
+                                        发布
+                                    </Button>
+                                </>
+                            ) : (
+                                <Button 
+                                    type="primary" 
+                                    onClick={handleEdit} 
+                                    icon={<EditOutlined />}
+                                    disabled={newsData?.status === 'adopted'}
+                                >
+                                    编辑
                                 </Button>
-                                <Button type="primary" onClick={handlePublish} icon={<SendOutlined />}>
-                                    发布
-                                </Button>
-                            </>
-                        ) : (
-                            <Button 
-                                type="primary" 
-                                onClick={handleEdit} 
-                                icon={<EditOutlined />}
-                                disabled={newsData?.status === 'adopted'}
-                            >
-                                编辑
-                            </Button>
-                        )}
-                    </Space>
-                </div>
-            }
-            width={800}
-            open={visible}
-            onClose={onClose}
-            destroyOnClose
-        >
+                            )}
+                        </Space>
+                    </div>
+                }
+                width={800}
+                open={visible}
+                onClose={onClose}
+                destroyOnClose={false}
+                maskClosable={true}
+                zIndex={1000}
+            >
+                {isEditing ? renderContent() : renderViewMode()}
+            </Drawer>
+            
             <Modal
                 open={imagePreviewVisible}
+                title="图片预览"
                 footer={null}
                 onCancel={() => setImagePreviewVisible(false)}
                 width={900}
                 centered
+                zIndex={1001}
             >
                 {imagePreviewSrc ? (
                     <img
@@ -380,8 +408,7 @@ const NewsManage = ({ visible, onClose, newsData, onPublish, onStatusUpdate }) =
                     />
                 ) : null}
             </Modal>
-            {isEditing ? renderContent() : renderViewMode()}
-        </Drawer>
+        </>
     );
 };
 
