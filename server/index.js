@@ -1365,6 +1365,41 @@ app.get('/api/debug/reset-sync', (req, res) => {
   }
 });
 
+// 调试接口：重置指定 slug 的 published_news 的 syncSta 为 0（需提供正确pwd）
+app.get('/api/debug/reset-sync/:slug', (req, res) => {
+  try {
+    const { slug } = req.params;
+    const { pwd } = req.query;
+    
+    if (pwd !== 'yali1990') {
+      return res.status(403).json({ success: false, error: 'Forbidden' });
+    }
+
+    if (!slug) {
+      return res.status(400).json({ success: false, error: '缺少 slug 参数' });
+    }
+
+    db.run('UPDATE published_news SET syncSta = 0 WHERE slug = ?', [slug], function(err) {
+      if (err) {
+        return res.status(500).json({ success: false, error: err.message });
+      }
+      
+      if (this.changes === 0) {
+        return res.status(404).json({ success: false, error: '未找到指定 slug 的新闻' });
+      }
+      
+      return res.json({ 
+        success: true, 
+        updated: this.changes || 0,
+        slug: slug,
+        message: `成功重置 slug "${slug}" 的同步状态`
+      });
+    });
+  } catch (e) {
+    return res.status(500).json({ success: false, error: '重置失败' });
+  }
+});
+
 app.listen(PORT, () => {
   console.log(`服务器运行在端口 ${PORT}`);
 }); 

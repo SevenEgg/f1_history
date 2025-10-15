@@ -119,7 +119,7 @@ const NewsList = () => {
             dataIndex: 'created_at',
             key: 'created_at',
             width: 180,
-            render: (text) => new Date(text).toLocaleString('zh-CN')
+            // render: (text) => new Date(text).toLocaleString('zh-CN')
         },
         // {
         //     title: '同步状态',
