@@ -1258,6 +1258,7 @@ app.get('/api/newList', (req, res) => {
       // 上传到 OSS 指定目录 ChinaF1/newsList.json
       const ossKey = 'ChinaF1/newsList.json';
       const uploadResult = await uploadBufferWithKey(ossKey, jsonBuffer, 'application/json');
+      console.log("uploadResult",uploadResult);
       if (!uploadResult || !uploadResult.success) {
         // 上传失败不阻塞本地导出，返回部分成功信息
         return res.json({
@@ -1366,10 +1367,9 @@ app.get('/api/debug/reset-sync', (req, res) => {
 });
 
 // 调试接口：重置指定 slug 的 published_news 的 syncSta 为 0（需提供正确pwd）
-app.get('/api/debug/reset-sync/:slug', (req, res) => {
+app.post('/api/debug/reset-sync', (req, res) => {
   try {
-    const { slug } = req.params;
-    const { pwd } = req.query;
+    const { slug, pwd } = req.body;
     
     if (pwd !== 'yali1990') {
       return res.status(403).json({ success: false, error: 'Forbidden' });

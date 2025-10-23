@@ -169,7 +169,40 @@ const NewsList = () => {
             render: (_, record) => (
                 <Space size="small">
                     {record.syncSta ? (
-                        <Tag color="green">已同步</Tag>
+                        <Popconfirm
+                            title="确认要重置同步吗？"
+                            description="重置后该新闻将变为未同步状态"
+                            onConfirm={async () => {
+                                try {
+                                    const resp = await fetch('http://localhost:3001/api/debug/reset-sync', {
+                                        method: 'POST',
+                                        headers: {
+                                            'Content-Type': 'application/json',
+                                        },
+                                        body: JSON.stringify({ 
+                                            slug: record.slug, 
+                                            pwd: 'yali1990' 
+                                        }),
+                                    });
+                                    const data = await resp.json();
+                                    if (resp.ok && data && data.success) {
+                                        message.success('重置同步状态成功');
+                                        // 重置后刷新列表，拿到最新 syncSta
+                                        setTimeout(() => {
+                                            fetchPublishedNews(pagination.current, pagination.pageSize, searchText);
+                                        }, 500);
+                                    } else {
+                                        message.error((data && data.error) || '重置失败');
+                                    }
+                                } catch (e) {
+                                    message.error('重置失败');
+                                }
+                            }}
+                            okText="确认"
+                            cancelText="取消"
+                        >
+                            <Tag color="green" style={{ cursor: 'pointer' }}>已同步</Tag>
+                        </Popconfirm>
                     ) : (
                         <Button
                             type="text"
