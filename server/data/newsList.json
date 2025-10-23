@@ -1,6 +1,1896 @@
 {
   "data": [
     {
+      "id": 295,
+      "slug": "mclaren-s-better-luck-next-time-taunt-on-grid-marker-to-red-bull-25102471038",
+      "cover_url": "https://anna1994.oss-cn-shenzhen.aliyuncs.com/f1-history/1761258276886-oj7cd12yfv.jpeg",
+      "news_source": "motorsport",
+      "title": "迈凯伦起跑线标记“挑衅”红牛：祝你好运下次",
+      "summary": "美国大奖赛后，红牛因干扰迈凯伦起跑线标记被罚。迈凯伦以“祝你好运下次”回应，加剧两队“心理战”。此举突显F1中细节及车手视野的重要性。",
+      "created_at": "2025-10-24 06:26:31"
+    },
+    {
+      "id": 294,
+      "slug": "aston-martin-admits-to-f1-cost-cap-procedural-breach-25102471015",
+      "cover_url": "https://anna1994.oss-cn-shenzhen.aliyuncs.com/f1-history/1761257068488-mvw2knz3gz.jpeg",
+      "news_source": "The Race",
+      "title": "阿斯顿·马丁因程序性失误遭FIA处罚",
+      "summary": "阿斯顿·马丁承认在F1成本上限规定中存在程序性违规，因提交文件缺少签名。车队已接受协议并承担责任，预计无实质处罚。FIA正对所有车队进行审查，预计近期公布结果。",
+      "created_at": "2025-10-24 06:07:55"
+    },
+    {
+      "id": 293,
+      "slug": "carlos-sainz-slams-disproportionate-fia-penalty-for-us-gp-incident-25102461016",
+      "cover_url": "https://anna1994.oss-cn-shenzhen.aliyuncs.com/f1-history/1761256807153-b7us934q055.jpeg",
+      "news_source": "Racingnews365",
+      "title": "塞恩斯抨击FIA对美国大奖赛事件的“不成比例”处罚，称其“难以接受”",
+      "summary": "塞恩斯因在美国大奖赛与安东内利碰撞被罚五位，他对此判罚表示“完全不成比例”且“难以接受”，认为规则执行存在问题。他指出，当前的判罚尺度可能阻碍了激进公平的竞争，并希望在即将到来的卡塔尔会议上对此进行讨论。",
+      "created_at": "2025-10-24 06:02:57"
+    },
+    {
+      "id": 292,
+      "slug": "liam-lawson-confident-in-f1-seat-defense-amid-red-bull-s-imminent-decision-2510245103",
+      "cover_url": "https://anna1994.oss-cn-shenzhen.aliyuncs.com/f1-history/1761256692767-4xfenqvq1et.jpeg",
+      "news_source": "Racingnews365",
+      "title": "劳森背水一战，命运悬于墨西哥站后决议",
+      "summary": "红牛车队即将于墨西哥城大奖赛后公布2026赛季车手阵容。利亚姆·劳森虽面临伊萨克·哈德加等激烈竞争，但凭阿塞拜疆站第五名的亮眼表现及“表现至上”的理念，对保住F1席位表示乐观。他认为过往和未来的赛道成绩将是关键。",
+      "created_at": "2025-10-24 05:58:16"
+    },
+    {
+      "id": 291,
+      "slug": "oscar-piastri-confirms-mclaren-wiped-the-slate-clean-after-austin-sprint-crash-25102451019",
+      "cover_url": "https://anna1994.oss-cn-shenzhen.aliyuncs.com/f1-history/1761255863528-p6020swvv7m.jpeg",
+      "news_source": "Racingnews365",
+      "title": "迈凯伦在奥斯汀冲刺赛碰撞后选择“翻篇”",
+      "summary": "迈凯伦车队证实，已与皮亚斯特里和诺里斯在奥斯汀冲刺赛碰撞事故后“翻篇”。皮亚斯特里承认责任，车队决定“清除过往”。维斯塔潘势头正猛，缩小了与迈凯伦车手之间的积分差距，车队需团结一致备战墨西哥站。",
+      "created_at": "2025-10-24 05:48:15"
+    },
+    {
+      "id": 290,
+      "slug": "perez-prepares-for-f1-return-with-ferrari-test-at-imola-25102441047",
+      "cover_url": "https://anna1994.oss-cn-shenzhen.aliyuncs.com/f1-history/1761255310068-rj6rlayjnjc.jpeg",
+      "news_source": "GP Blog",
+      "title": "佩雷兹将进行法拉利旧车测试，为2026年重返F1做准备",
+      "summary": "塞尔吉奥·佩雷兹为2026年重返F1，将使用法拉利2023款赛车在伊莫拉进行为期两天的旧车测试。这有助于他为凯迪拉克车队（与博塔斯搭档）的首个赛季找回状态。此次测试也得益于凯迪拉克与法拉利在2026年引擎供应的合作。",
+      "created_at": "2025-10-24 05:41:05"
+    },
+    {
+      "id": 289,
+      "slug": "fia-cost-cap-delay-fuels-f1-team-rule-breach-speculation-25102431023",
+      "cover_url": "https://anna1994.oss-cn-shenzhen.aliyuncs.com/f1-history/1761254998422-mcd3ptrrcjh.jpeg",
+      "news_source": "The Race",
+      "title": "FIA成本上限延期引爆F1车队违规猜测",
+      "summary": "F1 FIA成本上限合规证书发放史无前例地延误，引发车队可能违规受查的广泛猜测。此举关乎规则公平性，如违规恐面临严厉处罚，结果令人屏息以待。",
+      "created_at": "2025-10-24 05:33:10"
+    },
+    {
+      "id": 288,
+      "slug": "lewis-hamilton-s-test-weekends-comments-spark-debate-at-ferrari-25102421050",
+      "cover_url": "https://anna1994.oss-cn-shenzhen.aliyuncs.com/f1-history/1761254880844-346ga3q9oxo.jpeg",
+      "news_source": "motorsport",
+      "title": "汉密尔顿将余下赛季称为“测试周末”",
+      "summary": "刘易斯·汉密尔顿将F1 2025赛季剩余比赛称为“测试周末”，意在为2026年规则铺路。此言论引发法拉利内部讨论，有人质疑其对当下比赛的承诺，也有评论认为这是其融入新车队的前瞻性姿态。未来，汉密尔顿需平衡当下表现与未来目标。",
+      "created_at": "2025-10-24 05:28:02"
+    },
+    {
+      "id": 287,
+      "slug": "mclaren-handed-max-verstappen-rewrite-the-rules-warning-25102411017",
+      "cover_url": "https://anna1994.oss-cn-shenzhen.aliyuncs.com/f1-history/1761254532301-rpd5xxfatfn.jpeg",
+      "news_source": "Racingnews365",
+      "title": "维斯塔潘强势反攻：红牛底板升级重燃冠军悬念",
+      "summary": "惠特利警告迈凯伦，红牛升级后维斯塔潘重回争冠行列。维斯塔潘已迅速缩小积分差距，他擅长“改写规则”，有望挑战纪录。迈凯伦面临巨大压力，需警惕红牛和维斯塔潘的回归。",
+      "created_at": "2025-10-24 05:22:13"
+    },
+    {
+      "id": 286,
+      "slug": "gambling-ad-featuring-lewis-hamilton-banned-over-child-influence-concerns-2510241107",
+      "cover_url": "https://anna1994.oss-cn-shenzhen.aliyuncs.com/f1-history/1761253238344-sy0i1z9q3ta.jpeg",
+      "news_source": "GP Blog",
+      "title": "刘易斯·汉密尔顿代言博彩广告因涉嫌影响儿童在英国被禁",
+      "summary": "英国广告标准局（ASA）因刘易斯·汉密尔顿的形象可能影响未成年人，禁止了一则博彩广告。该广告因汉密尔顿在社交媒体、游戏及儿童节目中的广泛吸引力而被裁定违规。此事件加剧了对体育博彩广告的审查，并可能影响F1车队及赞助商的推广策略。",
+      "created_at": "2025-10-24 05:03:05"
+    },
+    {
+      "id": 285,
+      "slug": "f1-title-race-turnarounds-what-history-tells-max-verstappen-25102401057",
+      "cover_url": "https://anna1994.oss-cn-shenzhen.aliyuncs.com/f1-history/1761233733991-lovw6gff4f.jpeg",
+      "news_source": "motorsport",
+      "title": "回望F1历史逆转：从琼斯到维特尔，五大冠军追击传奇",
+      "summary": "F1历史显示，巨大积分差距并非不可逾越。多位车手曾上演惊人逆转。成功的关键包括赛车升级、对手失误及车手稳定表现。维斯塔潘若要追赶，需依赖红牛研发、完美驾驶并抓住对手失机。",
+      "created_at": "2025-10-23 23:39:21"
+    },
+    {
+      "id": 284,
+      "slug": "red-bull-handed-boost-in-mclaren-title-fight-that-bodes-well-for-them-251023231023",
+      "cover_url": "https://anna1994.oss-cn-shenzhen.aliyuncs.com/f1-history/1761231745651-uu2mkmj3ejk.jpeg",
+      "news_source": "Racingnews365",
+      "title": "维斯塔潘COTA双胜重燃冠军希望",
+      "summary": "红牛在COTA的统治级表现证明其RB21赛车适应性更强，维斯塔潘近期连胜缩小积分差距。这预示着红牛已完全回归，为赛季末的冠军争夺战注入强劲动力。",
+      "created_at": "2025-10-23 23:04:44"
+    },
+    {
+      "id": 283,
+      "slug": "ferrari-baffled-by-inconsistent-sf-25-performance-in-us-gp-251023231042",
+      "cover_url": "https://anna1994.oss-cn-shenzhen.aliyuncs.com/f1-history/1761231353637-ndxbkx4yfh.jpeg",
+      "news_source": "GP Blog",
+      "title": "瓦塞尔坦言法拉利深陷轮胎性能困局",
+      "summary": "法拉利F1车队在经历了美国大奖赛一场“过山车”式的周末后，对于SF-25赛车表现的起伏不定感到困惑。轮胎工作窗口难以把握以及赛车在不同环节性能差异过大，成为制约车队稳定争冠的关键难题。",
+      "created_at": "2025-10-23 22:55:55"
+    },
+    {
+      "id": 282,
+      "slug": "red-bull-seals-historic-f1-partnership-with-mcdonald-s-25102322104",
+      "cover_url": "https://anna1994.oss-cn-shenzhen.aliyuncs.com/f1-history/1761230676306-jsoq5x6hwdm.jpeg",
+      "news_source": "Racingnews365",
+      "title": "红牛携手麦当劳达成历史性F1合作",
+      "summary": "红牛与麦当劳达成历史性F1合作，麦当劳品牌将亮相圣保罗大奖赛。这是快餐巨头首次进军顶级赛车运动，标志着F1巨大的商业潜力。合作通过赛车涂装、联合营销及产品推广，深化双方品牌影响力。",
+      "created_at": "2025-10-23 22:46:58"
+    },
+    {
+      "id": 281,
+      "slug": "charles-leclerc-places-ferrari-faith-in-f1-choice-despite-painful-season-251023221013",
+      "cover_url": "https://anna1994.oss-cn-shenzhen.aliyuncs.com/f1-history/1761230429337-so87fuvcpd.jpeg",
+      "news_source": "Racingnews365",
+      "title": "勒克莱尔坚信法拉利未来：即使本赛季充满挑战",
+      "summary": "勒克莱尔坚信法拉利未来，尽管2023赛季不尽人意。他看好车队内部改进和对2026年规则的战略性投入，认为牺牲短期表现是为了长期竞争力。车队领队瓦塞尔也获得支持。",
+      "created_at": "2025-10-23 22:42:47"
+    },
+    {
+      "id": 280,
+      "slug": "jenson-button-urges-f1-fans-to-tune-in-as-he-names-2025-title-favorite-amidst-intensifying-battle-251023211013",
+      "cover_url": "https://anna1994.oss-cn-shenzhen.aliyuncs.com/f1-history/1761222439574-dwi0odtsuw.jpeg",
+      "news_source": "Racingnews365",
+      "title": "简森·巴顿看好诺里斯：F1收官战“不容错过”",
+      "summary": "F1传奇简森·巴顿呼吁车迷关注白热化的赛季收官战。他预测兰多·诺里斯将成2025年冠军热门，尽管维斯塔潘正强势追击，冠军归属悬念迭起。",
+      "created_at": "2025-10-23 20:31:12"
+    },
+    {
+      "id": 279,
+      "slug": "toto-wolff-acknowledges-tremendous-pressure-on-kimi-antonelli-after-2026-mercedes-retention-251023201015",
+      "cover_url": "https://anna1994.oss-cn-shenzhen.aliyuncs.com/f1-history/1761221295995-992dbwqfxa.jpeg",
+      "news_source": "Racingnews365",
+      "title": "梅赛德斯续信安东内利：沃尔夫称“压力巨大，但潜力毋庸置疑”",
+      "summary": "沃尔夫表示，尽管基米·安东内利在F1首秀赛季面临巨大压力和挑战，梅赛德斯仍确认他将与乔治·拉塞尔搭档征战2026赛季，显示了对这位年轻车手长期潜力的坚定信念。",
+      "created_at": "2025-10-23 20:13:24"
+    },
+    {
+      "id": 278,
+      "slug": "alonso-praises-verstappen-one-of-the-best-drivers-in-history-251023201053",
+      "cover_url": "https://anna1994.oss-cn-shenzhen.aliyuncs.com/f1-history/1761220759420-styd463l3z.jpeg",
+      "news_source": "GP Blog",
+      "title": "阿隆索盛赞维斯塔潘：F1历史最佳车手之一",
+      "summary": "阿隆索高度评价维斯塔潘，称其是F1历史最佳车手之一。他强调维斯塔潘能最大化赛车潜力，即便赛车不占优也能稳定发挥，并以2021年夺冠为例，展现其关键时刻的实力。维斯塔潘已跻身赛史精英。",
+      "created_at": "2025-10-23 20:06:25"
+    },
+    {
+      "id": 277,
+      "slug": "f1-2024-season-final-five-rounds-power-rankings-and-predictions-251023191051",
+      "cover_url": "https://anna1994.oss-cn-shenzhen.aliyuncs.com/f1-history/1761217509929-g338z2agfps.jpg",
+      "news_source": "motorsport",
+      "title": "F1收官五大战：维斯塔潘势头凶猛",
+      "summary": "F1赛季进入最后五站，皮亚斯特里领先但压力巨大。红牛及维斯塔潘势头强劲，各赛道特点将考验车队极限。策略与轮胎选择决定最终归属。",
+      "created_at": "2025-10-23 19:04:52"
+    },
+    {
+      "id": 276,
+      "slug": "mclaren-s-path-to-countering-max-verstappen-s-title-charge-251023181010",
+      "cover_url": "https://anna1994.oss-cn-shenzhen.aliyuncs.com/f1-history/1761214451823-bmvdpxm9mva.jpeg",
+      "news_source": "Racingnews365",
+      "title": "迈凯伦如何应对维斯塔潘的冠军冲刺",
+      "summary": "维斯塔潘正强势追击F1积分榜。迈凯伦面临内部管理和车手竞争的挑战。要抵挡维斯塔潘，车队需减少干扰，信任车手，让他们自由发挥，以数学为依据做最终决定，避免自我制造障碍。",
+      "created_at": "2025-10-23 18:28:40"
+    },
+    {
+      "id": 275,
+      "slug": "george-russell-on-learning-to-win-from-hamilton-and-wolff-251023181044",
+      "cover_url": "https://anna1994.oss-cn-shenzhen.aliyuncs.com/f1-history/1761214325220-1u7v55vaidx.jpeg",
+      "news_source": "GP Blog",
+      "title": "乔治·拉塞尔：从汉密尔顿与沃尔夫身上汲取冠军哲学",
+      "summary": "乔治·拉塞尔透露，他在梅赛德斯与汉密尔顿和沃尔夫的共处经历，深刻塑造了他的获胜心态。他表示从汉密尔顿那里学到了“胜利至上”，从沃尔夫那里获得了专注表现的自由，并将这些宝贵经验应用于 2026 年的未来征程。",
+      "created_at": "2025-10-23 18:12:06"
+    },
+    {
+      "id": 274,
+      "slug": "ethical-hackers-access-verstappen-s-personal-data-via-fia-site-vulnerability-251023171039",
+      "cover_url": "https://anna1994.oss-cn-shenzhen.aliyuncs.com/f1-history/1761213879655-0wwolk96o7tc.img",
+      "news_source": "F1i.com",
+      "title": "FIA官网曝安全漏洞，维斯塔潘个人信息险遭泄露",
+      "summary": "一群网络安全研究人员发现FIA官网存在严重漏洞，险些导致包括维斯塔潘在内的多名车手敏感个人信息泄露。研究人员及时报告，FIA已修复漏洞并加强安全措施。此事件凸显了F1赛事组织网络安全的重要性。",
+      "created_at": "2025-10-23 18:05:58"
+    },
+    {
+      "id": 273,
+      "slug": "sebastian-vettel-s-infamous-swear-filled-outburst-at-2016-mexican-gp-251023151014",
+      "cover_url": "https://anna1994.oss-cn-shenzhen.aliyuncs.com/f1-history/1761213470821-dh2j123yoil.jpeg",
+      "news_source": "Racingnews365",
+      "title": "2016年墨西哥大奖赛：维特尔爆粗怒吼的著名时刻",
+      "summary": "2016年墨西哥大奖赛，维特尔因与维斯塔潘的缠斗及赛会判罚不满，在无线电中爆粗怒骂。赛后他被降级，并向赛会总监查理·怀汀道歉。此事件凸显了车手压力与车队沟通。",
+      "created_at": "2025-10-23 18:02:50"
+    },
+    {
+      "id": 272,
+      "slug": "who-s-now-favorite-in-f1-s-three-way-title-race-and-who-has-best-car-for-run-in-251023141021",
+      "cover_url": "https://anna1994.oss-cn-shenzhen.aliyuncs.com/f1-history/1761212678718-zeimlps6wyr.jpeg",
+      "news_source": "Sky Sports",
+      "title": "F1三强争霸白热化：谁是热门？谁的车更有优势？",
+      "summary": "2025赛季F1车手总冠军争夺白热化，迈凯伦双雄皮亚斯特里、诺里斯与红牛维斯塔潘仅剩5站积分差距仅40分。皮亚斯特里领先，但诺里斯和维斯塔潘势头强劲。赛车性能与赛道适应性将是关键，冠军归属悬念迭起。",
+      "created_at": "2025-10-23 17:51:34"
+    },
+    {
+      "id": 271,
+      "slug": "mekies-reveals-biggest-surprise-working-with-verstappen-25102341054",
+      "cover_url": "https://anna1994.oss-cn-shenzhen.aliyuncs.com/f1-history/1761185703925-81zfcqin7wg.jpeg",
+      "news_source": "GP Blog",
+      "title": "梅基斯揭秘：与维斯塔潘共事的最大“惊喜”",
+      "summary": "红牛领队梅基斯透露，他对维斯塔潘最大的惊喜是他在赛车之外展现出的惊人投入和对车队的深刻理解。维斯塔潘不仅在赛道上表现卓越，更积极参与技术研发，日夜为赛车奉献，这成为红牛重振旗鼓的关键。",
+      "created_at": "2025-10-23 10:18:54"
+    },
+    {
+      "id": 270,
+      "slug": "f1-us-grand-prix-sets-new-tv-viewership-record-on-abc-25102311028",
+      "cover_url": "https://anna1994.oss-cn-shenzhen.aliyuncs.com/f1-history/1761165320835-dawyk533ruv.jpeg",
+      "news_source": "Blackbook",
+      "title": "F1美国大奖赛创ABC收视新纪录",
+      "summary": "F1美国大奖赛在ABC的收视人数达150万，创下新纪录，较去年增长15%。这标志着F1在美国市场持续增长，尤其在Netflix节目和增加北美赛事的推动下，显示出其巨大的商业潜力。",
+      "created_at": "2025-10-23 04:35:23"
+    },
+    {
+      "id": 269,
+      "slug": "colapinto-apologizes-for-disobeying-team-orders-at-us-grand-prix-2510230100",
+      "cover_url": "https://anna1994.oss-cn-shenzhen.aliyuncs.com/f1-history/1761165133444-ep7j53iunm.img",
+      "news_source": "F1i.com",
+      "title": "科拉平托就美国大奖赛违背车队指令致歉",
+      "summary": "科拉平托承认美国大奖赛中违背Alpine车队指令的错误，并承诺未来将严格遵守。此次事件强调了F1中团队纪律的重要性，对Alpine及新秀车手科拉平托都是一次重要学习。",
+      "created_at": "2025-10-23 04:32:15"
+    },
+    {
+      "id": 268,
+      "slug": "vasseur-full-of-praise-for-hamilton-in-austin-strong-all-weekend-25102311053",
+      "cover_url": "https://anna1994.oss-cn-shenzhen.aliyuncs.com/f1-history/1761164806147-rg85txd3cxm.jpeg",
+      "news_source": "GP Blog",
+      "title": "瓦塞尔盛赞汉密尔顿在奥斯汀的“强势周末”",
+      "summary": "弗雷德里克·瓦塞尔赞扬刘易斯·汉密尔顿在奥斯汀的强势表现，尽管他尚未登上领奖台，但P4的成绩显示出显著进步。这为法拉利在激烈争夺车队积分榜第二的战役中注入了动力，并预示着汉密尔顿个人表现的转折点。",
+      "created_at": "2025-10-23 04:26:55"
+    },
+    {
+      "id": 267,
+      "slug": "norris-s-simple-strategy-beat-everyone-to-ease-title-fight-pressure-251022221053",
+      "cover_url": "https://anna1994.oss-cn-shenzhen.aliyuncs.com/f1-history/1761140025394-0ec5e21ifdvr.jpeg",
+      "news_source": "GP Blog",
+      "title": "诺里斯：唯有击败所有人，才能简化冠军之争",
+      "summary": "诺里斯表示，面对激烈的F1总冠军争夺，他将采取简单策略：专注于击败所有对手，通过最大化每场比赛积分来减轻压力，这种务实心态是赛季冲刺阶段的关键。",
+      "created_at": "2025-10-22 21:37:51"
+    },
+    {
+      "id": 266,
+      "slug": "lewis-hamilton-tops-world-s-most-marketable-athlete-list-for-2025-25102222104",
+      "cover_url": "https://anna1994.oss-cn-shenzhen.aliyuncs.com/f1-history/1761139892181-v23uqcreyma.jpeg",
+      "news_source": "Blackbook",
+      "title": "汉密尔顿再度登顶 2025年全球最具商业价值运动员榜",
+      "summary": "汉密尔顿再次荣登2025年全球最具商业价值运动员榜首。这位40岁的车手不仅是史上最年长的冠军，也是第四位两次登顶的选手。他的持续影响力，尤其是在转会法拉利后，使他成为全球品牌和媒体关注的焦点。",
+      "created_at": "2025-10-22 21:31:34"
+    },
+    {
+      "id": 265,
+      "slug": "hamilton-sets-two-clear-goals-for-ferrari-consistency-and-p2-in-constructors-251022211024",
+      "cover_url": "https://anna1994.oss-cn-shenzhen.aliyuncs.com/f1-history/1761139151146-7j6x9uru2n.jpeg",
+      "news_source": "GP Blog",
+      "title": "汉密尔顿锁定双重目标：稳健收官与助力法拉利冲击车队亚军",
+      "summary": "汉密尔顿为法拉利设定了赛季剩余阶段的两大目标：一是提升比赛成绩的稳定性，二是帮助车队争夺车队积分榜的亚军。目前法拉利正与梅赛德斯、红牛激烈竞争第二名。汉密尔顿的经验和稳定发挥对车队至关重要。",
+      "created_at": "2025-10-22 21:26:43"
+    },
+    {
+      "id": 264,
+      "slug": "marko-hints-at-new-red-bull-upgrade-for-verstappen-251022201052",
+      "cover_url": "https://anna1994.oss-cn-shenzhen.aliyuncs.com/f1-history/1761138271164-wr5z5bc5qj.jpeg",
+      "news_source": "GP Blog",
+      "title": "红牛暗示将迎来神秘升级 维斯塔潘剑指冠军反扑",
+      "summary": "马尔科透露红牛为维斯塔潘准备了RB21的另一项重大升级，以巩固其在总冠军争夺中的领先地位。在维斯塔潘状态火热、近四场三冠之际，这项新研发有望进一步拉开与迈凯伦的差距，为赛季冲刺阶段增添关键动力。",
+      "created_at": "2025-10-22 21:12:12"
+    },
+    {
+      "id": 263,
+      "slug": "aston-martin-f1-reports-uk-46m-loss-in-2024-despite-revenue-growth-251022201018",
+      "cover_url": "https://anna1994.oss-cn-shenzhen.aliyuncs.com/f1-history/1761138232903-b7x7xq5g2q8.jpeg",
+      "news_source": "Blackbook",
+      "title": "阿斯顿·马丁F1车队2024年营收增长，但净亏损4600万英镑",
+      "summary": "阿斯顿·马丁F1车队2024年虽营收增长，但因巨额投资用于基础设施及人才（如纽维）而净亏损4600万英镑。车队长远目标是争夺冠军，未来将依靠新规及商业合作扭转亏损。",
+      "created_at": "2025-10-22 21:03:54"
+    },
+    {
+      "id": 262,
+      "slug": "f1-fans-divided-as-mclaren-faces-max-verstappen-threat-should-they-prioritize-a-driver-251022191017",
+      "cover_url": "https://anna1994.oss-cn-shenzhen.aliyuncs.com/f1-history/1761137878179-jy1goan8edr.jpeg",
+      "news_source": "Racingnews365",
+      "title": "迈凯伦是否该设“一号车手”？　车迷意见分歧加剧",
+      "summary": "F1车迷对迈凯伦是否应优先某车手与维斯塔潘争冠意见分裂。维斯塔潘状态火热，皮亚斯特里领先缩窄。投票显示，多数希望支持皮亚斯特里或维持现状，少数支持诺里斯。迈凯伦的策略面临挑战，下一站墨西哥大奖赛将是关键。",
+      "created_at": "2025-10-22 20:58:06"
+    },
+    {
+      "id": 261,
+      "slug": "former-mclaren-mechanic-compares-red-bull-s-cota-tape-incident-to-f1-s-skulduggery-past-25102217102",
+      "cover_url": "https://anna1994.oss-cn-shenzhen.aliyuncs.com/f1-history/1761137466401-wyh28w6277e.jpeg",
+      "news_source": "GP Blog",
+      "title": "红牛因干扰迈凯伦发车标记被罚　引发F1“灰色地带”讨论",
+      "summary": "前迈凯伦技师盖里·安德森将红牛在COTA试图移除诺里斯胶带的行为，比作F1历史上屡见不鲜的“阴谋诡计”。他指出，车队为求优势总会挑战规则，国际汽联对其处以罚款，凸显了公平竞赛的重要性。",
+      "created_at": "2025-10-22 20:51:16"
+    },
+    {
+      "id": 260,
+      "slug": "f1-s-groundbreaking-apple-tv-deal-a-glimpse-into-the-future-of-fan-experience-251022161033",
+      "cover_url": "https://anna1994.oss-cn-shenzhen.aliyuncs.com/f1-history/1761137109137-id4jnzl74we.jpeg",
+      "news_source": "The Race",
+      "title": "F1携手苹果革新转播模式　数字化观赛体验进入全新时代",
+      "summary": "F1与苹果签订重磅Apple TV转播协议，旨在通过技术创新和内容整合，为全球数字原生观众带来更沉浸、便捷的观赛体验，标志着F1粉丝互动模式的重大转变。",
+      "created_at": "2025-10-22 20:45:21"
+    },
+    {
+      "id": 259,
+      "slug": "f1-champion-damon-hill-assesses-max-verstappen-s-relaxed-title-charge-25102216105",
+      "cover_url": "https://anna1994.oss-cn-shenzhen.aliyuncs.com/f1-history/1761136695333-e6v96tdq5z.jpeg",
+      "news_source": "Racingnews365",
+      "title": "戴蒙·希尔：维斯塔潘“轻松”应战",
+      "summary": "F1冠军戴蒙·希尔评价麦克斯·维斯塔潘正“轻松”地追赶积分榜。维斯塔潘在多场比赛中表现出色，红牛赛车不断升级，已大幅缩小了与领跑者的差距。迈凯伦停止研发MCL39，将重心转向2026年，这使得维斯塔潘成为强有力的竞争者。",
+      "created_at": "2025-10-22 20:38:37"
+    },
+    {
+      "id": 258,
+      "slug": "wolff-admits-verstappen-pursuit-destabilized-mercedes-then-retracts-mistake-label-251022141042",
+      "cover_url": "https://anna1994.oss-cn-shenzhen.aliyuncs.com/f1-history/1761116444530-qcyxbcd0q5m.jpeg",
+      "news_source": "Sky Sports",
+      "title": "沃尔夫承认追逐维斯塔潘“动摇”了梅赛德斯",
+      "summary": "梅赛德斯车队领队沃尔夫承认，他此前公开争取维斯塔潘，对车队造成了“动荡”，并推迟了内部续约。他最初称之为“错误”，随后又澄清，承认此举的复杂性，尽管拉塞尔和安东内利已续约，但关于维斯塔潘未来的猜测仍存。",
+      "created_at": "2025-10-22 15:03:04"
+    },
+    {
+      "id": 257,
+      "slug": "brundle-blames-piastri-for-us-gp-sprint-chaos-251022151050",
+      "cover_url": "https://anna1994.oss-cn-shenzhen.aliyuncs.com/f1-history/1761116063311-aju6tc4dd49.jpeg",
+      "news_source": "GP Blog",
+      "title": "布伦德尔：皮亚斯特里是美国大奖赛冲刺赛混乱主因",
+      "summary": "马丁·布伦德尔认为，皮亚斯特里在美国大奖赛冲刺赛中，因在一号弯的激进操作导致多车相撞，负有主要责任。他分析了该弯道的危险设计，并指出车手需要对开赛事故负责。",
+      "created_at": "2025-10-22 14:59:09"
+    },
+    {
+      "id": 256,
+      "slug": "mclaren-addresses-potential-2007-title-fight-repeat-amidst-verstappen-s-threat-251022141016",
+      "cover_url": "https://anna1994.oss-cn-shenzhen.aliyuncs.com/f1-history/1761115956957-yl3cwfdbt6n.jpeg",
+      "news_source": "Racingnews365",
+      "title": "迈凯伦警惕 2007 年重演：维斯塔潘逼近，内部竞争风险浮现",
+      "summary": "迈凯伦 CEO 扎克·布朗坦承，车队为避免重蹈 2007 年内斗覆辙，将允许诺里斯和皮亚斯特里公平竞争。尽管维斯塔潘正在逼近，但车队认为此举最利于争夺车队总冠军，前提是车手们能成熟应对竞争压力。",
+      "created_at": "2025-10-22 14:53:01"
+    },
+    {
+      "id": 255,
+      "slug": "verstappen-hamilton-among-eight-drivers-missing-mexico-city-gp-first-practice-251022141045",
+      "cover_url": "https://anna1994.oss-cn-shenzhen.aliyuncs.com/f1-history/1761115488740-gbv3yldueu.jpeg",
+      "news_source": "Sky Sports",
+      "title": "维斯塔潘、汉密尔顿等八位车手缺席墨西哥城大奖赛首次练习赛",
+      "summary": "墨西哥城大奖赛首次练习赛，维斯塔潘、汉密尔顿等八位主力车手因新秀规则将缺席。这为新秀提供了宝贵机会，但也给车队和经验车手带来了挑战，影响周末格局。",
+      "created_at": "2025-10-22 14:47:20"
+    },
+    {
+      "id": 254,
+      "slug": "cadillac-s-f1-debut-mullets-motivation-and-momentum-towards-2026-2510224105",
+      "cover_url": "https://anna1994.oss-cn-shenzhen.aliyuncs.com/f1-history/1761074256434-zipv139j1wj.jpeg",
+      "news_source": "Speedcafe",
+      "title": "凯迪拉克F1倒计时50天 劳顿领衔新车队冲刺首秀",
+      "summary": "凯迪拉克车队正为2026年F1首秀进行最后冲刺。车队由格雷厄姆·劳顿领导，拥有博塔斯和佩雷斯等经验丰富的车手。车队正从零开始构建，注重文化建设和技术准备，目标是为长期竞争力奠定坚实基础。",
+      "created_at": "2025-10-22 03:17:44"
+    },
+    {
+      "id": 253,
+      "slug": "daniel-ricciardo-embraces-retirement-cites-end-of-gruelling-neck-training-25102231012",
+      "cover_url": "https://anna1994.oss-cn-shenzhen.aliyuncs.com/f1-history/1761071504107-irdghpznz5m.jpeg",
+      "news_source": "Racingnews365",
+      "title": "里卡多谢幕F1赛场 转型福特赛车全球大使",
+      "summary": "丹尼尔·里卡多确认已退役，并幽默地表示不再需要进行痛苦的颈部训练。他已正式成为福特赛车全球大使，将继续活跃在赛车运动中，但不再是F1车手。",
+      "created_at": "2025-10-22 02:38:25"
+    },
+    {
+      "id": 252,
+      "slug": "oscar-piastri-s-mental-strength-questioned-amidst-lando-norris-s-resurgence-2510222103",
+      "cover_url": "https://anna1994.oss-cn-shenzhen.aliyuncs.com/f1-history/1761069246274-7sa9t2qmr7v.jpeg",
+      "news_source": "Racingnews365",
+      "title": "诺里斯强势逼近 皮亚斯特里开始感到压力",
+      "summary": "诺里斯近期表现强势，积分大幅追近队友皮亚斯特里。前F1车手格洛克质疑皮亚斯特里在压力下是否“感到不安”，认为队友间的竞争考验着这位新秀的心理韧性。接下来的比赛将是皮亚斯特里证明自己的关键时刻。",
+      "created_at": "2025-10-22 01:54:20"
+    },
+    {
+      "id": 251,
+      "slug": "hamilton-recalls-2020-silverstone-scare-during-u-s-gp-last-lap-issue-25102221018",
+      "cover_url": "https://anna1994.oss-cn-shenzhen.aliyuncs.com/f1-history/1761067561400-wv4cq5jmfr.jpeg",
+      "news_source": "GP Blog",
+      "title": "汉密尔顿再遇末圈惊魂　法拉利可靠性隐忧再现",
+      "summary": "汉密尔顿在美国GP最后一圈遭遇惊险状况，重现2020年银石惊魂，赛车频发的刹车及操控问题持续困扰法拉利，阻碍他争夺积分和领奖台。车队需尽快解决可靠性问题，以助他打破纪录并成为稳定竞争者。",
+      "created_at": "2025-10-22 01:35:27"
+    },
+    {
+      "id": 250,
+      "slug": "ferrari-extends-cybersecurity-partnership-with-bitdefender-251021221019",
+      "cover_url": "https://anna1994.oss-cn-shenzhen.aliyuncs.com/f1-history/1761052684450-2t5ztk43711.jpeg",
+      "news_source": "Blackbook",
+      "title": "法拉利续约 Bitdefender",
+      "summary": "法拉利车队宣布与Bitdefender续签多年网络安全合作协议。此举将大幅提升Bitdefender品牌在F1赛车上的曝光度，并深化技术整合，标志着车队对网络安全防护的高度重视，以保障其数字资产与运营。",
+      "created_at": "2025-10-21 21:21:17"
+    },
+    {
+      "id": 249,
+      "slug": "mekies-mclaren-s-early-season-dominance-has-faded-251021211054",
+      "cover_url": "https://anna1994.oss-cn-shenzhen.aliyuncs.com/f1-history/1761050756183-q0tkq0bx5rr.jpeg",
+      "news_source": "GP Blog",
+      "title": "梅基斯：F1已无绝对强者　四支车队皆有胜机",
+      "summary": "红牛领队梅基斯认为，迈凯伦赛季初的领先优势已大幅缩减，F1整体竞争进入白热化。如今三到四支车队都有机会争夺胜利，比赛结果将取决于各队在不同赛道上的临场执行力。",
+      "created_at": "2025-10-21 20:47:47"
+    },
+    {
+      "id": 248,
+      "slug": "vasseur-issues-warning-to-red-bull-mercedes-amidst-intensifying-p2-battle-251021211041",
+      "cover_url": "https://anna1994.oss-cn-shenzhen.aliyuncs.com/f1-history/1761049983583-wqvft7u8n89.jpeg",
+      "news_source": "GP Blog",
+      "title": "瓦塞尔：全力发挥两辆赛车潜能",
+      "summary": "法拉利领队瓦塞尔警告红牛与梅赛德斯，表示车队将全力争夺制造商杯第二名。目前三队积分非常接近，剩余比赛的每一次表现都将至关重要。",
+      "created_at": "2025-10-21 20:43:59"
+    },
+    {
+      "id": 247,
+      "slug": "andrea-stella-dismisses-red-bull-copycat-claims-attributes-gains-to-internal-improvements-251021201055",
+      "cover_url": "https://anna1994.oss-cn-shenzhen.aliyuncs.com/f1-history/1761048864627-n3lu2zlxv1.jpeg",
+      "news_source": "GP Blog",
+      "title": "斯特拉否认红牛“抄袭”论　称其复苏源于内部优化与调校突破",
+      "summary": "麦凯伦领队斯特拉否认红牛抄袭，认为其近期表现提升源于内部技术改进，如优化气动和悬挂设置，而非模仿。红牛引入的新部件和对赛车理解的加深是关键。",
+      "created_at": "2025-10-21 20:14:26"
+    },
+    {
+      "id": 246,
+      "slug": "brundle-verstappen-s-dominance-puts-pressure-on-mclaren-s-two-driver-strategy-251021201040",
+      "cover_url": "https://anna1994.oss-cn-shenzhen.aliyuncs.com/f1-history/1761046201582-lssyjmi3hc.jpeg",
+      "news_source": "Sky Sports",
+      "title": "布伦德尔：维斯塔潘统治力爆棚，迈凯伦双车策略承压",
+      "summary": "布伦德尔指出，维斯塔潘和红牛在奥斯汀的统治表现给迈凯伦的双车手策略带来巨大压力。皮亚斯特与队友诺里斯的碰撞让迈凯伦付出代价，迫使其采取保守策略。维斯塔潘正持续缩小与领跑者的积分差距。",
+      "created_at": "2025-10-21 19:30:05"
+    },
+    {
+      "id": 245,
+      "slug": "lewis-hamilton-urges-ferrari-to-capitalize-on-gems-amidst-season-struggles-and-upcoming-tests-25102120109",
+      "cover_url": "https://anna1994.oss-cn-shenzhen.aliyuncs.com/f1-history/1761045651137-bu90y9imbat.jpeg",
+      "news_source": "Racingnews365",
+      "title": "汉密尔顿：法拉利需抓住“闪光点”才能在艰难赛季中争夺亚军",
+      "summary": "汉密尔顿呼吁法拉利抓住赛季中的“闪光点”，将零星的性能优势转化为稳定积分，以争夺车队亚军。剩余赛事被视为优化流程、提升执行力的“测试”。此举对本赛季排名及2026年新规准备至关重要。",
+      "created_at": "2025-10-21 19:23:19"
+    },
+    {
+      "id": 244,
+      "slug": "colton-herta-makes-sensational-f2-switch-chasing-f1-dream-251021191017",
+      "cover_url": "https://anna1994.oss-cn-shenzhen.aliyuncs.com/f1-history/1761045442721-soqemk23wlp.jpeg",
+      "news_source": "Racingnews365",
+      "title": "科尔顿·赫塔惊艳转战F2，为F1梦想全力冲刺",
+      "summary": "IndyCar明星车手科尔顿·赫塔为圆F1梦，宣布2026年将转战F2，加入Hitech TGR车队。他同时也是凯迪拉克2026年F1车队的发展车手。此举显示他正全力以赴冲击F1席位，并有望成为F1中引人注目的美国新星。",
+      "created_at": "2025-10-21 19:17:25"
+    },
+    {
+      "id": 243,
+      "slug": "verstappen-refutes-marko-s-claims-of-improved-second-half-form-251021181051",
+      "cover_url": "https://anna1994.oss-cn-shenzhen.aliyuncs.com/f1-history/1761045104245-lwae5dv8le.jpeg",
+      "news_source": "GP Blog",
+      "title": "维斯塔潘反驳马尔科 称整个赛季都保持高水平",
+      "summary": "维斯塔潘反驳了马尔科关于他下半赛季表现提升的说法，强调自己一直保持高水平，只是现在更享受胜利。他指出，是车队进步和个人准备是关键。他近期在美国站获胜，并大幅缩小了积分差距，为墨西哥站的强势表现奠定基础。",
+      "created_at": "2025-10-21 19:12:04"
+    },
+    {
+      "id": 242,
+      "slug": "damon-hill-s-advice-to-oscar-piastri-amidst-title-pressure-251021181034",
+      "cover_url": "https://anna1994.oss-cn-shenzhen.aliyuncs.com/f1-history/1761044876458-ufrvhqryfu.jpeg",
+      "news_source": "F1 Insider",
+      "title": "希尔向皮亚斯特里提供建议：保持冷静与坚定",
+      "summary": "Damon Hill 建议皮亚斯特里应对 F1 冠军争夺的巨大心理压力，强调保持冷静与坚定。他指出，韦伯的经验支持对帮助年轻车手重拾信心至关重要，尤其是在维斯塔潘步步紧逼的当下。",
+      "created_at": "2025-10-21 19:07:59"
+    },
+    {
+      "id": 241,
+      "slug": "wheatley-you-can-never-write-max-verstappen-off-25102118102",
+      "cover_url": "https://anna1994.oss-cn-shenzhen.aliyuncs.com/f1-history/1761044633491-2p70s14h67x.jpeg",
+      "news_source": "GP Blog",
+      "title": "惠特利：“永远不要低估马克斯·维斯塔潘！”",
+      "summary": "惠特利盛赞维斯塔潘在奥斯汀的统治级表现，并警告迈凯伦等对手。他认为红牛已恢复巅峰状态，展现出强大的研发和优化能力，维斯塔潘仍是世界顶尖车手。",
+      "created_at": "2025-10-21 19:03:55"
+    },
+    {
+      "id": 240,
+      "slug": "mercedes-confirms-frederik-vesti-for-mexico-fp1-25102117102",
+      "cover_url": "https://anna1994.oss-cn-shenzhen.aliyuncs.com/f1-history/1761044453709-6zn9hh0ozwb.jpeg",
+      "news_source": "Racingnews365",
+      "title": "梅赛德斯确认维斯蒂出战墨西哥FP1",
+      "summary": "梅赛德斯车队宣布，年轻车手弗雷德里克·维斯蒂将在墨西哥站FP1中替代乔治·拉塞尔出场。这是车队满足新秀车手规则的一部分，也是维斯蒂积累F1经验、展示实力的绝佳机会。他在近期IMSA赛事中表现出色，并为墨西哥站的严苛条件做了充分准备。",
+      "created_at": "2025-10-21 19:01:01"
+    },
+    {
+      "id": 239,
+      "slug": "ricciardo-praises-verstappen-s-title-charge-amidst-intense-f1-battle-25102171044",
+      "cover_url": "https://anna1994.oss-cn-shenzhen.aliyuncs.com/f1-history/1761027915760-bz7cmkklgym.jpeg",
+      "news_source": "Speedcafe",
+      "title": "维斯塔潘再掀冠军战高潮　里卡多盛赞前队友“统治级”表现",
+      "summary": "丹尼尔·里卡多赞扬了马克斯·维斯塔潘在奥斯汀的统治级表现，他赢得了冲刺赛和正赛，将差距缩小到40分。里卡多称维斯塔潘“简直太强了”，并认为他让冠军争夺战更加精彩。此外，他还肯定了勒克莱尔和角田裕毅的表现，角田的未来去向备受关注。",
+      "created_at": "2025-10-21 14:27:28"
+    },
+    {
+      "id": 238,
+      "slug": "hamilton-to-miss-fp1-in-mexico-fuoco-steps-in-25102131044",
+      "cover_url": "https://anna1994.oss-cn-shenzhen.aliyuncs.com/f1-history/1760987166964-wyajwwpway.jpeg",
+      "news_source": "GP Blog",
+      "title": "汉密尔顿将缺席墨西哥大奖赛首节练习，车队新人傅科顶替",
+      "summary": "法拉利车队确认，刘易斯·汉密尔顿将在墨西哥大奖赛首节自由练习（FP1）中缺席，由车队在WEC效力的车手安东尼奥·傅科顶替，以满足F1新人车手练习规定。汉密尔顿将在FP2回归。尽管缺席，但汉密尔顿近期状态回升，此次短暂缺席预计不会影响其节奏。",
+      "created_at": "2025-10-21 03:12:26"
+    },
+    {
+      "id": 237,
+      "slug": "max-verstappen-my-f1-2025-turnaround-prediction-would-ve-been-idiotic-25102111048",
+      "cover_url": "https://anna1994.oss-cn-shenzhen.aliyuncs.com/f1-history/1760977756633-v973n8dlw6k.jpeg",
+      "news_source": "motorsport",
+      "title": "维斯塔潘：坦言自己不会相信F1 2025赛季的翻盘预测",
+      "summary": "维斯塔潘表示，他绝不会相信F1 2025赛季能实现如此强势的翻盘。通过改进赛车理解和升级，他大幅缩小了与领先者的差距，为锦标赛争夺战注入了新的活力，但他强调红牛必须保持完美才能争冠。",
+      "created_at": "2025-10-21 00:31:29"
+    },
+    {
+      "id": 236,
+      "slug": "red-bull-s-grid-interference-tactics-explained-251020231033",
+      "cover_url": "https://anna1994.oss-cn-shenzhen.aliyuncs.com/f1-history/1760974909940-23oevx3jzz5.jpeg",
+      "news_source": "The Race",
+      "title": "红牛被曝干扰诺里斯起步标记　心理战升级引发公平性争议",
+      "summary": "F1奥斯汀站，红牛被指试图干扰诺里斯的起步标记。虽非违规，却触及体育道德与公平竞争。此举凸显竞争激烈，加剧赛道外心理博弈。",
+      "created_at": "2025-10-20 23:41:50"
+    },
+    {
+      "id": 235,
+      "slug": "lewis-hamilton-sets-new-unwanted-ferrari-record-despite-f1-milestone-251020221024",
+      "cover_url": "https://anna1994.oss-cn-shenzhen.aliyuncs.com/f1-history/1760974031132-pf88rxkpsr.jpeg",
+      "news_source": "Racingnews365",
+      "title": "汉密尔顿创尴尬法拉利纪录，F1里程碑也显挑战",
+      "summary": "汉密尔顿为法拉利创下19场无领奖台的尴尬纪录，但成为F1首位积分破5000的车手。下一站墨西哥城是他打破纪录的关键机会，也为车队带来鼓舞。",
+      "created_at": "2025-10-20 23:29:16"
+    },
+    {
+      "id": 234,
+      "slug": "zak-brown-praised-for-apology-to-nico-hulkenberg-after-us-gp-sprint-incident-251020211050",
+      "cover_url": "https://anna1994.oss-cn-shenzhen.aliyuncs.com/f1-history/1760965137262-67rlzz03p0d.jpeg",
+      "news_source": "motorsport",
+      "title": "扎克·布朗为冲刺赛事故向霍肯伯格道歉",
+      "summary": "迈凯伦CEO 扎克·布朗因在美国大奖赛冲刺赛事故后，迅速承认错误并向霍肯伯格致歉而广受赞誉。此举展现了责任感和体育精神，赢得了车迷认可，为F1树立了处理争议的积极榜样。",
+      "created_at": "2025-10-20 20:59:45"
+    },
+    {
+      "id": 233,
+      "slug": "mclaren-regrets-costly-lando-norris-strategy-call-at-cota-25102020109",
+      "cover_url": "https://anna1994.oss-cn-shenzhen.aliyuncs.com/f1-history/1760962040534-41n4n7rfz64.jpeg",
+      "news_source": "Racingnews365",
+      "title": "迈凯伦错失软胎机会让法拉利占先机",
+      "summary": "迈凯伦承认全美大奖赛上诺里斯的策略选择失误，未考虑软胎起步，导致被勒克莱尔超越并影响比赛节奏，错失争冠机会。数据缺失和保守策略是主因。",
+      "created_at": "2025-10-20 20:07:26"
+    },
+    {
+      "id": 232,
+      "slug": "leclerc-explains-ferrari-s-aggressive-us-gp-tire-strategy-25102019105",
+      "cover_url": "https://anna1994.oss-cn-shenzhen.aliyuncs.com/f1-history/1760960398188-gb8xo2wjiy9.jpeg",
+      "news_source": "Racingnews365",
+      "title": "勒克莱尔大胆启用软胎策略 赌局奏效获季军",
+      "summary": "勒克莱尔解释了法拉利在美国站大胆采用二手软胎起步的策略。他因对硬胎缺乏信心，选择非常规路线，并在进站后执行了成功下切，最终获得第三名。此举显示法拉利愿根据车手反馈调整策略。",
+      "created_at": "2025-10-20 19:40:00"
+    },
+    {
+      "id": 231,
+      "slug": "who-slept-best-last-night-stefano-domenicali-251020181045",
+      "cover_url": "https://anna1994.oss-cn-shenzhen.aliyuncs.com/f1-history/1760959855842-yt5rfnhoero.jpeg",
+      "news_source": "motorsport",
+      "title": "F1在美国迎来战略双赢时刻",
+      "summary": "F1 CEO多梅尼卡利近期在奥斯汀取得重大进展，包括与COTA续约及与Apple TV达成转播协议。这些战略性胜利，加上维斯塔潘回归重燃的年度争冠战，正推动F1在美国市场实现显著增长。",
+      "created_at": "2025-10-20 19:30:58"
+    },
+    {
+      "id": 230,
+      "slug": "mclaren-s-troubles-mount-why-zak-brown-might-be-losing-sleep-251020151048",
+      "cover_url": "https://anna1994.oss-cn-shenzhen.aliyuncs.com/f1-history/1760953311661-qggc9nh8kjl.jpeg",
+      "news_source": "motorsport",
+      "title": "迈凯伦困境加剧：扎克·布朗为何夜不能寐？",
+      "summary": "迈凯伦车队在新加坡夺得制造商冠军后，正面临车手总冠军的压力以及内部“橙色规则”和外部法律纠纷带来的不确定性。这些因素影响了车队表现和车手士气，扎克·布朗需解决沟通问题，重塑车队秩序以重返胜利。",
+      "created_at": "2025-10-20 17:44:30"
+    },
+    {
+      "id": 229,
+      "slug": "lando-norris-criticizes-silly-f1-track-limits-rule-after-us-gp-scare-25102015107",
+      "cover_url": "https://anna1994.oss-cn-shenzhen.aliyuncs.com/f1-history/1760952712449-zptaneb6vvn.jpeg",
+      "news_source": "Racingnews365",
+      "title": "诺里斯炮轰美国大奖赛“愚蠢”赛道限制规则",
+      "summary": "兰多·诺里斯在美国大奖赛上对F1的赛道限制规则表示强烈不满，称其“愚蠢”。比赛中，他因多次冲出赛道受到影响，并认为规则阻碍了精彩的比赛。此次事件引发了关于如何调整赛道限制执行方式的讨论，以平衡公平性与比赛观赏性。",
+      "created_at": "2025-10-20 17:34:49"
+    },
+    {
+      "id": 228,
+      "slug": "hamilton-baffled-by-last-lap-scare-in-us-grand-prix-251020141048",
+      "cover_url": "https://anna1994.oss-cn-shenzhen.aliyuncs.com/f1-history/1760952299896-u2u7cj174h.webp",
+      "news_source": "PlanetF1",
+      "title": "美国大奖赛：汉密尔顿对最后一圈突发状况感到困惑",
+      "summary": "美国大奖赛最后一圈，汉密尔顿遭遇突发操控问题，怀疑轮胎受损，但仍惊险保住第四。这一事件凸显F1的细微差别，也为法拉利本赛季剩余比赛注入了乐观动力。",
+      "created_at": "2025-10-20 17:28:25"
+    },
+    {
+      "id": 227,
+      "slug": "piastri-admits-struggle-after-disappointing-us-grand-prix-25102013108",
+      "cover_url": "https://anna1994.oss-cn-shenzhen.aliyuncs.com/f1-history/1760936687616-y0yd7ewqmy.jpeg",
+      "news_source": "Racingnews365",
+      "title": "皮亚斯特里承认美国大奖赛表现不佳，坦言面临挣扎",
+      "summary": "皮亚斯特里坦承美国大奖赛后表现挣扎，仅获10分。他与诺里斯、维斯塔潘的积分差距缩小，剩余五场比赛他需迅速找回状态。",
+      "created_at": "2025-10-20 13:07:23"
+    },
+    {
+      "id": 226,
+      "slug": "mclaren-considers-driver-prioritization-in-f1-title-fight-against-verstappen-25102091041",
+      "cover_url": "https://anna1994.oss-cn-shenzhen.aliyuncs.com/f1-history/1760919412223-oi14jkd5fpd.jpeg",
+      "news_source": "motorsport",
+      "title": "迈凯伦或启用车队指令必要时将优先支持单一车手",
+      "summary": "迈凯伦车队可能在F1总冠军争夺战中优先支持皮亚斯特里或诺里斯，以对抗维斯塔潘的强势回归。此策略将基于数学计算，仅在某车手积分落后太多时实施。车队对赛车性能有信心，并将力争在剩余比赛中稳固领先。",
+      "created_at": "2025-10-20 08:16:53"
+    },
+    {
+      "id": 225,
+      "slug": "red-bull-fined-after-us-gp-investigation-25102091010",
+      "cover_url": "https://anna1994.oss-cn-shenzhen.aliyuncs.com/f1-history/1760919094658-3hlh7dwxdnc.jpeg",
+      "news_source": "Racingnews365",
+      "title": "红牛车队因违规进赛道被罚5万欧元",
+      "summary": "红牛车队因美国大奖赛期间违反安全规定被罚款5万欧元，其中一半被暂停。此案强调了FIA对赛道安全零容忍的态度，提醒各车队严格遵守规程。",
+      "created_at": "2025-10-20 08:11:57"
+    },
+    {
+      "id": 224,
+      "slug": "norris-jokes-with-verstappen-and-leclerc-if-your-mum-had-balls-25102081011",
+      "cover_url": "https://anna1994.oss-cn-shenzhen.aliyuncs.com/f1-history/1760918870425-ayeu39oqzxf.jpeg",
+      "news_source": "GP Blog",
+      "title": "诺里斯巧引维斯塔潘名言调侃展现围场轻松一面",
+      "summary": "诺里斯在奥斯汀领奖台上，用维斯塔潘的经典语录“如果你妈妈有‘那玩意儿’……”巧妙回应了关于被勒克莱尔超车的提问。这一互动展现了年轻车手间的友好竞争和赛场之外的乐趣，也凸显了诺里斯的自信与幽默。",
+      "created_at": "2025-10-20 08:07:53"
+    },
+    {
+      "id": 223,
+      "slug": "colapinto-defies-alpine-team-orders-in-us-grand-prix-25102081026",
+      "cover_url": "https://anna1994.oss-cn-shenzhen.aliyuncs.com/f1-history/1760918172035-fxzmmf8j5na.jpeg",
+      "news_source": "The Race",
+      "title": "科拉平托无视车队指令超越加斯利引发内部审查",
+      "summary": "弗朗哥·科拉平托在美国大奖赛中无视Alpine车队指令，超车队友加斯利，引发内部审查。尽管车队表示失望，科拉平托辩称是为了防止被超越。此举凸显了车队纪律与个人野心间的冲突，并将影响其未来。",
+      "created_at": "2025-10-20 07:58:57"
+    },
+    {
+      "id": 222,
+      "slug": "hamilton-s-us-gp-last-lap-puncture-scare-detailed-2510207106",
+      "cover_url": "https://anna1994.oss-cn-shenzhen.aliyuncs.com/f1-history/1760917940875-co85tmh1cll.jpeg",
+      "news_source": "Racingnews365",
+      "title": "汉密尔顿最后一圈险爆胎惊险守住第四",
+      "summary": "汉密尔顿在美国大奖赛最后一圈遭遇轮胎疑爆胎惊险，速度骤降但仍以微弱优势保住第四。这次经历凸显了F1的瞬息万变，也反映出梅赛德斯赛车近期表现回升的积极信号。",
+      "created_at": "2025-10-20 07:54:04"
+    },
+    {
+      "id": 221,
+      "slug": "norris-on-leclerc-battle-it-took-long-enough-25102081039",
+      "cover_url": "https://anna1994.oss-cn-shenzhen.aliyuncs.com/f1-history/1760917781048-v7196ps3p5g.img",
+      "news_source": "F1i.com",
+      "title": "诺里斯惊险力压勒克莱尔夺得亚军",
+      "summary": "诺里斯在美洲赛道与勒克莱尔展开激烈缠斗，经历多次攻防后终获亚军。他坦言超车困难重重，显示了迈凯伦的进步和法拉利的韧性。队友差距缩小，队内竞争愈发激烈。",
+      "created_at": "2025-10-20 07:49:52"
+    },
+    {
+      "id": 220,
+      "slug": "carlos-sainz-penalized-for-antonelli-collision-at-us-grand-prix-25102081059",
+      "cover_url": "https://anna1994.oss-cn-shenzhen.aliyuncs.com/f1-history/1760917398802-6al9m5c1cp7.jpeg",
+      "news_source": "Racingnews365",
+      "title": "塞恩斯与安东内利碰撞遭罚　墨西哥站将退后五位发车",
+      "summary": "F1美国站，塞恩斯因碰撞安东内利被判罚。他将在墨西哥城大奖赛遭遇五位起步罚退，并获得两分罚分，累计达四分。此次事件突显了F1近距离缠斗的风险及规则的严格执行。",
+      "created_at": "2025-10-20 07:45:14"
+    },
+    {
+      "id": 219,
+      "slug": "marko-red-bull-had-given-up-before-mekies-revitalized-team-25102071015",
+      "cover_url": "https://anna1994.oss-cn-shenzhen.aliyuncs.com/f1-history/1760917219116-ie5g5uypcbf.jpeg",
+      "news_source": "motorsport",
+      "title": "红牛重燃冠军希望　维斯塔潘胜利点燃团队士气",
+      "summary": "红牛顾问马尔科透露，车队曾在夏季一度放弃赛季，直到新领导层梅基耶斯到来才重振士气。维斯塔潘在美国大奖赛的胜利，为冠军争夺战增添了新的悬念。",
+      "created_at": "2025-10-20 07:42:47"
+    },
+    {
+      "id": 218,
+      "slug": "winners-and-losers-from-the-2025-f1-united-states-grand-prix-25102071023",
+      "cover_url": "https://anna1994.oss-cn-shenzhen.aliyuncs.com/f1-history/1760917029767-ol6r7ae91p.jpeg",
+      "news_source": "The Race",
+      "title": "2025F1美国大奖赛：谁是赢家，谁是输家",
+      "summary": "2025F1美国大奖赛激化总冠军战，维斯塔潘（Verstappen）追击皮亚斯特里（Piastri）。法拉利（Ferrari）、索伯（Sauber）获益，迈凯伦（McLaren）表现挣扎。赛季后半段竞争白热化。",
+      "created_at": "2025-10-20 07:39:58"
+    },
+    {
+      "id": 217,
+      "slug": "verstappen-closes-gap-on-piastri-after-dominant-us-gp-victory-25102051027",
+      "cover_url": "https://anna1994.oss-cn-shenzhen.aliyuncs.com/f1-history/1760908083465-ske5mo46p8.jpg",
+      "news_source": "Racingnews365",
+      "title": "奥斯汀封王！维斯塔潘逼近车手总冠军",
+      "summary": "维斯塔潘在美国大奖赛获胜，将与领跑者皮亚斯特里的积分差距从55分缩小至40分。冠军争夺战重燃，法拉利车队在本赛季剩余积分尚多的情况下，也加强了对梅赛德斯的追击。",
+      "created_at": "2025-10-20 05:06:12"
+    },
+    {
+      "id": 216,
+      "slug": "carlos-sainz-exits-us-gp-after-antonelli-clash-25102041048",
+      "cover_url": "https://anna1994.oss-cn-shenzhen.aliyuncs.com/f1-history/1760903496638-jfymvjntv0e.jpeg",
+      "news_source": "motorsport",
+      "title": "塞恩斯在美国大奖赛中与安东内利相撞后退赛",
+      "summary": "塞恩斯在美国大奖赛第七圈与梅赛德斯新秀安东内利相撞后退赛。此次事故打断了他本赛季的良好势头，并可能面临处罚。威廉姆斯车队也因此错失良机。",
+      "created_at": "2025-10-20 03:53:39"
+    },
+    {
+      "id": 215,
+      "slug": "f1-fans-heavily-back-max-verstappen-for-perfect-us-gp-weekend-25102031010",
+      "cover_url": "https://anna1994.oss-cn-shenzhen.aliyuncs.com/f1-history/1760899942164-81nzepddmw.jpeg",
+      "news_source": "Racingnews365",
+      "title": "维斯塔潘冲刺周末势不可挡　剑指COTA“完美三冠”纪录",
+      "summary": "马克斯·维斯塔潘在美国大奖赛中表现强势，已锁定了冲刺赛和正赛的全部杆位及冲刺赛冠军。高达68.9%的车迷预测他将赢得正赛，有望达成生涯第三个“完美冲刺周末”，并进一步巩固其在积分榜上的巨大领先优势。",
+      "created_at": "2025-10-20 02:53:52"
+    },
+    {
+      "id": 214,
+      "slug": "austin-s-us-grand-prix-secures-new-f1-deal-until-2034-25102001050",
+      "cover_url": "https://anna1994.oss-cn-shenzhen.aliyuncs.com/f1-history/1760899781260-nlr2q1obtg.jpeg",
+      "news_source": "motorsport",
+      "title": "COTA与F1续约八年　美国大奖赛确认举办至2034年",
+      "summary": "奥斯汀赛道（COTA）已与F1续约至2034年，确保美国大奖赛长期举办。此举巩固了F1在美国的地位，并计划通过扩建设施以迎接未来发展和潜在新车队，凸显了对美国市场的信心。",
+      "created_at": "2025-10-20 02:51:41"
+    },
+    {
+      "id": 213,
+      "slug": "lando-norris-expresses-major-us-gp-concern-after-mclaren-s-sprint-disaster-251019231021",
+      "cover_url": "https://anna1994.oss-cn-shenzhen.aliyuncs.com/f1-history/1760885234118-4yocr21uq52.jpeg",
+      "news_source": "Racingnews365",
+      "title": "迈凯伦冲刺赛遭遇灾难，诺里斯对美国大奖赛前景表示严重担忧",
+      "summary": "迈凯伦在美洲赛道冲刺赛首圈即遭淘汰，兰多·诺里斯对此表示严重关切。车队损失了宝贵的长距离数据，这可能对正赛的轮胎、调校和升级效果评估带来不利影响，尤其是在本周末艰难的美国大奖赛上。",
+      "created_at": "2025-10-19 22:48:55"
+    },
+    {
+      "id": 212,
+      "slug": "isack-hadjar-takes-blame-for-heavy-austin-qualifying-crash-251019221014",
+      "cover_url": "https://anna1994.oss-cn-shenzhen.aliyuncs.com/f1-history/1760880477449-lzml8n71or.jpeg",
+      "news_source": "Racingnews365",
+      "title": "哈贾尔排位失误 红牛潜力股陷入晋升危机",
+      "summary": "哈贾尔承认在奥斯汀排位赛中因自己失误撞车，将从P20发车。此次事故对其争取红牛2026年席位构成打击，他表示将努力在正赛中弥补，并需在下场比赛中证明自己。",
+      "created_at": "2025-10-19 21:29:32"
+    },
+    {
+      "id": 211,
+      "slug": "f1-fans-blame-oscar-piastri-for-controversial-us-gp-sprint-crash-25101921109",
+      "cover_url": "https://anna1994.oss-cn-shenzhen.aliyuncs.com/f1-history/1760877629784-k5ewgukk889.jpeg",
+      "news_source": "Racingnews365",
+      "title": "F1车迷指责奥斯卡·皮亚斯特里，认为他是美国大奖赛冲刺赛争议撞车的罪魁祸首",
+      "summary": "F1车迷将美国大奖赛冲刺赛首圈撞车事故的主要责任归咎于迈凯伦车手奥斯卡·皮亚斯特里。此事故导致多车退赛，FIA判定为比赛事故，但车队内部及其与队友诺里斯的过往碰撞，使得此次事件受到高度关注。车队将进行内部审查。",
+      "created_at": "2025-10-19 20:42:36"
+    },
+    {
+      "id": 210,
+      "slug": "mclaren-boss-apologizes-to-h-lkenberg-after-austin-crash-remarks-251019191024",
+      "cover_url": "https://anna1994.oss-cn-shenzhen.aliyuncs.com/f1-history/1760870744318-v6nml05siua.jpeg",
+      "news_source": "F1 Insider",
+      "title": "迈凯伦领队就奥斯汀碰撞言论向霍肯伯格道歉",
+      "summary": "迈凯伦CEO扎克·布朗就奥斯汀冲刺赛撞车事故中的批评言论向霍肯伯格道歉，承认是在“激动时刻”脱口而出。此事凸显了F1的压力与判断，以及赛后评估的复杂性。",
+      "created_at": "2025-10-19 18:45:49"
+    },
+    {
+      "id": 209,
+      "slug": "halo-saves-lewis-hamilton-in-scary-us-gp-collision-251019181047",
+      "cover_url": "https://anna1994.oss-cn-shenzhen.aliyuncs.com/f1-history/1760870304887-fokvh31gnh.webp",
+      "news_source": "PlanetF1",
+      "title": "Halo再度救主　汉密尔顿惊险避过碳纤维碎片撞击",
+      "summary": "F1 美国站冲刺赛，刘易斯·汉密尔顿险些被赛道碎片击中头部，幸赖 Halo 安全结构及时弹出，成功化解致命危机。此事件再度彰显 Halo 对车手安全保护的至关重要性。",
+      "created_at": "2025-10-19 18:40:49"
+    },
+    {
+      "id": 208,
+      "slug": "mclaren-to-review-austin-f1-sprint-crash-but-not-immediately-251019181049",
+      "cover_url": "https://anna1994.oss-cn-shenzhen.aliyuncs.com/f1-history/1760864749106-6bc1ywkcwk4.jpeg",
+      "news_source": "motorsport",
+      "title": "迈凯伦推迟内部审查　奥斯汀冲刺赛碰撞引发责任争议",
+      "summary": "迈凯伦将审查奥斯汀冲刺赛中诺里斯与皮亚斯特的碰撞事故，但因涉及多方且责任不清，审查将被推迟。车队需平衡问责与保护新手车手，并着眼于维护团队凝聚力与制造商锦标赛的争夺。",
+      "created_at": "2025-10-19 17:09:03"
+    },
+    {
+      "id": 207,
+      "slug": "extreme-weather-conditions-to-challenge-drivers-at-cota-251019171029",
+      "cover_url": "https://anna1994.oss-cn-shenzhen.aliyuncs.com/f1-history/1760864365441-tzzueaoshum.jpeg",
+      "news_source": "GP Blog",
+      "title": "高温与强风来袭　美国大奖赛将成车手与机器的耐力极限考验",
+      "summary": "本周末COTA赛道将迎来极端高温和强阵风，而非降雨。这不仅考验车手体能，也将严峻挑战赛车设定与轮胎管理，预示着一场充满变数的比赛。",
+      "created_at": "2025-10-19 17:02:35"
+    },
+    {
+      "id": 206,
+      "slug": "lewis-hamilton-eyes-elusive-first-ferrari-podium-at-us-gp-25101916100",
+      "cover_url": "https://anna1994.oss-cn-shenzhen.aliyuncs.com/f1-history/1760861820933-cwipupq982q.jpeg",
+      "news_source": "Racingnews365",
+      "title": "汉密尔顿盼奥斯汀登台 法拉利重拾信心迎关键一战",
+      "summary": "刘易斯·汉密尔顿有望在美国大奖赛上为法拉利争取首个领奖台。尽管本赛季挑战重重，但他对周日正赛充满信心，希望能借此证明转会决定，为法拉利带来转折点。他期待改善赛车平衡，克服排位赛的转向不足问题，并利用冲刺赛经验。",
+      "created_at": "2025-10-19 16:19:24"
+    },
+    {
+      "id": 205,
+      "slug": "oscar-piastri-s-troubling-austin-struggles-explained-251019161014",
+      "cover_url": "https://anna1994.oss-cn-shenzhen.aliyuncs.com/f1-history/1760861711277-1oflhja0wjj.jpg",
+      "news_source": "The Race",
+      "title": "皮亚斯特里在奥斯汀陷入信心危机　迈凯伦内部差距扩大引发担忧",
+      "summary": "迈凯伦车手奥斯卡·皮亚斯特里在本周末的美国大奖赛中遭遇严重挣扎，表现出信心不足，并明显落后于队友兰多·诺里斯。颠簸的赛道、刹车难题以及赛车调校都影响了他的发挥。这次困难可能对其总冠军前景造成打击，他必须在正赛中努力限制损失。",
+      "created_at": "2025-10-19 16:12:18"
+    },
+    {
+      "id": 204,
+      "slug": "cota-under-fire-for-inaccurate-plaque-snubbing-phil-hill-251019101041",
+      "cover_url": "https://anna1994.oss-cn-shenzhen.aliyuncs.com/f1-history/1760860753269-s4gfcix3io8.jpeg",
+      "news_source": "motorsport",
+      "title": "COTA纪念牌错误惹争议：忽视首位美国F1世界冠军菲尔·希尔",
+      "summary": "美国COTA赛道纪念牌错误地将马里奥·安德烈蒂称为“唯一美国F1冠军”，忽略了1961年菲尔·希尔的成就。此举引发争议，凸显了历史准确性在赛车纪念中的重要性，并呼吁COTA纠正错误，以尊重所有美国F1传奇。",
+      "created_at": "2025-10-19 16:02:38"
+    },
+    {
+      "id": 203,
+      "slug": "norris-vows-aggressive-start-against-verstappen-despite-piastri-collision-251019101036",
+      "cover_url": "https://anna1994.oss-cn-shenzhen.aliyuncs.com/f1-history/1760860426693-tx2xlqqbv0c.jpeg",
+      "news_source": "Sky Sports",
+      "title": "诺里斯誓言全力争胜，迈凯伦内战加剧美国站冠军悬念",
+      "summary": "冲刺赛撞车退赛后，诺里斯誓言在美国大奖赛全力进攻维斯塔潘。他在排位赛中夺得第二，并对赛车在颠簸赛道的表现表示担忧，但决心抓住机会争夺胜利，为总冠军之争再添变数。",
+      "created_at": "2025-10-19 15:53:49"
+    },
+    {
+      "id": 202,
+      "slug": "verstappen-claims-pole-in-tense-us-grand-prix-qualifying-25101971029",
+      "cover_url": "https://anna1994.oss-cn-shenzhen.aliyuncs.com/f1-history/1760826487083-d8lfar6ryfg.jpeg",
+      "news_source": "The Race",
+      "title": "维斯塔潘夺美国大奖赛杆位，诺里斯紧追 皮亚斯特里第六陷入被动",
+      "summary": "维斯塔潘在紧张的美国大奖赛排位赛中夺得杆位，诺里斯紧随其后。积分领先者皮亚斯特里仅获第六，为比赛增加了不确定性。周日正赛将是策略与激战的较量。",
+      "created_at": "2025-10-19 06:28:12"
+    },
+    {
+      "id": 201,
+      "slug": "red-bull-s-renewed-hope-verstappen-s-title-defense-back-on-track-25101961053",
+      "cover_url": "https://anna1994.oss-cn-shenzhen.aliyuncs.com/f1-history/1760823602513-ndk5vhkxahh.jpeg",
+      "news_source": "GP Blog",
+      "title": "红牛重燃希望：维斯塔潘卫冕之旅重回正轨",
+      "summary": "红牛车队与维斯塔潘在经历赛季初的低迷后，对夺取第五个世界冠军重燃希望。近期的一系列优异成绩（如新加坡站亚军）彻底改变了车队的心态，尽管仍需迈凯伦的“帮助”，但争冠之路已重新清晰。",
+      "created_at": "2025-10-19 05:40:04"
+    },
+    {
+      "id": 200,
+      "slug": "isack-hadjar-punches-himself-after-major-usgp-qualifying-smash-25101961010",
+      "cover_url": "https://anna1994.oss-cn-shenzhen.aliyuncs.com/f1-history/1760822605671-hfgmuhm515r.png",
+      "news_source": "Racingnews365",
+      "title": "哈贾尔高速撞车引发红旗，新秀情绪失控暴露F1排位极限压力",
+      "summary": "F1美国大奖赛排位赛期间，新秀Isack Hadjar在6号弯遭遇严重撞车事故。赛后，他因沮丧和失望，在驾驶舱内反复击打自己。此次事件再次展现了F1比赛的残酷性及年轻车手面临的巨大心理压力。",
+      "created_at": "2025-10-19 05:23:50"
+    },
+    {
+      "id": 199,
+      "slug": "ferrari-reaffirms-full-confidence-in-fred-vasseur-amidst-horner-speculation-25101951017",
+      "cover_url": "https://anna1994.oss-cn-shenzhen.aliyuncs.com/f1-history/1760821472378-bacluq4blxs.jpeg",
+      "news_source": "Racingnews365",
+      "title": "法拉利坚定支持瓦瑟尔，粉碎霍纳转会传闻",
+      "summary": "法拉利公开支持领队瓦瑟尔，粉碎了有关霍纳加盟的传闻。主席埃尔坎重申对瓦瑟尔及其团队的信心，强调团队合作，聚焦提升赛道表现。",
+      "created_at": "2025-10-19 05:07:23"
+    },
+    {
+      "id": 198,
+      "slug": "alonso-finds-humor-in-us-grand-prix-sprint-disaster-25101951040",
+      "cover_url": "https://anna1994.oss-cn-shenzhen.aliyuncs.com/f1-history/1760821326939-okpqkixrnzj.jpeg",
+      "news_source": "GP Blog",
+      "title": "阿隆索苦中作乐：美大奖赛冲刺赛退赛成“搞笑事件”",
+      "summary": "美国大奖赛冲刺赛，阿隆索起步即退赛，却以幽默心态看待。他描述了避险失误与连环撞击，并打趣自己的“坏运气”。老将经验让他学会“一笑置之”。",
+      "created_at": "2025-10-19 05:04:18"
+    },
+    {
+      "id": 197,
+      "slug": "hamilton-s-p4-finish-in-austin-fuels-podium-hopes-25101951046",
+      "cover_url": "https://anna1994.oss-cn-shenzhen.aliyuncs.com/f1-history/1760819216045-z809hsa6lh.jpeg",
+      "news_source": "GP Blog",
+      "title": "汉密尔顿奥斯汀冲刺赛获第四，为正赛领奖台希望添动力",
+      "summary": "汉密尔顿在奥斯汀冲刺赛中获P4，超越队友勒克莱尔，状态回升。他巧妙避开事故，并对正赛登上领奖台充满期待，有望打破个人在法拉利的“无领奖台”尴尬纪录。",
+      "created_at": "2025-10-19 04:29:59"
+    },
+    {
+      "id": 196,
+      "slug": "winners-and-losers-from-f1-s-chaotic-austin-sprint-race-25101941030",
+      "cover_url": "https://anna1994.oss-cn-shenzhen.aliyuncs.com/f1-history/1760816654668-7pez43vn4rn.jpeg",
+      "news_source": "The Race",
+      "title": "奥斯汀冲刺赛大混乱：赢家与输家解析",
+      "summary": "奥斯汀F1冲刺赛首圈混乱，迈凯伦双退赛，维斯塔潘夺冠。塞恩斯登领奖台，角田裕毅积分。汉密尔顿、拉塞尔表现稳健，斯托尔退赛受罚。冲刺赛结果将影响正赛策略。",
+      "created_at": "2025-10-19 03:46:21"
+    },
+    {
+      "id": 195,
+      "slug": "oliver-bearman-avoids-race-ban-despite-latest-f1-penalty-2510194102",
+      "cover_url": "https://anna1994.oss-cn-shenzhen.aliyuncs.com/f1-history/1760815660897-j6y8fpiqt6l.jpeg",
+      "news_source": "Racingnews365",
+      "title": "奥利弗·比尔曼虽领罚单，但仍成功避开F1禁赛",
+      "summary": "F1小將奧利弗·比爾曼在美國衝刺賽中雖遭罰時，但因本次違規未被記罰分，成功避開了累積10分導致的禁賽風險。他將繼續參賽，但需謹慎駕駛。",
+      "created_at": "2025-10-19 03:29:38"
+    },
+    {
+      "id": 194,
+      "slug": "red-bull-points-blame-at-alonso-for-mclaren-sprint-crash-25101941016",
+      "cover_url": "https://anna1994.oss-cn-shenzhen.aliyuncs.com/f1-history/1760814509413-ktwqbs2dckl.jpeg",
+      "news_source": "Racingnews365",
+      "title": "马尔科将迈凯伦冲刺赛碰撞的责任归咎于阿隆索",
+      "summary": "红牛顾问马尔科将阿隆索称为迈凯伦车队车手在COTA冲刺赛首圈碰撞的罪魁祸首，尽管赛会干事判定为比赛事故。此事件导致两辆迈凯伦赛车退赛，维斯塔潘因此轻松获胜。",
+      "created_at": "2025-10-19 03:11:05"
+    },
+    {
+      "id": 193,
+      "slug": "lance-stroll-penalized-for-colliding-with-esteban-ocon-s-car-in-f1-sprint-race-25101931024",
+      "cover_url": "https://anna1994.oss-cn-shenzhen.aliyuncs.com/f1-history/1760814324948-goqb4toqvju.jpeg",
+      "news_source": "Racingnews365",
+      "title": "兰斯·斯特罗尔在冲刺赛撞车被罚，正赛将面临五位起步劣势",
+      "summary": "兰斯·斯特罗尔在F1冲刺赛中因撞车被判负全责，获美国大奖赛五位发车位下降和两分处罚。这使其在正赛中面临严峻挑战，累计积分逼近禁赛门槛，对车队策略也造成影响。",
+      "created_at": "2025-10-19 03:07:08"
+    },
+    {
+      "id": 192,
+      "slug": "verstappen-wins-us-gp-sprint-amid-mclaren-teammate-collision-25101931035",
+      "cover_url": "https://anna1994.oss-cn-shenzhen.aliyuncs.com/f1-history/1760811962522-7e33fd68l7u.jpeg",
+      "news_source": "Sky Sports",
+      "title": "维斯塔潘奥斯汀冲刺赛夺冠，迈凯伦首圈事故酿双退",
+      "summary": "维斯塔潘夺得美国大奖赛冲刺赛冠军，队友碰撞事故令迈凯伦损失惨重。维斯塔潘大幅缩小与皮亚斯特里的积分差距，争冠形势再添变数。",
+      "created_at": "2025-10-19 02:30:10"
+    },
+    {
+      "id": 191,
+      "slug": "zak-brown-blasts-amateur-hour-after-double-mclaren-dnf-25101921020",
+      "cover_url": "https://anna1994.oss-cn-shenzhen.aliyuncs.com/f1-history/1760808992244-e44vettwedd.jpeg",
+      "news_source": "Racingnews365",
+      "title": "扎克·布朗怒斥“业余表现”：霍肯伯格导致双车退赛",
+      "summary": "迈凯伦CEO扎克·布朗怒斥霍肯伯格在冲刺赛首圈的“业余表现”，导致诺里斯和皮亚斯特里双双退赛。尽管赛会未判罚，但此次事故对迈凯伦打击巨大，车队正全力修复赛车以备战正赛。",
+      "created_at": "2025-10-19 01:38:30"
+    },
+    {
+      "id": 190,
+      "slug": "mclaren-s-double-disaster-both-cars-out-in-us-grand-prix-sprint-first-lap-chaos-2510192109",
+      "cover_url": "https://anna1994.oss-cn-shenzhen.aliyuncs.com/f1-history/1760808359750-f7290m3an6.png",
+      "news_source": "Racingnews365",
+      "title": "迈凯伦双重灾难：美国大奖赛冲刺赛首圈混乱，两车均退赛",
+      "summary": "迈凯伦车队在F1美国大奖赛冲刺赛中遭遇重创。首圈，诺里斯和皮亚斯特里因赛道混乱发生碰撞，双双退赛。维斯塔潘则借机扩大了领先优势。车队需为正赛尽快调整。",
+      "created_at": "2025-10-19 01:28:05"
+    },
+    {
+      "id": 188,
+      "slug": "verstappen-overwhelming-favorite-for-us-gp-sprint-victory-2510191108",
+      "cover_url": "https://anna1994.oss-cn-shenzhen.aliyuncs.com/f1-history/1760806458238-vuhttl4o1yh.jpeg",
+      "news_source": "Racingnews365",
+      "title": "维斯塔潘稳居杆位，瞄准奥斯汀冲刺赛胜利",
+      "summary": "维斯塔潘在美国大奖赛冲刺赛中凭借杆位成为夺冠热门。近70%车迷预测他将获胜。冲刺赛是正赛前哨，对积分和战略至关重要，将检验红牛的统治力及竞争对手的挑战能力。",
+      "created_at": "2025-10-19 00:55:51"
+    },
+    {
+      "id": 187,
+      "slug": "f1-tv-how-formula-1-transformed-into-a-billion-dollar-broadcast-empire-251018231051",
+      "cover_url": "https://anna1994.oss-cn-shenzhen.aliyuncs.com/f1-history/1760800228104-i1883oxx55i.jpeg",
+      "news_source": "motorsport",
+      "title": "从银幕到流媒体：F1电视帝国的崛起与苹果时代的到来",
+      "summary": "F1的转播帝国之路：伯尼·埃克莱斯顿通过整合商业权力、推出打包转播协议和推行标准化运营，将F1从一项小众运动打造成价值数十亿美元的全球体育IP。尽管早期尝试数字服务失败，但其对媒体版权的掌控奠定了今日的商业辉煌。",
+      "created_at": "2025-10-18 23:11:47"
+    },
+    {
+      "id": 185,
+      "slug": "mclaren-considers-team-orders-to-protect-drivers-championship-from-verstappen-251018201035",
+      "cover_url": "https://anna1994.oss-cn-shenzhen.aliyuncs.com/f1-history/1760787952186-k4znarzwga.jpeg",
+      "news_source": "GP Blog",
+      "title": "布朗暗示或将实施车队指令 迈凯伦为应对维斯塔潘崛起调整策略",
+      "summary": "为应对维斯塔潘在车手积分榜上的追击，迈凯伦CEO扎克·布朗暗示可能对皮亚斯特里和诺里斯实施车队指令。此举旨在平衡车手雄心与团队积分最大化，显示车队在争冠关键阶段的战略调整。",
+      "created_at": "2025-10-18 19:47:41"
+    },
+    {
+      "id": 184,
+      "slug": "hulkenberg-surprised-and-ecstatic-with-p4-in-austin-sprint-qualifying-25101820101",
+      "cover_url": "https://anna1994.oss-cn-shenzhen.aliyuncs.com/f1-history/1760785829934-fly0c0d6d7l.img",
+      "news_source": "F1i.com",
+      "title": "霍肯伯格意外获得奥斯汀冲刺赛排位第四，欣喜若狂",
+      "summary": "霍肯伯格在奥斯汀冲刺赛排位赛中意外夺得第四，创赛季最佳。队友博尔托莱托则遭遇挫折。索伯车队对此感到鼓舞，但也意识到挑战依然存在。",
+      "created_at": "2025-10-18 19:14:14"
+    },
+    {
+      "id": 183,
+      "slug": "stella-s-worrying-verdict-after-verstappen-s-austin-sprint-pole-251018191049",
+      "cover_url": "https://anna1994.oss-cn-shenzhen.aliyuncs.com/f1-history/1760782789257-sr6ht2fd3p.jpeg",
+      "news_source": "GP Blog",
+      "title": "斯特拉：红牛全面复苏 迈凯伦仍有信心应对高温挑战",
+      "summary": "迈凯伦领队斯特拉承认红牛赛车已大幅提升，能争夺各赛道杆位和胜利。尽管维斯塔潘在奥斯汀冲刺赛中领先，但斯特拉仍视其为总冠军威胁。迈凯伦则寄望奥斯汀的高温和轮胎衰减来发挥优势，并期待下一场比赛的表现。",
+      "created_at": "2025-10-18 18:22:29"
+    },
+    {
+      "id": 182,
+      "slug": "ferrari-s-texas-disaster-hamilton-and-leclerc-left-stunned-251018181035",
+      "cover_url": "https://anna1994.oss-cn-shenzhen.aliyuncs.com/f1-history/1760782244881-1n7ssm0anwv.jpeg",
+      "news_source": "F1 Insider",
+      "title": "法拉利在奥斯汀陷入危机 昔日冠军沦为中游苦战者",
+      "summary": "法拉利在F1奥斯汀冲刺排位赛遭遇重大滑坡，赛车竞争力堪忧，车手汉密尔顿和勒克莱尔对表现感到震惊和沮丧，甚至被中游车队超越。",
+      "created_at": "2025-10-18 18:17:43"
+    },
+    {
+      "id": 181,
+      "slug": "jenson-button-suggests-possible-penalty-for-lando-norris-after-mclaren-sanction-25101817105",
+      "cover_url": "https://anna1994.oss-cn-shenzhen.aliyuncs.com/f1-history/1760777966173-s9hcokrfy3.jpeg",
+      "news_source": "Racingnews365",
+      "title": "简森·巴顿猜测兰多·诺里斯或因队友事故面临迈凯伦处罚",
+      "summary": "诺里斯因与队友皮亚斯特里发生碰撞，正接受迈凯伦内部处罚。专家猜测，处罚可能包括优先权让渡，例如进站时机、研发部件或排位赛尾流，以在不影响车队整体竞争力的情况下，平衡队内关系。",
+      "created_at": "2025-10-18 17:03:04"
+    },
+    {
+      "id": 180,
+      "slug": "mclaren-eyes-cota-advantage-stella-hints-at-tyre-management-edge-over-red-bull-251018161044",
+      "cover_url": "https://anna1994.oss-cn-shenzhen.aliyuncs.com/f1-history/1760774884069-rxrojsr573a.jpeg",
+      "news_source": "F1i.com",
+      "title": "迈凯伦信心满满迎战酷热COTA 斯特拉：高温或成对抗红牛的关键",
+      "summary": "斯特拉认为，美洲赛道（COTA）的酷热天气将使迈凯伦在轮胎管理方面超越红牛。尽管冲刺赛排位赛惜败，迈凯伦在奥斯汀高温下看到了利用轮胎磨损的潜力，目标是挑战红牛并争取胜利。",
+      "created_at": "2025-10-18 16:10:57"
+    },
+    {
+      "id": 179,
+      "slug": "cota-renames-final-corner-the-andretti-after-f1-legend-mario-andretti-251018111056",
+      "cover_url": "https://anna1994.oss-cn-shenzhen.aliyuncs.com/f1-history/1760759897421-7gjljt7emb5.jpeg",
+      "news_source": "Speedcafe",
+      "title": "COTA将20号弯命名为“安德烈蒂弯” 致敬美国赛车传奇",
+      "summary": "美国COTA赛道将最后弯道命名为“安德雷蒂弯”，以纪念F1传奇马里奥·安德雷蒂。此举彰显其在美国赛车史上的地位，但仪式上提及的“唯一美国F1冠军”信息有误，忽略了菲尔·希尔。新弯道在本周末美国大奖赛上亮相。",
+      "created_at": "2025-10-18 12:01:23"
+    },
+    {
+      "id": 178,
+      "slug": "red-bull-apologizes-to-yuki-tsunoda-after-austin-sprint-qualifying-error-25101891052",
+      "cover_url": "https://anna1994.oss-cn-shenzhen.aliyuncs.com/f1-history/1760759796611-2gqapt3l7ks.jpeg",
+      "news_source": "motorsport",
+      "title": "红牛就奥斯汀冲刺排位赛失误向角田裕毅致歉",
+      "summary": "红牛车队承认在奥斯汀冲刺排位赛中犯下策略失误，导致角田裕毅被淘汰。领队梅基斯已致歉，并强调了冲刺赛竞争的激烈性以及完美执行的重要性。",
+      "created_at": "2025-10-18 11:57:54"
+    },
+    {
+      "id": 177,
+      "slug": "winners-and-losers-from-f1-s-austin-sprint-qualifying-25101881022",
+      "cover_url": "https://anna1994.oss-cn-shenzhen.aliyuncs.com/f1-history/1760759753204-5wvvczn0ovl.jpeg",
+      "news_source": "The Race",
+      "title": "F1奥斯汀冲刺排位赛：赢家与输家分析",
+      "summary": "奥斯汀冲刺排位赛亮点频出：维斯塔潘统治杆位，胡肯伯格表现惊艳。然而，法拉利与梅赛德斯陷入挣扎，中游车队展现出强劲势头，预示着一场充满变数的正赛。",
+      "created_at": "2025-10-18 11:56:03"
+    },
+    {
+      "id": 176,
+      "slug": "marko-verstappen-needs-mclaren-s-help-for-f1-2025-title-25101881049",
+      "cover_url": "https://anna1994.oss-cn-shenzhen.aliyuncs.com/f1-history/1760759368470-amht2pryp3s.jpeg",
+      "news_source": "motorsport",
+      "title": "维斯塔潘再夺COTA冲刺赛杆位 马尔科承认红牛“仍需迈凯伦出错”",
+      "summary": "红牛顾问马尔科表示，维斯塔潘若想在2025年赢得第五个F1世界冠军，可能需要迈凯伦车队出现失误。尽管红牛赛车RB21近期表现回升，但马尔科认为追赶已为时稍晚，需借助对手的帮助。维斯塔潘已在冲刺赛中夺得杆位，但争冠之路仍充满挑战。",
+      "created_at": "2025-10-18 11:52:49"
+    },
+    {
+      "id": 175,
+      "slug": "hamilton-ferrari-has-mountain-to-climb-after-puzzling-sprint-performance-25101881011",
+      "cover_url": "https://anna1994.oss-cn-shenzhen.aliyuncs.com/f1-history/1760759084246-svzkygn4wwo.jpeg",
+      "news_source": "Racingnews365",
+      "title": "汉密尔顿：法拉利在令人费解的冲刺赛表现后面临‘难以逾越的山峰’",
+      "summary": "汉密尔顿认为法拉利在巴西大奖赛冲刺赛中表现令人费解，与杆位差距巨大，面临‘难以逾越的山峰’。客户车队表现甚至优于法拉利，凸显了车队在赛车调校和轮胎使用方面存在严重问题，亟需改进。",
+      "created_at": "2025-10-18 11:48:42"
+    },
+    {
+      "id": 174,
+      "slug": "verstappen-secures-third-consecutive-austin-sprint-pole-expects-tough-battle-25101881046",
+      "cover_url": "https://anna1994.oss-cn-shenzhen.aliyuncs.com/f1-history/1760758948853-dd0085om1g5.jpeg",
+      "news_source": "GP Blog",
+      "title": "维斯塔潘连续第三个奥斯汀冲刺赛杆位，预料将有“艰苦的较量”",
+      "summary": "维斯塔潘连续第三个奥斯汀冲刺赛杆位，显示红牛车队实力依旧。尽管面临强风和颠簸赛道，他依然出色。他预料冲刺赛将是场硬仗，但对其车速充满信心，并关注起步。",
+      "created_at": "2025-10-18 11:44:13"
+    },
+    {
+      "id": 173,
+      "slug": "norris-explains-max-verstappen-s-sprint-qualifying-win-in-austin-25101881024",
+      "cover_url": "https://anna1994.oss-cn-shenzhen.aliyuncs.com/f1-history/1760758704369-fsrgjgi5nee.jpeg",
+      "news_source": "Racingnews365",
+      "title": "诺里斯解释维斯塔潘在奥斯汀冲刺排位赛夺冠原因",
+      "summary": "诺里斯解释称，在奥斯汀冲刺排位赛中，他在最后冲刺圈第一弯道的颠簸处损失了宝贵时间，以微弱劣势输给维斯塔潘。尽管如此，迈凯伦对正赛表现充满信心。",
+      "created_at": "2025-10-18 11:42:06"
+    },
+    {
+      "id": 172,
+      "slug": "f1-united-states-gp-sprint-race-starting-grid-25101871022",
+      "cover_url": "https://anna1994.oss-cn-shenzhen.aliyuncs.com/f1-history/1760739953617-wfryjwl9ej.jpeg",
+      "news_source": "The Race",
+      "title": "F1美国大奖赛冲刺赛发车位：维斯塔潘杆位领跑，迈凯伦双雄紧随其后",
+      "summary": "F1美国大奖赛冲刺赛，维斯塔潘（红牛）杆位起步，迈凯伦的诺里斯和皮亚斯特里分列二三。霍肯伯格（萨伯）惊喜获得第四。发车位显示了各车队在COTA赛道的竞争态势，冲刺赛积分对正赛备战至关重要。",
+      "created_at": "2025-10-18 06:30:18"
+    },
+    {
+      "id": 171,
+      "slug": "fia-addresses-flawed-election-claims-after-candidate-withdrawal-2510186109",
+      "cover_url": "https://anna1994.oss-cn-shenzhen.aliyuncs.com/f1-history/1760737239040-646g7oefbpc.jpeg",
+      "news_source": "Racingnews365",
+      "title": "国际汽联回应“选举有瑕疵”指控，因总统候选人退选",
+      "summary": "国际汽联回应了总统候选人斯托克提出的“选举有瑕疵”的指控。斯托克因组建名单的严苛要求而退选，指责FIA选举是“民主的幻觉”。FIA则坚称其流程透明公正。",
+      "created_at": "2025-10-18 05:42:13"
+    },
+    {
+      "id": 170,
+      "slug": "mclaren-s-secrecy-on-norris-s-consequences-after-piastri-clash-25101851029",
+      "cover_url": "https://anna1994.oss-cn-shenzhen.aliyuncs.com/f1-history/1760734139211-6bokkuxzu0k.jpeg",
+      "news_source": "The Race",
+      "title": "迈凯伦内部“后果”成谜：诺里斯新加坡撞队友事件引发车队保密风波",
+      "summary": "迈凯伦对诺里斯与皮亚斯特在新加坡GP的碰撞事件，选择对后续“体育后果”保密，理由是避免泄露竞争策略。诺里斯已接受处罚，车队称将保持一致的管理方式，此事也凸显了车队内部管理的复杂性。",
+      "created_at": "2025-10-18 04:51:07"
+    },
+    {
+      "id": 169,
+      "slug": "toto-wolff-vows-to-learn-from-the-mistake-after-verstappen-saga-and-driver-contract-delays-25101841013",
+      "cover_url": "https://anna1994.oss-cn-shenzhen.aliyuncs.com/f1-history/1760733803874-tgrbmlx4ljj.jpeg",
+      "news_source": "Racingnews365",
+      "title": "沃尔夫承认梅赛德斯车手决策“失误”：维斯塔潘传闻后吸取教训，确定拉塞尔与安东内利组合",
+      "summary": "梅赛德斯车队负责人沃尔夫承认，此前围绕车手阵容的不确定性（尤其涉及维斯塔潘的传闻）是“失误”，未来将避免类似情况。车队现已确认拉塞尔和安东内利的2025赛季阵容，将专注赛车研发。",
+      "created_at": "2025-10-18 04:48:30"
+    },
+    {
+      "id": 168,
+      "slug": "jenson-button-sides-with-lando-norris-after-singapore-clash-predicts-more-incidents-25101831048",
+      "cover_url": "https://anna1994.oss-cn-shenzhen.aliyuncs.com/f1-history/1760727204110-cx9cg5lgm1i.jpeg",
+      "news_source": "motorsport",
+      "title": "巴顿力挺诺里斯：激进但必要，队内竞争是迈凯伦前进的双刃剑",
+      "summary": "F1世界冠军巴顿支持诺里斯在新加坡的激进超车，认为这是争冠常态，并预测迈凯伦队友间因竞争激烈将出现更多碰撞。他警告过度干预恐适得其反。",
+      "created_at": "2025-10-18 02:55:51"
+    },
+    {
+      "id": 167,
+      "slug": "united-states-grand-prix-f1-practice-1-norris-paces-unexpected-cota-session-2510183101",
+      "cover_url": "https://anna1994.oss-cn-shenzhen.aliyuncs.com/f1-history/1760726951056-qaa4al96lal.jpeg",
+      "news_source": "The Race",
+      "title": "诺里斯领跑COTA自由练习赛首节，霍肯博格惊艳第二引爆冷门",
+      "summary": "F1美国大奖赛首练爆冷！迈凯伦车手诺里斯以1分33秒294领跑，索伯车手霍肯博格以0.255秒之差位列次席，维斯塔潘仅排第五，预示周末竞争将格外激烈。",
+      "created_at": "2025-10-18 02:52:23"
+    },
+    {
+      "id": 166,
+      "slug": "ferrari-admits-simulation-mistake-led-to-hamilton-s-singapore-brake-issues-25101831048",
+      "cover_url": "https://anna1994.oss-cn-shenzhen.aliyuncs.com/f1-history/1760726197019-22ahilssgm8.jpeg",
+      "news_source": "motorsport",
+      "title": "法拉利承认模拟失误导致汉密尔顿刹车问题：新加坡站失分源于激进调校",
+      "summary": "法拉利承认新加坡站汉密尔顿刹车问题源于模拟失误，导致其受罚。车队正改进模拟工具，力求在墨西哥站等后续赛事中避免重蹈覆辙，并为2026赛季做准备。",
+      "created_at": "2025-10-18 02:39:42"
+    },
+    {
+      "id": 165,
+      "slug": "carlos-sainz-faces-gearbox-issue-in-us-gp-fp1-2510183104",
+      "cover_url": "https://anna1994.oss-cn-shenzhen.aliyuncs.com/f1-history/1760726077115-ipglsoaztm.jpeg",
+      "news_source": "Racingnews365",
+      "title": "美国GP练习赛：塞恩斯遭遇变速箱故障",
+      "summary": "美国GP练习赛FP1，威廉姆斯车手塞恩斯因变速箱故障仅跑九圈。尽管训练受阻，车队对其冲刺排位赛仍有信心，但塞恩斯需克服数据不足的挑战。",
+      "created_at": "2025-10-18 02:35:44"
+    },
+    {
+      "id": 164,
+      "slug": "martin-brundle-mclaren-s-norris-piastri-title-fight-doomed-to-fail-25101821048",
+      "cover_url": "https://anna1994.oss-cn-shenzhen.aliyuncs.com/f1-history/1760725937846-v6ywplqn3tp.jpeg",
+      "news_source": "motorsport",
+      "title": "马丁·布伦德尔：迈凯伦诺里斯-皮亚斯特里争冠组合“注定失败”",
+      "summary": "马丁·布伦德尔认为，迈凯伦车队诺里斯与皮亚斯特里争夺总冠军的内部较量“注定失败”，因其极具竞争性的本性会引发冲突。他指出，车队需通过内部措施（如零件或排位优先权）来管理这种紧张关系。",
+      "created_at": "2025-10-18 02:34:18"
+    },
+    {
+      "id": 163,
+      "slug": "apple-and-netflix-to-collaborate-on-f1-content-no-changes-to-drive-to-survive-25101821043",
+      "cover_url": "https://anna1994.oss-cn-shenzhen.aliyuncs.com/f1-history/1760725620104-qphv4878npb.jpeg",
+      "news_source": "GP Blog",
+      "title": "苹果与Netflix联手打造F1内容，《极速求生》系列保持不变",
+      "summary": "苹果将从2026年起独家转播美国F1赛事，但与Netflix的《极速求生》合作将保持不变。双方将携手拓展F1在美国的观众群，旨在通过内容联动和独家直播，全面提升F1的全球吸引力。",
+      "created_at": "2025-10-18 02:31:57"
+    },
+    {
+      "id": 162,
+      "slug": "leclerc-disappointed-not-depressed-amidst-ferrari-s-ongoing-struggles-25101821010",
+      "cover_url": "https://anna1994.oss-cn-shenzhen.aliyuncs.com/f1-history/1760724571725-aoxhj0jasal.jpeg",
+      "news_source": "GP Blog",
+      "title": "勒克莱尔坦言对法拉利赛季表现“失望但不沮丧”，强调团队仍团结奋进",
+      "summary": "法拉利车手勒克莱尔表示，尽管车队本赛季成绩不佳，他对此感到“失望但不沮丧”。他强调车队士气高昂，正努力改进，尽管承认与顶尖对手存在性能差距，并将在剩余比赛中力争完美执行。",
+      "created_at": "2025-10-18 02:26:43"
+    },
+    {
+      "id": 161,
+      "slug": "max-verstappen-s-view-on-f1-title-chances-we-should-have-won-singapore-25101811049",
+      "cover_url": "https://anna1994.oss-cn-shenzhen.aliyuncs.com/f1-history/1760724446523-o15xhfaarmj.jpeg",
+      "news_source": "motorsport",
+      "title": "维斯塔潘锁定迈凯伦为主要对手：称新加坡胜利对冠军争夺“至关重要”",
+      "summary": "维斯塔潘认为新加坡站是F1冠军争夺的关键失利。他承认落后63分，但仍决心争夺，红牛赛车虽有提升，但在特定赛道仍面临挑战，奥斯汀将是严峻考验。",
+      "created_at": "2025-10-18 02:09:19"
+    },
+    {
+      "id": 160,
+      "slug": "mercedes-and-haas-unveil-key-updates-for-united-states-grand-prix-25101811030",
+      "cover_url": "https://anna1994.oss-cn-shenzhen.aliyuncs.com/f1-history/1760724322714-pbtui60f3dn.jpeg",
+      "news_source": "GP Blog",
+      "title": "梅赛德斯与哈斯在COTA带来重大升级，力求赛季末抢分突破",
+      "summary": "梅赛德斯和哈斯是美国大奖赛唯二带来重大更新的车队。梅赛德斯聚焦高速弯道表现，哈斯则推出全面空气动力学套件，旨在中游集团中奋力一搏。",
+      "created_at": "2025-10-18 02:07:12"
+    },
+    {
+      "id": 159,
+      "slug": "norris-on-verstappen-s-remarks-our-approach-is-better-2510181105",
+      "cover_url": "https://anna1994.oss-cn-shenzhen.aliyuncs.com/f1-history/1760724201212-4ys0qd8giab.jpeg",
+      "news_source": "GP Blog",
+      "title": "诺里斯：迈凯伦车队管理方式优于他人",
+      "summary": "诺里斯称迈凯伦处理车手竞争的方式更优越，强调简单透明的内部规则和车手自主权，驳斥了“木瓜规则”的偏袒说法。此举被视为对比其他车队管理模式，以巩固团队团结并专注争冠。",
+      "created_at": "2025-10-18 02:04:48"
+    },
+    {
+      "id": 158,
+      "slug": "apple-to-revolutionize-us-f1-broadcasts-with-vr-and-new-camera-tech-from-2026-251017231058",
+      "cover_url": "https://anna1994.oss-cn-shenzhen.aliyuncs.com/f1-history/1760724022535-v428s1r5gh.jpeg",
+      "news_source": "motorsport",
+      "title": "苹果2026年起革新美国F1转播：引入VR及尖端摄像技术",
+      "summary": "苹果公司宣布将从2026年起独家拥有美国F1赛事的转播权，通过Apple TV平台提供，并承诺引入VR、AR等尖端技术，提升观赛沉浸感和互动性，重塑其在美国市场的地位。",
+      "created_at": "2025-10-18 02:02:53"
+    },
+    {
+      "id": 157,
+      "slug": "ferrari-boss-frederic-vasseur-under-pressure-amidst-performance-issues-and-horner-rumors-25101821025",
+      "cover_url": "https://anna1994.oss-cn-shenzhen.aliyuncs.com/f1-history/1760723838867-yshwkaarb6m.jpeg",
+      "news_source": "F1 Insider",
+      "title": "法拉利领队维斯尔面临压力：性能问题与霍纳传闻缠身",
+      "summary": "法拉利领队维斯尔因车队表现不佳及涉及霍纳的传闻而面临巨大压力。他强调团结并决心扭转局面。即将到来的美国大奖赛将是检验车队能否克服困难、重振旗鼓的关键时刻。",
+      "created_at": "2025-10-18 02:00:07"
+    },
+    {
+      "id": 156,
+      "slug": "former-fia-presidential-candidate-blasts-governing-body-s-illusion-of-democracy-25101723107",
+      "cover_url": "https://anna1994.oss-cn-shenzhen.aliyuncs.com/f1-history/1760710163265-rymy0xzfupn.jpeg",
+      "news_source": "Racingnews365",
+      "title": "FIA主席选举陷入争议：迈耶退选后痛批制度为“民主的幻觉”",
+      "summary": "前FIA主席候选人蒂姆·迈耶退出竞选，并公开抨击国际汽联主席选举是“民主的幻觉”。此举引发对FIA治理透明度和公平性的质疑，可能影响其公信力。无竞争的选举将巩固现任主席地位，但迈耶的批评或将促使对改革的呼声。",
+      "created_at": "2025-10-17 22:10:43"
+    },
+    {
+      "id": 155,
+      "slug": "us-talent-jak-crawford-to-make-f1-fp1-debut-in-mexico-city-251017231018",
+      "cover_url": "https://anna1994.oss-cn-shenzhen.aliyuncs.com/f1-history/1760710057182-aqj73g8x9.jpeg",
+      "news_source": "Racingnews365",
+      "title": "美国车手克劳福德将在墨西哥城迎来F1首次官方练习赛亮相",
+      "summary": "美国F2车手、阿斯顿·马丁预备车手Jak Crawford将在墨西哥城大奖赛首次参加F1官方练习赛。此次亮相是其个人里程碑，也是F1培养年轻人才、促进美国赛车运动发展的重要一步。",
+      "created_at": "2025-10-17 22:09:05"
+    },
+    {
+      "id": 154,
+      "slug": "fia-president-set-for-unopposed-re-election-as-major-rival-withdraws-251017221019",
+      "cover_url": "https://anna1994.oss-cn-shenzhen.aliyuncs.com/f1-history/1760709920434-frwfvsjbl2j.jpeg",
+      "news_source": "Racingnews365",
+      "title": "FIA主席选举再无悬念：蒂姆·迈耶退选，本·苏拉耶姆几乎锁定连任",
+      "summary": "国际汽联主席候选人蒂姆·迈耶退选，现任主席本·苏拉耶姆将几乎无竞争连任。复杂的选举规则和提名门槛是主要原因，凸显了挑战现有领导层的难度。",
+      "created_at": "2025-10-17 22:07:01"
+    },
+    {
+      "id": 153,
+      "slug": "apple-s-eddy-cue-explains-why-it-invested-in-tiny-f1-25101722100",
+      "cover_url": "https://anna1994.oss-cn-shenzhen.aliyuncs.com/f1-history/1760709798612-b0faxb1y1h.jpeg",
+      "news_source": "motorsport",
+      "title": "Eddy Cue：苹果投资F1不仅为商业，更是情怀驱动的科技与赛车融合梦",
+      "summary": "苹果服务高管埃迪·库解释了公司对F1美国转播权巨额投资的原因。他认为F1虽在美国观众规模相对小众，但其全球性、技术性和车手魅力提供了巨大潜力。此次投资是库个人情怀与苹果技术实力相结合的战略举措，旨在重塑体育流媒体体验，提升F1在美国的影响力。",
+      "created_at": "2025-10-17 22:05:09"
+    },
+    {
+      "id": 152,
+      "slug": "apple-tv-secures-exclusive-f1-us-broadcast-rights-in-five-year-deal-251017221011",
+      "cover_url": "https://anna1994.oss-cn-shenzhen.aliyuncs.com/f1-history/1760707837973-f0y03xurjwb.jpeg",
+      "news_source": "motorsport",
+      "title": "苹果斥资独揽F1美国转播权：五年协议重塑赛车流媒体格局",
+      "summary": "Apple TV 斥巨资签下美国 F1 独家转播权（2026-2030），年费超 1.4 亿美元。此举旨在提升 F1 在美收入及影响力，吸引年轻观众，并巩固苹果在体育流媒体的地位。",
+      "created_at": "2025-10-17 21:32:18"
+    },
+    {
+      "id": 151,
+      "slug": "george-russell-s-mercedes-extension-toto-wolff-could-have-been-tighter-25101720107",
+      "cover_url": "https://anna1994.oss-cn-shenzhen.aliyuncs.com/f1-history/1760707520747-h1mirtrurpr.jpeg",
+      "news_source": "Racingnews365",
+      "title": "乔治·拉塞尔梅赛德斯续约：沃尔夫本可“更吝啬”",
+      "summary": "乔治·拉塞尔续约梅赛德斯，透露领队沃尔夫本可“更吝啬”。新约巩固了他参与2026年规则变革的关键地位。拉塞尔对财务满意，但强调速度是首要目标，期待梅赛德斯重返争冠行列。",
+      "created_at": "2025-10-17 21:29:45"
+    },
+    {
+      "id": 150,
+      "slug": "mclaren-s-stella-on-verstappen-s-title-chances-25101719108",
+      "cover_url": "https://anna1994.oss-cn-shenzhen.aliyuncs.com/f1-history/1760707002897-wvvfhwyen4d.jpeg",
+      "news_source": "GP Blog",
+      "title": "迈凯伦领队：从未低估维斯塔潘的争冠能力",
+      "summary": "迈凯伦领队斯特拉表示，车队从未低估维斯塔潘的追分能力。尽管一度领先，但维斯塔潘已大幅缩小与皮亚斯特里的积分差距。斯特拉强调，车队将专注于自身表现，以应对这位四届世界冠军的挑战。美国大奖赛将是决定冠军归属的关键一站。",
+      "created_at": "2025-10-17 21:24:55"
+    },
+    {
+      "id": 149,
+      "slug": "alonso-urges-aston-martin-to-rest-and-test-ahead-of-crucial-2026-f1-season-251017191048",
+      "cover_url": "https://anna1994.oss-cn-shenzhen.aliyuncs.com/f1-history/1760706571103-j8740krqe9.jpeg",
+      "news_source": "motorsport",
+      "title": "阿隆索建议阿斯顿·马丁转向2026战略：从短期挣扎到长期重建的关键阶段",
+      "summary": "阿隆索呼吁阿斯顿·马丁将2025赛季剩余时间作为2026年规则大改的“测试期”，重点在于休整和改进运营。车队今年表现不佳，积分榜排名下滑，新规则及阿德里安·纽维的加盟是其重塑竞争力的关键。",
+      "created_at": "2025-10-17 21:12:27"
+    },
+    {
+      "id": 148,
+      "slug": "why-pierre-gasly-retains-faith-in-alpine-amidst-2025-f1-struggles-251017171046",
+      "cover_url": "https://anna1994.oss-cn-shenzhen.aliyuncs.com/f1-history/1760692174911-ao12q4venpd.jpeg",
+      "news_source": "motorsport",
+      "title": "加斯利看好Alpine未来：即便陷入低谷，他坚信2026年将迎来复苏",
+      "summary": "尽管Alpine在2025赛季遭遇困境，皮埃尔·加斯利仍对其未来充满信心。新领导层、梅赛德斯引擎及规则改革预示着重大转变。",
+      "created_at": "2025-10-17 17:13:05"
+    },
+    {
+      "id": 147,
+      "slug": "f1-champions-mid-season-wobbles-a-historical-look-at-title-scares-251017171037",
+      "cover_url": "https://anna1994.oss-cn-shenzhen.aliyuncs.com/f1-history/1760691885852-cx8kmfqybao.jpeg",
+      "news_source": "The Race",
+      "title": "皮亚斯特里领先优势告急：从稳居榜首到陷入白热化争冠，F1历史再现熟悉剧本",
+      "summary": "皮亚斯特里2025赛季F1领先优势大幅缩水，面临诺里斯和维斯塔潘的强力追击。文章回顾了多位车手曾经历的赛季中期“摇摆”与惊险夺冠历程，强调了冠军之路的艰难与韧性。",
+      "created_at": "2025-10-17 17:09:24"
+    },
+    {
+      "id": 146,
+      "slug": "f1-backed-charity-launches-special-prize-to-support-dementia-research-251017171057",
+      "cover_url": "https://anna1994.oss-cn-shenzhen.aliyuncs.com/f1-history/1760691651133-yejixnoolf.jpeg",
+      "news_source": "GP Blog",
+      "title": "F1携手杰基·斯图尔特发起“与失智症赛跑”慈善抽奖：车迷可赢稀有签名头盔与阿布扎比VIP体验",
+      "summary": "F1支持的Race Against Dementia慈善机构发起特别奖项抽奖，以筹集资金支持失智症研究。传奇车手斯图尔特爵士（Sir Jackie Stewart）以其妻子经历为动力，呼吁车迷参与，赢取独家F1纪念品，共助抗击失智症。",
+      "created_at": "2025-10-17 17:03:24"
+    },
+    {
+      "id": 145,
+      "slug": "2025-us-gp-weather-rain-possible-for-austin-weekend-251017171038",
+      "cover_url": "https://anna1994.oss-cn-shenzhen.aliyuncs.com/f1-history/1760691323475-gcfbykkcihw.jpeg",
+      "news_source": "GP Blog",
+      "title": "COTA天气或成美国大奖赛最大变数：冲刺赛周末恐受雷雨影响",
+      "summary": "2025年美国GP奥斯汀站天气多变。周五晴热，周六或有雨，周日干燥。这可能为正激烈进行的维斯塔潘与迈凯伦的车手总冠军争夺增添不确定性。冲刺赛周末更添变数。",
+      "created_at": "2025-10-17 17:00:40"
+    },
+    {
+      "id": 144,
+      "slug": "pundits-question-norris-s-repercussions-after-singapore-incident-251017161041",
+      "cover_url": "https://anna1994.oss-cn-shenzhen.aliyuncs.com/f1-history/1760691102327-3yysuumbfok.jpeg",
+      "news_source": "Sky Sports",
+      "title": "新加坡赛后，评论员质疑诺里斯面临的“后果”",
+      "summary": "F1评论员们对诺里斯称将因与队友皮亚斯特里在新加坡赛道上的缠斗而面临迈凯伦“后果”的言论表示不解。专家认为，F1比赛激烈，车队应鼓励公平竞争而非惩罚，并担忧此举可能影响车手士气和团队合作。",
+      "created_at": "2025-10-17 16:55:07"
+    },
+    {
+      "id": 143,
+      "slug": "leclerc-shuts-down-ferrari-rumors-speaking-without-facts-251017161055",
+      "cover_url": "https://anna1994.oss-cn-shenzhen.aliyuncs.com/f1-history/1760690727461-d36xmpafsud.img",
+      "news_source": "F1i.com",
+      "title": "勒克莱尔正面回击转会传闻：誓言与法拉利共进退，专注重返巅峰",
+      "summary": "法拉利车手勒克莱尔坚决否认了关于他未来去向的各种传闻，并重申了对车队的忠诚。他表示，目前唯一的目标是驾驶红色赛车赢得胜利，并将法拉利带回巅峰，同时希望以此稳定军心，让车队专注于提升赛道表现和备战2026年规则。",
+      "created_at": "2025-10-17 16:50:33"
+    },
+    {
+      "id": 142,
+      "slug": "leclerc-dismisses-horner-to-ferrari-rumors-focuses-on-team-unity-251017161039",
+      "cover_url": "https://anna1994.oss-cn-shenzhen.aliyuncs.com/f1-history/1760690604231-58n0073kkad.jpeg",
+      "news_source": "GP Blog",
+      "title": "勒克莱尔驳斥“霍纳接任”传闻：法拉利专注内部团结与赛场表现",
+      "summary": "法拉利车手勒克莱尔回应了关于霍纳可能接替瓦塞尔的传闻，称其为分散注意力的噪音。他强调车队专注于自身工作和团结，并已改进以减少外界干扰。汉密尔顿也否认了相关传闻。车队需在赛道上证明实力以维持稳定。",
+      "created_at": "2025-10-17 16:45:07"
+    },
+    {
+      "id": 141,
+      "slug": "did-russell-get-everything-he-wanted-in-his-new-mercedes-deal-251017161057",
+      "cover_url": "https://anna1994.oss-cn-shenzhen.aliyuncs.com/f1-history/1760690336719-5kwl2k0xedr.jpeg",
+      "news_source": "GP Blog",
+      "title": "拉塞尔的新梅赛德斯合同如愿以偿了吗？",
+      "summary": "乔治·拉塞尔与梅赛德斯续签多年合同，但强调其首要关注点是赛车的竞争力，尤其为2026年规则大改做准备。合同条款虽优厚，但他的长期满意度取决于梅赛德斯能否提供一辆足以争夺冠军的赛车。车队正面临巨大压力，需通过研发来满足拉塞尔的期望。",
+      "created_at": "2025-10-17 16:43:11"
+    },
+    {
+      "id": 140,
+      "slug": "hamilton-recounts-nerve-racking-brake-failure-and-accepts-fia-penalty-25101715106",
+      "cover_url": "https://anna1994.oss-cn-shenzhen.aliyuncs.com/f1-history/1760690186284-cc5rb6j1wj.jpeg",
+      "news_source": "Racingnews365",
+      "title": "汉密尔顿回忆新加坡大奖赛惊魂刹车失灵，接受FIA处罚",
+      "summary": "刘易斯·汉密尔顿在新加坡大奖赛中经历惊险的刹车失灵，被迫驶出赛道，最终被罚时五秒，从第七降至第八。他接受了这一处罚，但法拉利将对此类机械故障进行深入调查。",
+      "created_at": "2025-10-17 16:38:41"
+    },
+    {
+      "id": 139,
+      "slug": "will-piastri-bounce-back-at-the-united-states-grand-prix-25101713101",
+      "cover_url": "https://anna1994.oss-cn-shenzhen.aliyuncs.com/f1-history/1760677934012-op4yqkr3pji.jpeg",
+      "news_source": "Speedcafe",
+      "title": "皮亚斯特里能否在美国大奖赛强势反弹？",
+      "summary": "皮亚斯特里在美国大奖赛面临维斯塔潘的追击。COTA赛道前排发车优势明显，排位赛表现是关键。他能否反弹并巩固领先地位，将决定冠军争夺的走向。",
+      "created_at": "2025-10-17 13:14:25"
+    },
+    {
+      "id": 138,
+      "slug": "key-takeaways-from-day-one-of-the-f1-us-grand-prix-25101781017",
+      "cover_url": "https://anna1994.oss-cn-shenzhen.aliyuncs.com/f1-history/1760672439900-h8z0rtjbwtg.jpeg",
+      "news_source": "The Race",
+      "title": "F1奥斯汀赛前动态：从内部问责到合同定调，赛场外的风暴正酝酿",
+      "summary": "F1美国大奖赛首日，迈凯伦确认诺里斯在新加坡负全责，汉密尔顿否认霍纳转会法拉利传闻，安东内利承认曾有自我怀疑。此外，加斯利揭示赛车故障，拉塞尔态度转变，阿隆索等呼吁谨慎播报车队广播，哈达尔对红牛机会态度变化。这些信息为赛季和2026年规则变革提供了新视角。",
+      "created_at": "2025-10-17 11:43:07"
+    },
+    {
+      "id": 137,
+      "slug": "george-russell-confident-mercedes-is-best-bet-for-2026-f1-title-25101781034",
+      "cover_url": "https://anna1994.oss-cn-shenzhen.aliyuncs.com/f1-history/1760672311847-99gxv2f41g9.jpeg",
+      "news_source": "Sky Sports",
+      "title": "拉塞尔坚信梅赛德斯是2026年F1冠军的最佳选择",
+      "summary": "乔治·拉塞尔续约梅赛德斯，并公开表示相信车队是2026年F1世界冠军的最佳选择。此举显示出车队对新规则的乐观态度和内部技术发展信心。",
+      "created_at": "2025-10-17 11:40:12"
+    },
+    {
+      "id": 136,
+      "slug": "oscar-piastri-mclaren-not-biased-towards-lando-norris-in-f1-title-fight-25101771052",
+      "cover_url": "https://anna1994.oss-cn-shenzhen.aliyuncs.com/f1-history/1760653571433-jnp3so1i48.jpeg",
+      "news_source": "motorsport",
+      "title": "皮亚斯特里否认迈凯伦偏袒：强调公平竞争，不求特殊待遇",
+      "summary": "皮亚斯特里表示，迈凯伦在F1车手总冠军争夺中对诺里斯没有偏袒。新加坡赛后，车队进行了深入沟通，他对此结果满意，并相信两位车手将获得公平竞争的机会，共同对抗维斯塔潘。",
+      "created_at": "2025-10-17 06:28:14"
+    },
+    {
+      "id": 135,
+      "slug": "norris-takes-full-accountability-for-piastri-clash-25101771019",
+      "cover_url": "https://anna1994.oss-cn-shenzhen.aliyuncs.com/f1-history/1760653227523-02v64trjo9e1.jpeg",
+      "news_source": "Racingnews365",
+      "title": "诺里斯就与队友皮亚斯特的碰撞承担全部责任",
+      "summary": "诺里斯就新加坡大奖赛与队友皮亚斯特的碰撞事件，公开承认全部责任。他认为车队的判定公平，并强调迈凯伦致力于避免未来发生类似事件，以维护车队和谐与成绩。",
+      "created_at": "2025-10-17 06:23:32"
+    },
+    {
+      "id": 134,
+      "slug": "hulkenberg-hints-at-wheatley-s-quiet-revolution-at-sauber-25101761034",
+      "cover_url": "https://anna1994.oss-cn-shenzhen.aliyuncs.com/f1-history/1760653017441-mi7xwts2lma.jpeg",
+      "news_source": "GP Blog",
+      "title": "霍肯博格盛赞惠特利“重塑索伯”：索伯在新领队带领下重拾斗志与方向",
+      "summary": "汉克伯格表示，新任索伯领队惠特利正为车队带来一场“低调的变革”。他通过提升士气、重塑信心和优化运营，引领车队走出低迷，重返竞争行列，为未来成为奥迪厂队奠定基础。",
+      "created_at": "2025-10-17 06:20:11"
+    },
+    {
+      "id": 133,
+      "slug": "lewis-hamilton-declares-cota-best-track-in-the-states-amidst-f1-s-us-boom-25101761047",
+      "cover_url": "https://anna1994.oss-cn-shenzhen.aliyuncs.com/f1-history/1760652896656-3it8dgplqso.jpeg",
+      "news_source": "motorsport",
+      "title": "汉密尔顿盛赞COTA：称其为“美国最佳赛道”，见证F1在美爆发式成长",
+      "summary": "汉密尔顿称COTA为“美国最佳赛道”，见证F1在美国的迅猛发展。Netflix《极速求生》及新电影助推F1吸引年轻观众。赛道持续改进，预示北美市场光明前景。",
+      "created_at": "2025-10-17 06:16:28"
+    },
+    {
+      "id": 132,
+      "slug": "seven-key-insights-from-cadillac-s-f1-leaders-on-2026-preparations-25101751025",
+      "cover_url": "https://anna1994.oss-cn-shenzhen.aliyuncs.com/f1-history/1760651009508-alszxlo92mm.png",
+      "news_source": "The Race",
+      "title": "凯迪拉克F1冲刺百日倒计时：西蒙兹与沃伦详解进展、挑战与雄心",
+      "summary": "凯迪拉克F1团队正为2026年赛季进行紧张备战。他们争取尽早完成碰撞测试，设定激进的空气动力学目标，并强调美国本土研发与法拉利合作的平衡。佩雷兹已参与模拟器反馈，团队致力于按时完成首台赛车。",
+      "created_at": "2025-10-17 06:14:35"
+    },
+    {
+      "id": 131,
+      "slug": "antonelli-admits-f1-future-doubts-amidst-tough-european-race-form-25101751046",
+      "cover_url": "https://anna1994.oss-cn-shenzhen.aliyuncs.com/f1-history/1760647156025-0v7jsnhbj4a.jpeg",
+      "news_source": "motorsport",
+      "title": "安东内利坦言曾对F1未来动摇：续约让他重拾信心，专注2026赛季",
+      "summary": "安东内利坦承欧洲赛季低迷时曾对F1未来产生怀疑，但梅赛德斯续约使其重拾信心。他感谢车队支持，并表示新规下的2026赛季是关键，需全力以赴争取长期席位。",
+      "created_at": "2025-10-17 04:41:17"
+    },
+    {
+      "id": 130,
+      "slug": "hamilton-horner-speculation-distracting-for-ferrari-amidst-2026-focus-25101751036",
+      "cover_url": "https://anna1994.oss-cn-shenzhen.aliyuncs.com/f1-history/1760646650300-7uczcy82qld.jpeg",
+      "news_source": "Sky Sports",
+      "title": "汉密尔顿坦言霍纳加盟传闻令法拉利分心：强调团队需专注2026目标",
+      "summary": "汉密尔顿表示，关于霍纳加盟法拉利的传闻是车队的“分心”因素。法拉利当前正专注于2025赛季的表现和2026年新规则的准备，强调保持稳定与专注的重要性。",
+      "created_at": "2025-10-17 04:32:29"
+    },
+    {
+      "id": 129,
+      "slug": "max-verstappen-jos-verstappen-would-be-an-excellent-f1-team-principal-25101751015",
+      "cover_url": "https://anna1994.oss-cn-shenzhen.aliyuncs.com/f1-history/1760646523884-bw6pi3cgkbn.jpeg",
+      "news_source": "Racingnews365",
+      "title": "维斯塔潘盛赞父亲约斯：他具备成为“杰出领队”的一切特质",
+      "summary": "马克斯·维斯塔潘认为，父亲约斯·维斯塔潘凭借其深厚的技术理解和无与伦比的奉献精神，堪称“杰出的”F1车队领队。约斯早期为培养马克斯职业生涯付出了巨大牺牲，父子间持续的技术探讨，印证了约斯在马克斯赛车之路上的重要非官方作用。",
+      "created_at": "2025-10-17 04:30:40"
+    },
+    {
+      "id": 128,
+      "slug": "f1-drivers-voice-frustration-over-broadcast-team-radio-25101751024",
+      "cover_url": "https://anna1994.oss-cn-shenzhen.aliyuncs.com/f1-history/1760646358854-9fmt92fi81g.jpeg",
+      "news_source": "The Race",
+      "title": "阿隆索批评F1无线电转播被断章取义：车手呼吁尊重沟通隐私",
+      "summary": "F1车手对比赛中团队无线电的广播方式表达强烈不满，认为其断章取义、歪曲事实，影响了他们与车队的私密沟通，并呼吁在转播中更注重语境和车手隐私。",
+      "created_at": "2025-10-17 04:28:33"
+    },
+    {
+      "id": 127,
+      "slug": "carlos-sainz-proposes-short-term-f1-sprint-race-fix-25101741054",
+      "cover_url": "https://anna1994.oss-cn-shenzhen.aliyuncs.com/f1-history/1760646322370-3rzsxcrvfsz.jpeg",
+      "news_source": "motorsport",
+      "title": "塞恩斯建议强制使用软胎，推动F1冲刺赛改革以增加不确定性",
+      "summary": "塞恩斯提出F1冲刺赛短期方案：强制软胎，增加消耗与进站，提高不确定性。他认为现有赛制剧透正赛，需更多创新以提升观赏性。F1官方对赛制改革持开放态度，未来或引入更多实验性改变。",
+      "created_at": "2025-10-17 04:25:27"
+    },
+    {
+      "id": 126,
+      "slug": "isack-hadjar-reveals-condition-for-immediate-red-bull-move-2510174109",
+      "cover_url": "https://anna1994.oss-cn-shenzhen.aliyuncs.com/f1-history/1760642630933-ln7wg077m5.jpeg",
+      "news_source": "Racingnews365",
+      "title": "哈贾尔放话：若锁定2026红牛席位，愿本赛季提前加盟主队",
+      "summary": "哈贾尔仅在能提前确定2026年成为维斯塔潘队友的情况下，才考虑立即转投红牛。这显示了他对顶级车队席位的强烈渴望，同时也突显了转会决策的复杂性。",
+      "created_at": "2025-10-17 03:23:52"
+    },
+    {
+      "id": 125,
+      "slug": "carlos-sainz-singapore-gp-broadcast-comments-blown-out-of-proportion-25101731046",
+      "cover_url": "https://anna1994.oss-cn-shenzhen.aliyuncs.com/f1-history/1760641032484-5seg7x30sy.jpeg",
+      "news_source": "motorsport",
+      "title": "塞恩斯澄清对新加坡站转播批评：仅为“简单指正”，非全面否定",
+      "summary": "卡洛斯·塞恩斯澄清其对新加坡大奖赛转播的批评已被“过度解读”。他表示并非广泛攻击，仅是对该场特定转播存在的问题提出建设性意见，指出现场动作被画面分散，并希望平衡赛道动作与场外娱乐。",
+      "created_at": "2025-10-17 02:59:08"
+    },
+    {
+      "id": 124,
+      "slug": "cadillac-reveals-sergio-perez-s-key-request-for-2026-f1-car-2510172105",
+      "cover_url": "https://anna1994.oss-cn-shenzhen.aliyuncs.com/f1-history/1760640895865-c0x1udcv1at.jpeg",
+      "news_source": "Racingnews365",
+      "title": "佩雷兹提前参与凯迪拉克F1项目开发，助力2026赛季强势首秀",
+      "summary": "凯迪拉克透露，塞尔吉奥·佩雷兹已对2026赛季赛车开发产生影响。他通过模拟器测试，要求调整动力转向系统，以获得特定驾驶手感。新车队此举旨在利用经验丰富的车手尽早优化赛车，为2026赛季做好准备。",
+      "created_at": "2025-10-17 02:56:56"
+    },
+    {
+      "id": 123,
+      "slug": "daniel-ricciardo-makes-surprise-appearance-in-austin-ahead-of-us-grand-prix-25101721049",
+      "cover_url": "https://anna1994.oss-cn-shenzhen.aliyuncs.com/f1-history/1760639206279-jlkeqboqrmn.webp",
+      "news_source": "PlanetF1",
+      "title": "退役不退场——里卡多现身奥斯汀，携福特身份继续书写F1篇章",
+      "summary": "丹尼尔·里卡多退役后意外现身奥斯汀，推广个人品牌并以福特大使身份亮相。此次露面预示着他将继续以新角色参与F1相关活动，尤其关注2026年福特与红牛的合作。",
+      "created_at": "2025-10-17 02:54:38"
+    },
+    {
+      "id": 122,
+      "slug": "fia-announces-major-f1-power-unit-change-ahead-of-2026-rules-25101711032",
+      "cover_url": "https://anna1994.oss-cn-shenzhen.aliyuncs.com/f1-history/1760639085401-y1lmiqog1g.jpeg",
+      "news_source": "Racingnews365",
+      "title": "FIA推出“额外研发与升级机会”计划，为2026动力单元新规护航",
+      "summary": "FIA推出“额外研发与升级机会”（ADUO）计划，旨在通过在2026年重大动力单元规则变革前平衡各制造商性能，维护F1的竞争公平性。新规则将大幅提升电动功率，并吸引奥迪等新车队加入。ADUO允许落后制造商获得额外研发支持，以确保比赛的精彩程度。",
+      "created_at": "2025-10-17 02:26:29"
+    },
+    {
+      "id": 121,
+      "slug": "ex-pilot-explains-verstappen-s-edge-over-piastri-calmness-under-pressure-2510171100",
+      "cover_url": "https://anna1994.oss-cn-shenzhen.aliyuncs.com/f1-history/1760638728039-kndxi0cymgr.jpeg",
+      "news_source": "F1 Insider",
+      "title": "心理战升级：维斯塔潘强势反弹，皮亚斯特里陷入压力漩涡",
+      "summary": "维斯塔潘以压力下的冷静和“不计算，只比赛”的心态，正在无情地追赶皮亚斯特里。红牛赛车速度的回归让他重拾乐趣，而皮亚斯特里则面临压力。接下来的六场比赛，心理战将是关键。",
+      "created_at": "2025-10-17 02:22:58"
+    },
+    {
+      "id": 120,
+      "slug": "nascar-s-55-million-content-push-aiming-for-f1-like-success-25101711049",
+      "cover_url": "https://anna1994.oss-cn-shenzhen.aliyuncs.com/f1-history/1760638601688-92n973m0v2g.jpeg",
+      "news_source": "motorsport",
+      "title": "NASCAR豪掷5500万美元打造原创内容，力图复刻F1《极速求生》的成功",
+      "summary": "NASCAR斥资5500万美元，模仿F1《极速求生》的成功经验，通过《全力以赴》等原创内容吸引新观众。尽管取得初步成效，但全球影响力尚不及F1。NASCAR将继续投资，致力于讲述车手故事，深化粉丝情感，以期拓展市场。",
+      "created_at": "2025-10-17 02:18:18"
+    },
+    {
+      "id": 119,
+      "slug": "red-bull-s-helmut-marko-expresses-double-doubt-on-max-verstappen-s-f1-title-chances-2510170105",
+      "cover_url": "https://anna1994.oss-cn-shenzhen.aliyuncs.com/f1-history/1760638471817-j70b428fqm9.jpeg",
+      "news_source": "Racingnews365",
+      "title": "马尔科：维斯塔潘五冠之路仍存两大疑虑",
+      "summary": "红牛顾问马尔科对维斯塔潘本赛季能否夺得第五个F1车手总冠军表示担忧。他指出，尽管维斯塔潘近期表现强势，但迈凯伦车队的内部竞争以及红牛赛车能否持续保持顶尖状态，是两大关键不确定因素。",
+      "created_at": "2025-10-17 02:16:27"
+    },
+    {
+      "id": 118,
+      "slug": "why-mercedes-was-unfazed-by-hamilton-s-exit-25101711055",
+      "cover_url": "https://anna1994.oss-cn-shenzhen.aliyuncs.com/f1-history/1760638238569-fcu1s6991kh.jpeg",
+      "news_source": "GP Blog",
+      "title": "沃尔夫：拉塞尔的稳定表现让梅赛德斯无惧汉密尔顿离队",
+      "summary": "梅赛德斯对汉密尔顿离队反应平静，因其信任乔治·拉塞尔的实力。拉塞尔的稳定表现和长远规划，使车队能从容培养新秀安东内利，巩固未来阵容，目标重返巅峰。",
+      "created_at": "2025-10-17 02:12:47"
+    },
+    {
+      "id": 117,
+      "slug": "george-russell-recalls-first-toto-wolff-encounter-sparked-by-a-rapid-email-25101701022",
+      "cover_url": "https://anna1994.oss-cn-shenzhen.aliyuncs.com/f1-history/1760638044368-vfxy7iqoym.jpeg",
+      "news_source": "Racingnews365",
+      "title": "一封邮件改变命运——拉塞尔如何开启与梅赛德斯的F1之路",
+      "summary": "16岁时，乔治·拉塞尔面临赛车资金困境，主动联系了托托·沃尔夫。15分钟后收到回复，并加入了梅赛德斯青训，成为车队发掘新星的关键。如今他是F1车手，其励志故事展现了才华、决心与策略性自我推销的力量。",
+      "created_at": "2025-10-17 02:09:49"
+    },
+    {
+      "id": 116,
+      "slug": "steiner-ranks-verstappen-above-hamilton-in-all-time-f1-driver-list-25101701051",
+      "cover_url": "https://anna1994.oss-cn-shenzhen.aliyuncs.com/f1-history/1760637904856-ri13xpe0al9.jpeg",
+      "news_source": "GP Blog",
+      "title": "斯泰纳力挺维斯塔潘高于汉密尔顿：伟大不止于F1冠军数量",
+      "summary": "前F1车队领队斯泰纳将维斯塔潘评为比汉密尔顿更伟大的车手，引发热议。斯泰纳看重车手跨领域挑战的热情，而非仅F1数据。汉密尔顿虽成就辉煌，但被排在第七。维斯塔潘因其多样化赛事参与精神获赞。两人未来在美大奖赛将继续是焦点。",
+      "created_at": "2025-10-17 02:07:13"
+    },
+    {
+      "id": 115,
+      "slug": "former-ferrari-boss-binotto-expresses-empathy-for-team-s-struggles-251016231053",
+      "cover_url": "https://anna1994.oss-cn-shenzhen.aliyuncs.com/f1-history/1760637770453-28lrmg9d5tsj.jpeg",
+      "news_source": "GP Blog",
+      "title": "比诺托为法拉利当前困境发声：理解痛苦，但已翻篇",
+      "summary": "前法拉利领队比诺托对车队目前的困境表示同情，理解车迷和员工的痛苦，但已将重心转向新目标。法拉利2025赛季仍面临严峻挑战，未尝胜绩，领队瓦塞尔压力巨大。",
+      "created_at": "2025-10-17 02:04:40"
+    },
+    {
+      "id": 114,
+      "slug": "fia-declares-heat-hazard-for-united-states-grand-prix-25101622109",
+      "cover_url": "https://anna1994.oss-cn-shenzhen.aliyuncs.com/f1-history/1760637650231-61acna9tq1x.jpeg",
+      "news_source": "Racingnews365",
+      "title": "FIA发布高温预警，美国大奖赛将实施强制降温措施",
+      "summary": "FIA对美国大奖赛宣布“高温预警”，因气温可能超31℃。车手需穿降温背心或加0.5kg配重。此举旨在保障车手安全与表现，并引发了对舒适度的讨论。",
+      "created_at": "2025-10-17 02:02:21"
+    },
+    {
+      "id": 113,
+      "slug": "george-russell-reveals-father-s-extreme-tactic-to-fuel-his-f1-ambition-251016221024",
+      "cover_url": "https://anna1994.oss-cn-shenzhen.aliyuncs.com/f1-history/1760637568507-5776atcb3ud.jpeg",
+      "news_source": "Racingnews365",
+      "title": "拉塞尔自曝“被操纵的秒表训练”：父亲用心理战术铸就冠军心态",
+      "summary": "乔治·拉塞尔的父亲曾用故意延迟秒表的方式，让他在卡丁车时代始终感觉有进步空间，即使在获胜时也如此。这种非常规的心理塑造，锻造了拉塞尔坚韧的心态和对卓越的永不满足的追求，成为他迈向F1的关键。",
+      "created_at": "2025-10-17 02:00:39"
+    },
+    {
+      "id": 112,
+      "slug": "grupo-televisa-confirmed-as-f1-s-new-broadcaster-in-mexico-251016231050",
+      "cover_url": "https://anna1994.oss-cn-shenzhen.aliyuncs.com/f1-history/1760637431779-5e0uzttu703.jpeg",
+      "news_source": "Blackbook",
+      "title": "特莱维萨接手F1墨西哥转播权，确保赛事在当地无缝延续",
+      "summary": "F1与墨西哥的特莱维萨集团签署了至2028年底的三年代言权协议，取代了此前遇财务问题的FOX体育。新协议包括Sky Sports的全面转播，并将部分赛事在免费电视频道播出，确保了F1在墨西哥这一重要市场的覆盖。",
+      "created_at": "2025-10-17 01:59:13"
+    },
+    {
+      "id": 111,
+      "slug": "cota-the-true-home-of-f1-in-the-us-251016221040",
+      "cover_url": "https://anna1994.oss-cn-shenzhen.aliyuncs.com/f1-history/1760629514644-c8cprt8be7s.jpeg",
+      "news_source": "GP Blog",
+      "title": "COTA：美国F1的真正主场？",
+      "summary": "COTA（美国赛道）凭借其为赛事建造的赛道和丰富历史，巩固了其在美国F1的领先地位。不同于迈阿密和拉斯维加斯的街区赛道，COTA提供纯粹的赛车体验，满足“油头族”需求，并在平衡F1的娱乐性与赛车精神方面发挥关键作用。",
+      "created_at": "2025-10-16 23:46:44"
+    },
+    {
+      "id": 110,
+      "slug": "cadillac-s-f1-team-prioritizes-startup-culture-amidst-rapid-growth-251016211050",
+      "cover_url": "https://anna1994.oss-cn-shenzhen.aliyuncs.com/f1-history/1760629443277-lzvv4u7e4w9.jpeg",
+      "news_source": "motorsport",
+      "title": "凯迪拉克F1车队：快速扩张中，坚守初创企业文化",
+      "summary": "凯迪拉克F1车队将于2026年亮相，正快速扩张但力求保持初创企业文化。通过“一个团队”理念、全球布局及重视价值观的招聘，车队旨在高效运作，克服官僚主义，为在F1预算帽时代竞争奠定基础。",
+      "created_at": "2025-10-16 23:44:58"
+    },
+    {
+      "id": 109,
+      "slug": "red-bull-junior-pepe-marti-considers-formula-e-switch-251016211047",
+      "cover_url": "https://anna1994.oss-cn-shenzhen.aliyuncs.com/f1-history/1760629348342-orm2lz20ci.jpeg",
+      "news_source": "GP Blog",
+      "title": "红牛青训车手佩佩·马蒂考虑转战Formula E",
+      "summary": "红牛青训车手佩佩·马蒂据报道正与Formula E车队Kiro Race进行深入会谈，可能在2025-2026赛季转战电动方程式。此举预示着他将在F1体系外寻求职业赛车生涯的新方向。",
+      "created_at": "2025-10-16 23:43:38"
+    },
+    {
+      "id": 108,
+      "slug": "lando-norris-warned-about-max-verstappen-s-retaliation-after-singapore-incident-251016201051",
+      "cover_url": "https://anna1994.oss-cn-shenzhen.aliyuncs.com/f1-history/1760629020712-tjbq4bprud.webp",
+      "news_source": "PlanetF1",
+      "title": "新加坡事件后，诺里斯收到维斯塔潘的‘报复’警告",
+      "summary": "新加坡GP排位赛后，维斯塔潘警告诺里斯，暗示可能因“脏空气”事件进行报复。诺里斯不仅要面对队友竞争，还需警惕维斯塔潘在剩余赛程中的影响。",
+      "created_at": "2025-10-16 23:39:22"
+    },
+    {
+      "id": 107,
+      "slug": "esteban-ocon-on-navigating-obsessed-fans-and-haters-251016201044",
+      "cover_url": "https://anna1994.oss-cn-shenzhen.aliyuncs.com/f1-history/1760628911489-su6my4bm2n9.jpeg",
+      "news_source": "motorsport",
+      "title": "奥康谈如何应对狂热粉丝与网络黑粉",
+      "summary": "F1车手奥康分享了如何应对狂热粉丝的骚扰和网络黑粉的经历，强调了名声的双刃剑效应，以及个人处理冲突和维护形象的重要性。",
+      "created_at": "2025-10-16 23:36:47"
+    },
+    {
+      "id": 106,
+      "slug": "marko-dampens-alex-dunne-s-red-bull-prospects-lindblad-favored-251016201041",
+      "cover_url": "https://anna1994.oss-cn-shenzhen.aliyuncs.com/f1-history/1760628730073-8mmihirbayh.jpeg",
+      "news_source": "GP Blog",
+      "title": "马尔科否认丹尼加盟传闻　林德布拉德成红牛F1晋升热门人选",
+      "summary": "红牛顾问马尔科对亚历克斯·丹尼进入红牛F1车队的前景表示怀疑，指出其缺乏超级驾照。同时，他暗示年轻的阿尔维德·林德布拉德更有机会晋升F1，今年可能已会驾驶F1赛车。",
+      "created_at": "2025-10-16 23:34:55"
+    },
+    {
+      "id": 105,
+      "slug": "alpine-joins-half-the-grid-with-special-livery-for-us-grand-prix-25101619108",
+      "cover_url": "https://anna1994.oss-cn-shenzhen.aliyuncs.com/f1-history/1760616972831-krx4wn0vpbs.jpeg",
+      "news_source": "Racingnews365",
+      "title": "Alpine发布美洲三连赛特别涂装　携Mercado Libre彰显拉丁美洲力量",
+      "summary": "Alpine为美洲三场大奖赛推出特别涂装，融入Mercado Libre标志性黄色，以强化品牌营销及与车迷互动，并支持阿根廷车手Colapinto。",
+      "created_at": "2025-10-16 20:16:13"
+    },
+    {
+      "id": 104,
+      "slug": "zak-brown-claims-lando-norris-paid-for-mclaren-f1-spot-amid-alex-palou-legal-battle-251016191050",
+      "cover_url": "https://anna1994.oss-cn-shenzhen.aliyuncs.com/f1-history/1760616613094-9b0biwy4nom.webp",
+      "news_source": "PlanetF1",
+      "title": "迈凯伦CEO法庭爆料：诺里斯早年曾付费进入F1体系　帕卢违约案揭示车手晋升真相",
+      "summary": "迈凯伦CEO扎克·布朗在与帕卢的诉讼案中透露，兰多·诺里斯在获得F1全职席位前曾付费加入车队。此案揭示了F1进入的昂贵现实，并牵扯出车手合同的复杂性。法庭文件还披露了其他车手的支付细节。",
+      "created_at": "2025-10-16 20:14:33"
+    },
+    {
+      "id": 103,
+      "slug": "tensions-erupt-rosberg-throws-cap-at-hamilton-after-crucial-error-secures-2015-f1-title-251016191012",
+      "cover_url": "https://anna1994.oss-cn-shenzhen.aliyuncs.com/f1-history/1760616491398-kgvdmp8kv2q.jpeg",
+      "news_source": "Racingnews365",
+      "title": "2015年美国大奖赛：汉密尔顿加冕三冠王　与罗斯伯格矛盾爆发的转折点",
+      "summary": "2015年美国大奖赛，汉密尔顿因罗斯伯格关键失误锁定总冠军。赛后休息室，罗斯伯格怒掷赛帽，标志着两人激烈竞争进入新高潮，预示着2016年的史诗对决。",
+      "created_at": "2025-10-16 20:09:32"
+    },
+    {
+      "id": 102,
+      "slug": "aston-martin-adrian-newey-in-a-design-trance-for-2026-f1-car-development-251016181048",
+      "cover_url": "https://anna1994.oss-cn-shenzhen.aliyuncs.com/f1-history/1760612377007-z2lea2seeta.jpeg",
+      "news_source": "motorsport",
+      "title": "阿斯顿·马丁押注2026规则变革　纽维全身心投入“设计三昧”",
+      "summary": "阿斯顿·马丁为2026年F1新规则全力冲刺，传奇设计师纽维已进入“设计三昧”状态，专注于新赛车研发。尽管这可能导致2025赛季表现“痛苦”，但车队认为这是争夺未来冠军的战略性投资。纽维的才华与卡迪莱的组织能力结合，将是成功的关键。",
+      "created_at": "2025-10-16 20:05:18"
+    },
+    {
+      "id": 101,
+      "slug": "ralf-schumacher-criticizes-f1-drivers-claims-they-re-worse-than-mick-251016181042",
+      "cover_url": "https://anna1994.oss-cn-shenzhen.aliyuncs.com/f1-history/1760609226766-u45tatjo3gf.jpeg",
+      "news_source": "GP Blog",
+      "title": "拉尔夫·舒马赫批评F1现役车手，称其“不如米克”",
+      "summary": "拉尔夫·舒马赫炮轰F1现役车手，认为他们不如侄子米克。此言论引发争议，或影响米克的F1回归之路，但米克在WEC的表现和对其他单座赛车的兴趣同样关键。",
+      "created_at": "2025-10-16 18:12:58"
+    },
+    {
+      "id": 100,
+      "slug": "fia-president-holds-mysterious-meeting-with-christian-horner-and-zak-brown-25101617104",
+      "cover_url": "https://anna1994.oss-cn-shenzhen.aliyuncs.com/f1-history/1760604779887-au8r2xb6nw.jpeg",
+      "news_source": "Racingnews365",
+      "title": "F1总裁与霍纳、布朗神秘会面，引发猜测",
+      "summary": "F1总裁本·苏拉耶姆与迈凯伦CEO布朗及前红牛领队霍纳会面，引发对幕后政治及霍纳未来去向的猜测。此次低调会晤的时机与场合耐人寻味，可能涉及F1未来规则与车队关系。",
+      "created_at": "2025-10-16 16:54:08"
+    },
+    {
+      "id": 99,
+      "slug": "lewis-hamilton-submits-new-ferrari-document-amidst-internal-politics-battle-251016161053",
+      "cover_url": "https://anna1994.oss-cn-shenzhen.aliyuncs.com/f1-history/1760604709288-w07o47wyk1d.webp",
+      "news_source": "PlanetF1",
+      "title": "汉密尔顿提交新“文件”给法拉利，直面内部政治斗争",
+      "summary": "汉密尔顿转会法拉利后表现未达预期，正积极提交“文件”推动车队改革，试图克服内部政治障碍，提升赛车性能。他期望将法拉利打造成稳定冠军争夺者，目标是赢得更多世界冠军。",
+      "created_at": "2025-10-16 16:52:49"
+    },
+    {
+      "id": 98,
+      "slug": "ferrari-denies-fred-vasseur-replacement-rumors-amid-christian-horner-speculation-25101615100",
+      "cover_url": "https://anna1994.oss-cn-shenzhen.aliyuncs.com/f1-history/1760604552375-xb44pb09rd.webp",
+      "news_source": "PlanetF1",
+      "title": "法拉利否认瓦塞尔下课传闻，霍纳加盟传言被驳斥",
+      "summary": "法拉利否认了关于车队领队弗雷德·瓦塞尔将被前红牛领队克里斯蒂安·霍纳取代的传闻。尽管本赛季表现不佳，瓦瑟尔已续约，且车队对他的领导充满信心。此举旨在稳定军心，聚焦赛车性能改进，同时霍纳的去向也与法拉利股权结构不符。",
+      "created_at": "2025-10-16 16:49:57"
+    },
+    {
+      "id": 97,
+      "slug": "verstappen-s-feedback-drives-red-bull-s-recent-f1-resurgence-251016151012",
+      "cover_url": "https://anna1994.oss-cn-shenzhen.aliyuncs.com/f1-history/1760604335019-gnoyl7u3p0h.jpeg",
+      "news_source": "Racingnews365",
+      "title": "维斯塔潘的反馈驱动红牛在F1赛场强势复苏",
+      "summary": "前F1车手赫伯特指出，红牛近期的强势复苏得益于对维斯塔潘反馈的高度重视。车队采纳其意见后，已连赢两场，将维斯塔潘重新带入冠军争夺行列，给迈凯伦带来巨大压力。",
+      "created_at": "2025-10-16 16:46:40"
+    },
+    {
+      "id": 96,
+      "slug": "haas-s-harsh-reality-why-upgrades-alone-won-t-save-their-season-251016151036",
+      "cover_url": "https://anna1994.oss-cn-shenzhen.aliyuncs.com/f1-history/1760604263875-145kdizstpr.jpeg",
+      "news_source": "The Race",
+      "title": "哈斯车队的“残酷现实”：仅靠升级无法拯救本赛季",
+      "summary": "哈斯车队面临“残酷现实”：本赛季至今，尽管赛车有潜力，但因执行失误，错失了大量关键积分。车队正努力改造工程和策略团队，并调整对车手的指导，以期在下半赛季改善表现，但最终执行仍取决于车手。",
+      "created_at": "2025-10-16 16:45:16"
+    },
+    {
+      "id": 95,
+      "slug": "f1-sprints-could-be-decisive-in-2025-title-battle-251016141041",
+      "cover_url": "https://anna1994.oss-cn-shenzhen.aliyuncs.com/f1-history/1760604119523-fwp940eth27.jpeg",
+      "news_source": "Sky Sports",
+      "title": "F1冲刺赛或成2025赛季冠军争夺的关键",
+      "summary": "2025赛季F1冠军争夺因最后六场比赛中的三场冲刺赛而加剧。迈凯伦队友皮亚斯特里与诺里斯积分接近，而维斯塔潘也可能抓住机会。冲刺赛额外的积分和紧张赛程将是决定冠军归属的关键。",
+      "created_at": "2025-10-16 16:44:07"
+    },
+    {
+      "id": 94,
+      "slug": "vasseur-reaffirms-trust-with-hamilton-amidst-early-ferrari-struggles-251016131014",
+      "cover_url": "https://anna1994.oss-cn-shenzhen.aliyuncs.com/f1-history/1760603841465-2j18pf1j3xo.jpeg",
+      "news_source": "Racingnews365",
+      "title": "塞尔坚称与汉密尔顿互信未变：法拉利正稳步融合新阶段",
+      "summary": "法拉利领队瓦塞尔重申对刘易斯·汉密尔顿的信任，尽管赛季初车队表现不佳，汉密尔顿也未获胜。双方正专注于整合，并着眼于2026年规则变革。",
+      "created_at": "2025-10-16 16:41:21"
+    },
+    {
+      "id": 93,
+      "slug": "williams-unveils-retro-livery-for-us-grand-prix-celebrating-2002-season-25101681051",
+      "cover_url": "https://anna1994.oss-cn-shenzhen.aliyuncs.com/f1-history/1760572134903-kc0yjcix12d.webp",
+      "news_source": "PlanetF1",
+      "title": "威廉姆斯发布2002赛季致敬版涂装，复古设计亮相美国大奖赛",
+      "summary": "威廉姆斯车队为美国大奖赛推出复古涂装，致敬2002赛季辉煌。新设计融合了经典元素与赞助商Atlassian的合作，旨在激发车迷热情，并预示车队重返巅峰的决心。",
+      "created_at": "2025-10-16 07:49:51"
+    },
+    {
+      "id": 92,
+      "slug": "brad-pitt-not-impressed-by-lewis-hamilton-s-f1-movie-age-comment-25101671047",
+      "cover_url": "https://anna1994.oss-cn-shenzhen.aliyuncs.com/f1-history/1760571995541-f0vjo3bmpxa.jpeg",
+      "news_source": "motorsport",
+      "title": "汉密尔顿“否决”皮特角色设定 让F1电影更真实也更成功",
+      "summary": "电影《F1》剧本因刘易斯·汉密尔顿建议重写：他认为布拉德·皮特太老不适合演现役车手，角色改为退役车手复出。该片以真实性获成功，票房创纪录，有望推续集。",
+      "created_at": "2025-10-16 07:48:32"
+    },
+    {
+      "id": 91,
+      "slug": "2025-united-states-grand-prix-what-to-expect-in-austin-25101671026",
+      "cover_url": "https://anna1994.oss-cn-shenzhen.aliyuncs.com/f1-history/1760571900292-f34ko6pj5od.jpeg",
+      "news_source": "FIA",
+      "title": "COTA赛前气氛高涨：拉塞尔胜利点燃梅赛德斯士气，美国站或再掀波澜",
+      "summary": "2025年美国大奖赛即将在奥斯汀举行。新加坡站拉塞尔的意外胜利为比赛增添了不确定性。梅赛德斯和迈凯伦已锁定车队总冠军，焦点将转向车手争夺。COTA赛道将考验车队适应能力，红牛能否重拾统治地位引人关注。",
+      "created_at": "2025-10-16 07:46:11"
+    },
+    {
+      "id": 90,
+      "slug": "toto-wolff-initially-hated-drive-to-survive-here-s-why-he-changed-his-mind-25101671049",
+      "cover_url": "https://anna1994.oss-cn-shenzhen.aliyuncs.com/f1-history/1760571783627-z6nn67dhbh.jpeg",
+      "news_source": "motorsport",
+      "title": "从质疑到拥抱：托托·沃尔夫如何被《极速求生》改变",
+      "summary": "Toto Wolff 最初因过度戏剧化而厌恶 Netflix 的 F1 纪录片《Drive to Survive》。但看到朋友的孩子因该剧成为车迷后，他改变了看法，认识到其吸引新观众的巨大力量，并承认了该剧对 F1 全球推广的重要性。",
+      "created_at": "2025-10-16 07:43:57"
+    },
+    {
+      "id": 89,
+      "slug": "mclaren-unveils-google-gemini-inspired-us-gp-livery-2510166105",
+      "cover_url": "https://anna1994.oss-cn-shenzhen.aliyuncs.com/f1-history/1760571710482-d9knc2ii5a.jpeg",
+      "news_source": "Racingnews365",
+      "title": "迈凯伦推出Gemini主题特别涂装 AI元素亮相美国大奖赛",
+      "summary": "迈凯伦为美国大奖赛推出特别涂装，灵感来自谷歌Gemini AI。此举突显了与谷歌的合作，是F1商业策略的一部分。该设计使迈凯伦成为第四支推出独特涂装的车队，旨在吸引粉丝并增强品牌形象，预示着技术合作与赛车运动的融合。",
+      "created_at": "2025-10-16 07:42:44"
+    },
+    {
+      "id": 88,
+      "slug": "apple-s-eddy-cue-on-f1-broadcasting-rights-we-do-love-f1-25101651046",
+      "cover_url": "https://anna1994.oss-cn-shenzhen.aliyuncs.com/f1-history/1760571615314-ymvelkcufw9.jpeg",
+      "news_source": "motorsport",
+      "title": "苹果高管谈F1转播权：我们非常热爱F1",
+      "summary": "苹果高管Eddy Cue对F1在美转播权表现出浓厚兴趣，并称“我们非常热爱F1”。电影《F1：狂飙飞车》的巨大成功进一步推动了这一潜在合作。若交易达成，有望重塑美国观众的F1观赛体验。",
+      "created_at": "2025-10-16 07:41:26"
+    },
+    {
+      "id": 87,
+      "slug": "aston-martin-unveils-science-themed-livery-for-united-states-gp-25101651018",
+      "cover_url": "https://anna1994.oss-cn-shenzhen.aliyuncs.com/f1-history/1760571541059-x1p95h7ir4n.jpeg",
+      "news_source": "Racingnews365",
+      "title": "阿斯顿·马丁在美国站亮相科学主题涂装 向工程创新致敬",
+      "summary": "阿斯顿·马丁为美国大奖赛推出创新科学主题涂装，展示F1工程智慧，并与著名物理学家合作。此举意在提升品牌形象，吸引人才，并与车迷建立更深联系。",
+      "created_at": "2025-10-16 07:39:53"
+    },
+    {
+      "id": 86,
+      "slug": "apple-s-eddy-cue-f1-s-toto-wolff-now-a-movie-star-in-nyc-25101651047",
+      "cover_url": "https://anna1994.oss-cn-shenzhen.aliyuncs.com/f1-history/1760571449228-2ay929d03ev.jpeg",
+      "news_source": "motorsport",
+      "title": "苹果高管：F1车队老板沃尔夫现已成纽约“电影明星”",
+      "summary": "苹果高管埃迪·库指出，F1在美国人气飙升，梅赛德斯领队沃尔夫已成纽约“明星”。F1通过《极速求生》等策略吸引新粉丝，市场潜力巨大，苹果可能斥资逾1.5亿美元收购转播权，有望进一步推动其在美国的发展。",
+      "created_at": "2025-10-16 07:38:52"
+    },
+    {
+      "id": 85,
+      "slug": "red-bull-hesitates-on-signing-highly-rated-f2-driver-alex-dunne-25101621017",
+      "cover_url": "https://anna1994.oss-cn-shenzhen.aliyuncs.com/f1-history/1760549814332-bs7rh7opzg8.jpeg",
+      "news_source": "Racingnews365",
+      "title": "红牛对签约F2新星亚历克斯·邓恩犹豫不决：速度惊人，成熟度存疑",
+      "summary": "红牛对签约F2车手亚历克斯·邓恩态度犹豫。尽管邓恩表现出色，但其10个罚分及突然离开迈凯伦的背景，引发车队对其稳定性和成熟度的担忧，F1之路面临考验。",
+      "created_at": "2025-10-16 01:36:59"
+    },
+    {
+      "id": 84,
+      "slug": "racing-bulls-reveal-special-livery-for-united-states-gp-with-shaboozey-collaboration-25101621014",
+      "cover_url": "https://anna1994.oss-cn-shenzhen.aliyuncs.com/f1-history/1760548697246-fx7yyvjxioe.jpg",
+      "news_source": "Racingnews365",
+      "title": "RB 车队携艺人 Shaboozey 推出珠光黑琥珀龟甲纹特别涂装亮相美国站",
+      "summary": "RB车队为美国大奖赛推出Shaboozey联名特别涂装，采用“珠光黑琥珀龟甲纹”。此举展现F1跨界融合，吸引年轻观众，并深化与Cash App的合作，体现车队创新的商业策略。",
+      "created_at": "2025-10-16 01:10:09"
+    },
+    {
       "id": 83,
       "slug": "mercedes-contract-delay-for-russell-sparks-instability-warning-25101611012",
       "cover_url": "https://anna1994.oss-cn-shenzhen.aliyuncs.com/f1-history/1760546358270-dvul8onthl5.jpeg",
