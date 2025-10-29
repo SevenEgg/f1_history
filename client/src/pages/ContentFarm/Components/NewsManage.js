@@ -318,6 +318,11 @@ const NewsManage = ({ visible, onClose, newsData, onPublish, onStatusUpdate }) =
                     </div>
 
                     <Divider />
+                    
+                    <div style={{ marginBottom: 16 }}>
+                        <h4>来源</h4>
+                        <p>{newsDetail?.link_url || '未知来源'}</p>
+                    </div>
 
                     <div style={{ marginBottom: 16 }}>
                         <h4>摘要</h4>
