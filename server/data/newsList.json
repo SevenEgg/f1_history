@@ -1,6 +1,771 @@
 {
   "data": [
     {
+      "id": 469,
+      "slug": "audi-offers-first-major-hint-on-2026-f1-car-concept-2511619115",
+      "cover_url": "https://anna1994.oss-cn-shenzhen.aliyuncs.com/f1-history/1762429247743-btya46216zs.jpeg",
+      "news_source": "GP Blog",
+      "title": "奥迪首次披露2026年F1赛车概念",
+      "summary": "奥迪首次透露2026年F1赛车涂装概念将于11月12日发布，实车预计2026年1月亮相。新动力单元包含重要电动组件，对工程师是巨大挑战。奥迪此举旨在展示工程实力，与红牛一同开启F1新时代。",
+      "created_at": "2025-11-06 19:40:56"
+    },
+    {
+      "id": 468,
+      "slug": "lando-norris-s-self-awareness-a-super-strength-2511618113",
+      "cover_url": "https://anna1994.oss-cn-shenzhen.aliyuncs.com/f1-history/1762429100901-gfwrmg9sh9n.jpeg",
+      "news_source": "GP Blog",
+      "title": "诺里斯的自我认知：一项“超级力量”",
+      "summary": "雅克·维伦纽夫称赞兰多·诺里斯勇于承认错误的“自我认知”是其“超级力量”，这促使他不断成长和提升。这种特质在高压F1运动中尤为宝贵，也与队友皮亚斯特里在近期表现上的差距形成对比，但被归结为个人适应性而非阴谋。",
+      "created_at": "2025-11-06 19:38:37"
+    },
+    {
+      "id": 467,
+      "slug": "hamilton-to-honor-senna-s-legacy-at-brazilian-gp-with-ferrari-themed-helmet-25116171142",
+      "cover_url": "https://anna1994.oss-cn-shenzhen.aliyuncs.com/f1-history/1762428896957-hdcohiyq2s4.jpeg",
+      "news_source": "GP Blog",
+      "title": "汉密尔顿在巴西实现塞纳与法拉利的梦幻组合",
+      "summary": "汉密尔顿将在其转战法拉利前，于巴西大奖赛佩戴塞纳主题头盔，向传奇致敬。此举融合了两大传奇的梦想与历史，意义非凡，预示着他加盟跃马将承载深厚的情感与传承。",
+      "created_at": "2025-11-06 19:35:08"
+    },
+    {
+      "id": 466,
+      "slug": "jos-verstappen-urges-piastri-to-slam-his-fist-on-the-table-at-mclaren-25116161145",
+      "cover_url": "https://anna1994.oss-cn-shenzhen.aliyuncs.com/f1-history/1762428521341-dct4n341hmi.jpeg",
+      "news_source": "GP Blog",
+      "title": "约斯敦促皮亚斯特在迈凯伦“拍桌子”",
+      "summary": "约斯·维斯塔潘建议皮亚斯特在诺里斯表现强势、存在优待猜测的情况下，应在迈凯伦果断发声，这对他的职业生涯至关重要。",
+      "created_at": "2025-11-06 19:28:58"
+    },
+    {
+      "id": 465,
+      "slug": "steiner-ferrari-must-give-vasseur-until-2026-for-true-test-2511615112",
+      "cover_url": "https://anna1994.oss-cn-shenzhen.aliyuncs.com/f1-history/1762428202421-dd9wfl7hkq.jpeg",
+      "news_source": "Racingnews365",
+      "title": "施泰纳：法拉利应给予瓦塞尔至 2026 年的考验期",
+      "summary": "前 F1 领队施泰纳建议法拉利给予瓦塞尔至 2026 年的领导期，认为在此之前评估其成效为时过早。他强调，在 2026 年新规则下，瓦塞尔需要时间来落实其愿景并重振车队，稳定是关键。",
+      "created_at": "2025-11-06 19:23:45"
+    },
+    {
+      "id": 464,
+      "slug": "sebastian-vettel-set-for-f1-paddock-return-at-brazilian-gp-25116161145",
+      "cover_url": "https://anna1994.oss-cn-shenzhen.aliyuncs.com/f1-history/1762427941875-mgqha9l55ke.jpeg",
+      "news_source": "GP Blog",
+      "title": "不容错过：维特尔本周末将在巴西重返围场",
+      "summary": "四届F1世界冠军塞巴斯蒂安·维特尔将重返围场，亮相巴西大奖赛。尽管无意复出赛道，他将与车迷互动，并继续推动环保事业。本周末，英特拉格斯还将迎来激烈的年度总冠军争夺战及冲刺赛。",
+      "created_at": "2025-11-06 19:19:03"
+    },
+    {
+      "id": 463,
+      "slug": "mclaren-investigates-piastri-s-f1-performance-dip-links-it-to-low-grip-tracks-2511614114",
+      "cover_url": "https://anna1994.oss-cn-shenzhen.aliyuncs.com/f1-history/1762427674627-1i32u4hyq1g.jpeg",
+      "news_source": "Racingnews365",
+      "title": "迈凯伦解析皮亚斯特里状态下滑背后的原因",
+      "summary": "迈凯伦车队领队斯特拉分析，皮亚斯特里近来F1表现下滑，疑与低抓地力赛道有关。赛车调校与驾驶风格调整后，车队期待他在剩余比赛中找回状态，助力车队争冠。",
+      "created_at": "2025-11-06 19:15:17"
+    },
+    {
+      "id": 462,
+      "slug": "valtteri-bottas-reflects-on-hard-mercedes-reserve-role-after-f1-exit-251163117",
+      "cover_url": "https://anna1994.oss-cn-shenzhen.aliyuncs.com/f1-history/1762388882795-vaf17c60p4d.jpeg",
+      "news_source": "Racingnews365",
+      "title": "博塔斯坦诚梅赛德斯替补车手角色困境",
+      "summary": "瓦尔特利·博塔斯坦承，作为梅赛德斯替补车手度过2024赛季“很艰难”，远离赛道令他倍感煎熬。尽管如此，他为2026年加盟凯迪拉克做好了准备，并认为这段经历让他更珍惜重返赛场的机会。",
+      "created_at": "2025-11-06 08:28:38"
+    },
+    {
+      "id": 461,
+      "slug": "mclaren-prioritizes-fairness-over-favoritism-even-if-it-means-losing-to-verstappen-2511611116",
+      "cover_url": "https://anna1994.oss-cn-shenzhen.aliyuncs.com/f1-history/1762388604090-z3hi209v8ls.jpeg",
+      "news_source": "The Race",
+      "title": "迈凯伦宁愿重蹈2007年覆辙也不愿偏袒单一车手",
+      "summary": "迈凯伦承诺车手公平，宁愿输给维斯塔潘也不偏袒诺里斯或皮亚斯特里，重申了2007年的教训。",
+      "created_at": "2025-11-06 08:23:36"
+    },
+    {
+      "id": 460,
+      "slug": "yuki-tsunoda-stranded-in-brazil-airport-goes-viral-251163110",
+      "cover_url": "https://anna1994.oss-cn-shenzhen.aliyuncs.com/f1-history/1762388450671-9ls0foyb25n.jpeg",
+      "news_source": "GP Blog",
+      "title": "角田在巴西机场滞留 意外经历引发网络热议",
+      "summary": "F1车手角田裕毅在巴西圣保罗机场遭遇罕见物流失误，因接机人员缺席而滞留，相关照片视频引发网络热议。尽管有此小插曲，他仍专注于比赛，并期待利用当地天气优势。",
+      "created_at": "2025-11-06 08:20:51"
+    },
+    {
+      "id": 459,
+      "slug": "lewis-hamilton-s-performance-engineer-departs-ferrari-for-sportscars-2511601112",
+      "cover_url": "https://anna1994.oss-cn-shenzhen.aliyuncs.com/f1-history/1762388253051-modgotuhlyg.jpeg",
+      "news_source": "Racingnews365",
+      "title": "汉密尔顿遭遇关键法拉利人员流失，工程师离队",
+      "summary": "汉密尔顿的性能工程师里卡多·科尔特在效力11年后离开法拉利，转战澳大利亚超级跑车赛。他的离职给汉密尔顿2025年的融入带来挑战。",
+      "created_at": "2025-11-06 08:17:58"
+    },
+    {
+      "id": 458,
+      "slug": "f1-legend-bruce-mclaren-s-grave-vandalized-in-new-zealand-25115201113",
+      "cover_url": "https://anna1994.oss-cn-shenzhen.aliyuncs.com/f1-history/1762342682269-z9s7n70328f.jpeg",
+      "news_source": "Racingnews365",
+      "title": "F1传奇布鲁斯·迈凯伦墓地在新西兰遭破坏",
+      "summary": "F1传奇布鲁斯·迈凯伦及其家人的墓地在新西兰遭破坏，墓碑被泼金漆、粘玩具车。修复工作正在进行，信托基金会表示“无言以对”，事件引发对保护历史遗产的关注。",
+      "created_at": "2025-11-05 19:38:23"
+    },
+    {
+      "id": 457,
+      "slug": "max-verstappen-helps-launch-f1-s-first-season-ticket-prize-25115181116",
+      "cover_url": "https://anna1994.oss-cn-shenzhen.aliyuncs.com/f1-history/1762342419788-8tb8vrf0ufb.jpeg",
+      "news_source": "Racingnews365",
+      "title": "维斯塔潘助 F1 推出史无前例的“赛季通行证”大奖",
+      "summary": "F1 与 Heineken 续签十年合作，推出史无前例的“赛季通行证”大奖，覆盖所有大奖赛的机票和酒店。此举旨在革新车迷体验，首位获奖者 Brandon Burgess 因其宏大计划备受瞩目。",
+      "created_at": "2025-11-05 19:34:01"
+    },
+    {
+      "id": 456,
+      "slug": "ferrari-ceo-admits-disappointment-with-2025-f1-season-performance-25115171156",
+      "cover_url": "https://anna1994.oss-cn-shenzhen.aliyuncs.com/f1-history/1762342176815-y4k9xty07d.jpeg",
+      "news_source": "GP Blog",
+      "title": "法拉利CEO承认2025赛季F1表现令人失望",
+      "summary": "法拉利CEO维尼亚承认2025赛季F1表现不如预期，至今未获一胜。车队正面临技术挑战，特别是后悬挂问题，并已计划在2026年采用新规则进行重大变革。",
+      "created_at": "2025-11-05 19:30:15"
+    },
+    {
+      "id": 455,
+      "slug": "norris-acknowledges-verstappen-threat-as-f1-title-race-nears-climax-25115161112",
+      "cover_url": "https://anna1994.oss-cn-shenzhen.aliyuncs.com/f1-history/1762341891224-ji8253spwcl.jpeg",
+      "news_source": "Racingnews365",
+      "title": "冠军争夺战白热化，诺里斯坦承维斯塔潘威胁",
+      "summary": "诺里斯坦承面对状态火热的维斯塔潘，迈凯伦“无能为力”。尽管迈凯伦进步迅速，但维斯塔潘凭借经验和稳定性正迅速追近积分，F1冠军争夺战愈发激烈。",
+      "created_at": "2025-11-05 19:25:22"
+    },
+    {
+      "id": 454,
+      "slug": "rainy-conditions-may-give-verstappen-an-edge-in-brazil-25115171153",
+      "cover_url": "https://anna1994.oss-cn-shenzhen.aliyuncs.com/f1-history/1762341674456-2zp6px1pm3j.jpeg",
+      "news_source": "GP Blog",
+      "title": "巴西站雨水或为维斯塔潘带来优势",
+      "summary": "巴西圣保罗站天气预报显示将有雨水，这可能成为马克斯·维斯塔潘的一大优势。他在雨地赛车方面有着惊人记录，曾多次在英特拉格斯赛道克服困难取得胜利。尽管迈凯伦近期表现强劲，但湿地环境往往能放大车手个人能力，为维斯塔潘创造了再次证明自己的机会。",
+      "created_at": "2025-11-05 19:21:22"
+    },
+    {
+      "id": 453,
+      "slug": "lewis-hamilton-s-podium-drought-palmer-sees-mojo-back-25115151114",
+      "cover_url": "https://anna1994.oss-cn-shenzhen.aliyuncs.com/f1-history/1762340410303-wtyyoydm4u.jpeg",
+      "news_source": "Racingnews365",
+      "title": "帕尔默：汉密尔顿状态回升，有望结束F1领奖台荒",
+      "summary": "乔利恩·帕尔默认为刘易斯·汉密尔顿已找回“比赛感觉”，在转会法拉利后，虽然尚未登上领奖台，但近期表现亮眼。巴西大奖赛有望成为他本赛季的转折点。",
+      "created_at": "2025-11-05 19:06:54"
+    },
+    {
+      "id": 452,
+      "slug": "f1-s-sprint-race-storytelling-problem-25115151122",
+      "cover_url": "https://anna1994.oss-cn-shenzhen.aliyuncs.com/f1-history/1762339693673-q55l0dxdju.jpeg",
+      "news_source": "The Race",
+      "title": "F1冲刺赛的症结不在赛制本身",
+      "summary": "F1冲刺赛因缺乏故事叙述而效果不彰，赛后车手采访和媒体报道不足，让粉丝难以体会其重要性。需改进媒体策略，扩大媒体区或增加独立发布会，提升参与感。",
+      "created_at": "2025-11-05 18:48:26"
+    },
+    {
+      "id": 451,
+      "slug": "rain-threat-looms-over-interlagos-set-to-shake-up-f1-title-fight-25115161148",
+      "cover_url": "https://anna1994.oss-cn-shenzhen.aliyuncs.com/f1-history/1762339088157-8bnljmm2bsu.jpeg",
+      "news_source": "GP Blog",
+      "title": "雨水威胁巴西站，或将颠覆F1冠军争夺",
+      "summary": "圣保罗大奖赛恐遇强降雨。诺里斯墨西哥站告捷后，维斯塔潘紧追皮亚斯特里，积分榜竞争白热化。雨水将是圣保罗站关键变数，考验车队策略与车手应变能力，或重写冠军格局。",
+      "created_at": "2025-11-05 18:38:13"
+    },
+    {
+      "id": 450,
+      "slug": "ralf-schumacher-predicts-verstappen-s-return-to-winning-form-in-brazil-25115151149",
+      "cover_url": "https://anna1994.oss-cn-shenzhen.aliyuncs.com/f1-history/1762338772967-ps7pagqxyeb.jpeg",
+      "news_source": "GP Blog",
+      "title": "拉尔夫预测维斯塔潘有望在巴西站重拾胜势",
+      "summary": "拉尔夫预测维斯塔潘有望在巴西站重拾胜势。尽管红牛湿地表现不稳定，但车手积分清零心理压力减小。竞争加剧，法拉利、梅赛德斯实力不容小觑。维斯塔潘落后榜首36分，巴西站或成关键。",
+      "created_at": "2025-11-05 18:33:26"
+    },
+    {
+      "id": 449,
+      "slug": "red-bull-s-incredible-mood-shift-under-laurent-mekies-2511531114",
+      "cover_url": "https://anna1994.oss-cn-shenzhen.aliyuncs.com/f1-history/1762301032304-w88hz76njbd.jpeg",
+      "news_source": "Racingnews365",
+      "title": "梅基斯执掌下红牛车队展现“惊人”转变",
+      "summary": "红牛车队在劳伦特·梅基斯接任领队后，士气与表现均有显著提升。关键升级带来的性能突破，使车队重拾竞争力，有望在赛季末段继续发力争冠。",
+      "created_at": "2025-11-05 08:04:24"
+    },
+    {
+      "id": 448,
+      "slug": "aston-martin-s-quest-for-next-gen-f1-mechanics-25114211153",
+      "cover_url": "https://anna1994.oss-cn-shenzhen.aliyuncs.com/f1-history/1762287478523-93lhoejubpl.jpeg",
+      "news_source": "motorsport",
+      "title": "阿斯顿·马丁：为F1下一代技师播下希望",
+      "summary": "阿斯顿·马丁携手瓦尔沃林启动“未来技师培养计划”，投资百万美元在全球范围内为F1及汽车行业培养逾万名技术人才，以应对日益严峻的技术工人短缺，并为年轻人搭建通往赛事的桥梁。",
+      "created_at": "2025-11-05 04:17:59"
+    },
+    {
+      "id": 447,
+      "slug": "lando-norris-reduces-data-reliance-to-outpace-oscar-piastri-251152110",
+      "cover_url": "https://anna1994.oss-cn-shenzhen.aliyuncs.com/f1-history/1762287238268-6sttkc6h74u.jpeg",
+      "news_source": "motorsport",
+      "title": "诺里斯精简赛车数据，状态回升超越皮亚斯特",
+      "summary": "诺里斯在F1排位赛中减少方向盘数据依赖，专注赛道感受，状态回升，重夺对队友皮亚斯特的领先。此举显示对自身直觉的信任，可能引领新趋势。",
+      "created_at": "2025-11-05 04:14:11"
+    },
+    {
+      "id": 446,
+      "slug": "ayrton-senna-and-mclaren-an-unbreakable-bond-25114231113",
+      "cover_url": "https://anna1994.oss-cn-shenzhen.aliyuncs.com/f1-history/1762286835725-ahdktt7yksb.jpeg",
+      "news_source": "GP Blog",
+      "title": "塞纳与迈凯伦：一段永不磨灭的羁绊",
+      "summary": "埃尔顿·塞纳与迈凯伦车队的情谊深厚，三十年后仍是F1界传奇。他在1988年加盟迈凯伦，不仅成就了个人职业生涯巅峰，其对卓越的不懈追求更深刻影响了车队的文化与精神，巩固了其顶级制造商地位，并激励了无数后人，至今仍是F1界不可磨灭的标志。",
+      "created_at": "2025-11-05 04:07:24"
+    },
+    {
+      "id": 445,
+      "slug": "bernie-ecclestone-criticizes-fred-vasseur-as-too-weak-for-ferrari-25114221133",
+      "cover_url": "https://anna1994.oss-cn-shenzhen.aliyuncs.com/f1-history/1762285666702-jhx97ufaisq.jpeg",
+      "news_source": "Racingnews365",
+      "title": "伯尼：瓦塞尔不够强硬，法拉利需要独裁者",
+      "summary": "前F1掌门人埃克莱斯顿批评法拉利领队瓦塞尔“太软弱”，认为车队需要“独裁者”领导。他质疑了汉密尔顿转会法拉利的动机，称其为“营销项目”。尽管瓦塞尔得到车手和主席支持，但压力依然巨大。",
+      "created_at": "2025-11-05 03:48:24"
+    },
+    {
+      "id": 444,
+      "slug": "mclaren-s-pato-o-ward-expects-colton-herta-in-f1-by-2027-25114201116",
+      "cover_url": "https://anna1994.oss-cn-shenzhen.aliyuncs.com/f1-history/1762256868240-klut9y8y3vr.jpeg",
+      "news_source": "Racingnews365",
+      "title": "奥沃德：科尔顿·赫塔有望2027年进入F1",
+      "summary": "迈凯伦车手奥沃德认为，科尔顿·赫塔具备F1实力，预计2027年将有机会。赫塔转战F2，加入凯迪拉克，力争F1席位。印地卡赛也支持他。",
+      "created_at": "2025-11-04 19:48:35"
+    },
+    {
+      "id": 443,
+      "slug": "bernie-ecclestone-backs-special-verstappen-for-2025-f1-title-25114191154",
+      "cover_url": "https://anna1994.oss-cn-shenzhen.aliyuncs.com/f1-history/1762256359928-qa1uxm97eqd.jpeg",
+      "news_source": "GP Blog",
+      "title": "埃克莱斯顿看好维斯塔潘争夺2025年总冠军",
+      "summary": "F1传奇人物埃克莱斯顿看好维斯塔潘争夺2025年F1总冠军，称他“特别”且赛车强大。尽管积分落后，但他的观点以及迈凯伦内部围绕“偏袒”的猜测，为收官战增添了看点。",
+      "created_at": "2025-11-04 19:39:57"
+    },
+    {
+      "id": 442,
+      "slug": "valtteri-bottas-hopes-lewis-hamilton-finds-old-form-at-ferrari-25114171116",
+      "cover_url": "https://anna1994.oss-cn-shenzhen.aliyuncs.com/f1-history/1762255773106-1871e07kc3l.jpeg",
+      "news_source": "Racingnews365",
+      "title": "博塔斯坚信汉密尔顿仍能重拾昔日巅峰状态",
+      "summary": "博塔斯看好汉密尔顿在法拉利第二个赛季的表现，认为他会重拾巅峰状态。他指出转会初期适应困难，但经过一年磨练和2026年新规可能带来的契机，汉密尔顿有望重返顶尖。",
+      "created_at": "2025-11-04 19:30:21"
+    },
+    {
+      "id": 441,
+      "slug": "mclaren-to-address-lando-norris-s-one-lap-confidence-ahead-of-new-f1-era-25114151114",
+      "cover_url": "https://anna1994.oss-cn-shenzhen.aliyuncs.com/f1-history/1762255129702-c03ml8jrh4h.jpeg",
+      "news_source": "Racingnews365",
+      "title": "F1新时代来临：迈凯伦将解决诺里斯的单圈信心问题",
+      "summary": "卫冕车手诺里斯正努力提升排位赛单圈信心，以应对2026年F1新规则。他承认赛季初的细微失误影响表现，迈凯伦正与其合作改进。队友皮亚斯特紧随其后。此举关乎迈凯伦争冠前景。",
+      "created_at": "2025-11-04 19:19:04"
+    },
+    {
+      "id": 440,
+      "slug": "red-bull-acknowledges-price-to-pay-for-continued-rb21-development-amid-2026-focus-25114141118",
+      "cover_url": "https://anna1994.oss-cn-shenzhen.aliyuncs.com/f1-history/1762254677496-wkcm9xydtx.jpeg",
+      "news_source": "Racingnews365",
+      "title": "红牛承认持续开发RB21有“代价”，同时聚焦2026年规则",
+      "summary": "红牛车队在面临2026年规则大改之际，仍坚持开发RB21赛车。车队主管梅基斯承认此举有“代价”，但认为长期收益和对未来设计的验证是值得的。尽管近期表现出现困惑，红牛仍致力于平衡当前争冠与未来规划。",
+      "created_at": "2025-11-04 19:12:25"
+    },
+    {
+      "id": 439,
+      "slug": "williams-unveils-rebrand-for-2026-f1-season-revives-classic-w-logo-25113231119",
+      "cover_url": "https://anna1994.oss-cn-shenzhen.aliyuncs.com/f1-history/1762185037132-azvz04gr107.jpeg",
+      "news_source": "motorsport",
+      "title": "威廉姆斯车队2026赛季重塑品牌，经典“W”标志回归",
+      "summary": "威廉姆斯车队宣布2026赛季将进行品牌重塑，经典“W”标志回归，官方名称更新为“Atlassian Williams F1 Team”。此举旨在结合历史传承与未来发展，重振车队精神，并吸引新老车迷。（124字）",
+      "created_at": "2025-11-03 23:51:26"
+    },
+    {
+      "id": 438,
+      "slug": "aston-martin-declares-relentless-pursuit-of-f1-world-championship-25113221110",
+      "cover_url": "https://anna1994.oss-cn-shenzhen.aliyuncs.com/f1-history/1762184901127-owp4h9tqs7f.jpeg",
+      "news_source": "Racingnews365",
+      "title": "阿斯顿·马丁誓言“不懈追求”F1世界冠军",
+      "summary": "阿斯顿·马丁老板劳伦斯·斯特罗尔重申其赢得F1世界冠军的“不懈”承诺。车队通过巨额投资新建工厂、引进顶尖人才（如纽维）并与本田达成2026年引擎合作，正为实现长期目标奠定坚实基础，准备迎接新规则时代的挑战。",
+      "created_at": "2025-11-03 23:48:31"
+    },
+    {
+      "id": 437,
+      "slug": "alpine-driver-drama-heads-for-2026-resolution-25113211118",
+      "cover_url": "https://anna1994.oss-cn-shenzhen.aliyuncs.com/f1-history/1762184715998-axyaed04yto.jpeg",
+      "news_source": "The Race",
+      "title": "Alpine 2026年车手尘埃落定：科拉平托留任，稳定性回归",
+      "summary": "Alpine车队确认弗朗科·科拉平托将在2026年留任，为车队注入急需的稳定性。此举得益于其近期表现提升及赞助支持。同时，这也意味着杰克·杜汉的Alpine F1之路基本走到尽头，他将寻求其他发展机会。",
+      "created_at": "2025-11-03 23:45:21"
+    },
+    {
+      "id": 436,
+      "slug": "hamilton-and-engineer-adami-s-chemistry-under-scrutiny-25113211117",
+      "cover_url": "https://anna1994.oss-cn-shenzhen.aliyuncs.com/f1-history/1762183824304-s7puuw5oemp.jpeg",
+      "news_source": "GP Blog",
+      "title": "汉密尔顿与工程师阿达米受审视：默契不足成隐忧",
+      "summary": "荷兰评论员多恩博斯质疑汉密尔顿与工程师阿达米的“化学反应”，认为沟通不畅影响了其表现，并引用墨西哥大奖赛罚时事件为例。此前的搭档默契非凡，当前关系审视凸显了人机协同对梅赛德斯重返巅峰的重要性。",
+      "created_at": "2025-11-03 23:32:51"
+    },
+    {
+      "id": 435,
+      "slug": "leclerc-spends-big-on-alexandra-s-engagement-ring-25113211116",
+      "cover_url": "https://anna1994.oss-cn-shenzhen.aliyuncs.com/f1-history/1762183555961-jcy4fwjz7o.jpeg",
+      "news_source": "GP Blog",
+      "title": "勒克莱尔为未婚妻豪掷千金购订婚戒指，价值超50万美元",
+      "summary": "F1车手查尔斯·勒克莱尔被曝为其未婚妻亚历山德拉购买了一枚价值超50万美元的订婚戒指。",
+      "created_at": "2025-11-03 23:26:12"
+    },
+    {
+      "id": 434,
+      "slug": "f1-responds-to-alonso-s-mexican-gp-radio-complaints-25113211126",
+      "cover_url": "https://anna1994.oss-cn-shenzhen.aliyuncs.com/f1-history/1762183190112-5qm1ocvk69y.jpeg",
+      "news_source": "GP Blog",
+      "title": "F1官方回应阿隆索墨西哥站无线电抱怨",
+      "summary": "F1赛事转播总监迪恩·洛克回应了阿隆索在墨西哥站对车手抄近1号弯的抱怨。他强调F1致力于公平准确地叙事，不会成为车手的“传声筒”，并将继续编辑无线电内容以服务于娱乐和新闻目标。",
+      "created_at": "2025-11-03 23:21:24"
+    },
+    {
+      "id": 433,
+      "slug": "lando-norris-relaxed-demeanor-signals-major-shift-in-title-pursuit-2511319115",
+      "cover_url": "https://anna1994.oss-cn-shenzhen.aliyuncs.com/f1-history/1762182666675-wa7eib7xcd.jpeg",
+      "news_source": "Racingnews365",
+      "title": "诺里斯的放松心态预示着冠军争夺的重大转变",
+      "summary": "兰多·诺里斯近期表现出前所未有的放松，前F1车手认为这是他争夺总冠军的关键优势。他在逆转劣势后登上积分榜首，展现了强大的心理素质和赛车竞争力，预示着他有机会冲击年度冠军。",
+      "created_at": "2025-11-03 23:11:36"
+    },
+    {
+      "id": 432,
+      "slug": "is-pole-position-the-key-to-the-2025-f1-title-25113191151",
+      "cover_url": "https://anna1994.oss-cn-shenzhen.aliyuncs.com/f1-history/1762164500508-12ew6c9pkvgr.jpeg",
+      "news_source": "motorsport",
+      "title": "2025 F1年度总冠军争夺：杆位是否是决定性因素？",
+      "summary": "2025 F1赛季中，杆位获胜率高达70%，创十年新高。这归因于赛车空气动力学和超车困难。尽管排位赛至关重要，但轮胎管理、车手表现及比赛策略仍是决定年度总冠军归属的关键因素。",
+      "created_at": "2025-11-03 18:08:49"
+    },
+    {
+      "id": 431,
+      "slug": "rain-anticipated-to-play-key-role-in-brazilian-gp-2511316115",
+      "cover_url": "https://anna1994.oss-cn-shenzhen.aliyuncs.com/f1-history/1762161985050-btzjrn4iv2m.jpeg",
+      "news_source": "GP Blog",
+      "title": "巴西大奖赛：雨水或成关键角色",
+      "summary": "巴西大奖赛周末预计将受雨水影响。周六降雨概率高达73%，可能影响冲刺赛和排位赛。周日雨势虽减弱，但仍可能影响正赛。历史表明，英特拉格斯雨战充满变数，将考验车手技术，有望带来精彩赛事。",
+      "created_at": "2025-11-03 17:26:51"
+    },
+    {
+      "id": 430,
+      "slug": "lewis-hamilton-dismisses-distraction-claims-emphasizing-off-track-ventures-fuel-f1-focus-2511391145",
+      "cover_url": "https://anna1994.oss-cn-shenzhen.aliyuncs.com/f1-history/1762141463049-eh1zn261cbg.jpeg",
+      "news_source": "motorsport",
+      "title": "汉密尔顿驳斥“分心”论：场外事业助推赛道专注",
+      "summary": "汉密尔顿驳斥场外事业是分心之说，认为这些多元化活动（投资、时尚、基金会等）能提供平衡与灵感，助其提升赛道表现。",
+      "created_at": "2025-11-03 11:44:43"
+    },
+    {
+      "id": 429,
+      "slug": "rumor-ferrari-unlikely-to-renew-hamilton-s-contract-for-2027-2511331142",
+      "cover_url": "https://anna1994.oss-cn-shenzhen.aliyuncs.com/f1-history/1762112864706-6inolx5emr.jpeg",
+      "news_source": "GP Blog",
+      "title": "传闻：法拉利2027赛季恐难与汉密尔顿续约",
+      "summary": "传闻称，由于汉密尔顿在法拉利的初赛季表现不佳，车队可能不会与这位七届世界冠军续约至2027年。尽管他面临适应新车和车队挑战，但近期表现已见起色。2026年新规将是检验双方合作的关键。",
+      "created_at": "2025-11-03 03:47:58"
+    },
+    {
+      "id": 428,
+      "slug": "the-unbreakable-f1-record-100-points-in-a-season-2511222119",
+      "cover_url": "https://anna1994.oss-cn-shenzhen.aliyuncs.com/f1-history/1762112506220-0zuadjhy0nyh.jpeg",
+      "news_source": "Racingnews365",
+      "title": "F1史上最强纪录：赛季100%积分",
+      "summary": "F1早期采用“舍去分数”规则，造就了阿尔贝托·阿斯卡里（1952年）和吉姆·克拉克（1963、1965年）赛季100%积分的伟大纪录。现代F1积分系统下，这一成就已不可能实现，两位传奇的车迷神话将永载史册。",
+      "created_at": "2025-11-03 03:42:02"
+    },
+    {
+      "id": 427,
+      "slug": "alonso-s-prot-g-gabriel-bortoleto-reveals-key-advice-from-f1-star-25112211116",
+      "cover_url": "https://anna1994.oss-cn-shenzhen.aliyuncs.com/f1-history/1762111805259-4n5gfg9lofx.jpeg",
+      "news_source": "Racingnews365",
+      "title": "阿隆索对得意门生博莱托的建议",
+      "summary": "阿隆索在F3赛季初给予博托莱托关键语音指导，助其管理期望、保持稳定性。博托莱托凭借这一建议赢得F3冠军，并锁定索伯F1席位，展现了阿隆索培养年轻车手的成效。",
+      "created_at": "2025-11-03 03:31:24"
+    },
+    {
+      "id": 426,
+      "slug": "guenther-steiner-defends-george-russell-s-mexico-gp-radio-outburst-2511221111",
+      "cover_url": "https://anna1994.oss-cn-shenzhen.aliyuncs.com/f1-history/1762111283416-6r3pc3fz59x.jpeg",
+      "news_source": "motorsport",
+      "title": "施泰纳力挺拉塞尔墨西哥大奖赛车队电台争议",
+      "summary": "前哈斯车队领队施泰纳力挺拉塞尔在墨西哥大奖赛上的车队电台发泄。拉塞尔因车队指令延迟而沮丧，认为影响了争夺领奖台的机会。施泰纳称赞拉塞尔有理，并指出梅赛德斯错失了战略时机，强调了实时沟通与决策的重要性。",
+      "created_at": "2025-11-03 03:21:48"
+    },
+    {
+      "id": 425,
+      "slug": "ayrton-senna-s-iconic-1991-brazilian-gp-winning-mclaren-up-for-multi-million-dollar-auction-25112201116",
+      "cover_url": "https://anna1994.oss-cn-shenzhen.aliyuncs.com/f1-history/1762110948283-ga1ueakyi5n.jpeg",
+      "news_source": "Racingnews365",
+      "title": "塞纳1991年巴西夺冠赛车将以千万美元拍卖",
+      "summary": "传奇车手塞纳1991年在家乡夺冠的迈凯伦MP4/6赛车将以千万美元拍卖。这辆V12手动挡赛车不仅战胜了故障，还代表了F1历史上的经典时刻，其高昂的市场价值预示着F1藏品的魅力。",
+      "created_at": "2025-11-03 03:16:41"
+    },
+    {
+      "id": 424,
+      "slug": "charles-leclerc-and-alexandra-saint-mleux-are-engaged-2511331152",
+      "cover_url": "https://anna1994.oss-cn-shenzhen.aliyuncs.com/f1-history/1762110618465-lgulem0zef.jpeg",
+      "news_source": "GP Blog",
+      "title": "查尔斯·勒克莱尔与女友亚历山德拉·圣·姆勒宣布订婚",
+      "summary": "法拉利车手查尔斯·勒克莱尔与女友亚历山德拉·圣·姆勒已宣布订婚。这对备受关注的情侣在2023年公开恋情，并于2024年迎来家庭新成员。此个人里程碑将为勒克莱尔在追求F1世界冠军的道路上提供更多稳定支持。",
+      "created_at": "2025-11-03 03:11:29"
+    },
+    {
+      "id": 423,
+      "slug": "ferrari-s-fred-vasseur-addresses-biggest-challenge-of-2026-f1-regulations-25112161116",
+      "cover_url": "https://anna1994.oss-cn-shenzhen.aliyuncs.com/f1-history/1762070796744-ak8tbhuziwn.jpeg",
+      "news_source": "Racingnews365",
+      "title": "瓦塞尔：2026年F1新规是最大挑战",
+      "summary": "法拉利车队领队瓦塞尔指出，2026年F1新规将带来巨大挑战，要求所有关键领域“从零开始”设计。车队需密集开发以适应新轮胎、动力单元等，这对其近期未来至关重要。",
+      "created_at": "2025-11-02 16:08:06"
+    },
+    {
+      "id": 422,
+      "slug": "lewis-hamilton-s-2008-title-win-a-brazilian-gp-heartbreak-for-felipe-massa-2511215118",
+      "cover_url": "https://anna1994.oss-cn-shenzhen.aliyuncs.com/f1-history/1762069567973-0nc5vbv74nh.jpeg",
+      "news_source": "Racingnews365",
+      "title": "汉密尔顿2008巴西站夺冠：马萨的悲情时刻",
+      "summary": "2008年巴西大奖赛上演F1史上最惊心动魄的夺冠大战。汉密尔顿在最后一刻超越格洛克，惊险夺得首个世界冠军，而马萨则在主场痛失冠军。一场围绕“撞车门”丑闻的法律诉讼，让这段往事至今仍被热议。",
+      "created_at": "2025-11-02 15:58:05"
+    },
+    {
+      "id": 421,
+      "slug": "aston-martin-f1-collaborates-with-pixar-s-toy-story-for-limited-edition-merchandise-2511291142",
+      "cover_url": "https://anna1994.oss-cn-shenzhen.aliyuncs.com/f1-history/1762048775520-t5eltn7ran.jpeg",
+      "news_source": "motorsport",
+      "title": "阿斯顿·马丁携手皮克斯《玩具总动员》推出联名限定商品",
+      "summary": "阿斯顿·马丁F1携手《玩具总动员》推出限量版商品，旨在通过文化IP拓展受众，巩固F1文化影响力。此举是其“I/AM DROPS”营销策略的一部分，同时车队也在赛道上积极争夺排名。",
+      "created_at": "2025-11-02 10:02:06"
+    },
+    {
+      "id": 420,
+      "slug": "f1-contracts-banning-scuba-diving-while-allowing-space-travel-2511241135",
+      "cover_url": "https://anna1994.oss-cn-shenzhen.aliyuncs.com/f1-history/1762024089675-i09tx9eqi4.jpeg",
+      "news_source": "Speedcafe",
+      "title": "F1合同：禁止潜水却允许太空旅行",
+      "summary": "F1车手合同限制奇特，如博塔斯被禁潜水却允许太空旅行。这些条款旨在保护车队巨额投资，同时兼顾车手个性化需求，体现了运动高风险性和对车手状态的严苛要求。",
+      "created_at": "2025-11-02 03:09:13"
+    },
+    {
+      "id": 419,
+      "slug": "bruckheimer-confirms-f1-movie-sequel-talks-with-lewis-hamilton-2511231139",
+      "cover_url": "https://anna1994.oss-cn-shenzhen.aliyuncs.com/f1-history/1762023735582-xldh8vwba7.jpeg",
+      "news_source": "GP Blog",
+      "title": "布鲁克海默证实与汉密尔顿洽谈F1电影续集",
+      "summary": "制片人杰瑞·布鲁克海默已与七届F1世界冠军刘易斯·汉密尔顿会面，探讨制作《F1：狂飙飞车》续集的可能性。首部电影票房大获成功，汉密尔顿强调需谨慎打磨续集，以确保质量。",
+      "created_at": "2025-11-02 03:04:34"
+    },
+    {
+      "id": 418,
+      "slug": "tsunoda-confident-in-red-bull-future-amidst-2026-decision-251122113",
+      "cover_url": "https://anna1994.oss-cn-shenzhen.aliyuncs.com/f1-history/1762023607500-3o0lwxt75kw.jpeg",
+      "news_source": "Racingnews365",
+      "title": "角田信心十足，为2026年红牛席位做好准备",
+      "summary": "角田勇树对2026赛季红牛车队席位充满信心，认为自己已尽力做到最好。尽管本赛季有起伏，他在下半赛季表现亮眼，正与众多车手竞争。他的持续稳定发挥和努力，是争取与维斯塔潘搭档的关键。",
+      "created_at": "2025-11-02 03:00:18"
+    },
+    {
+      "id": 417,
+      "slug": "susie-wolff-lewis-hamilton-s-f1-influence-underestimated-2511201155",
+      "cover_url": "https://anna1994.oss-cn-shenzhen.aliyuncs.com/f1-history/1762023301726-2nd0tp6u81n.jpeg",
+      "news_source": "motorsport",
+      "title": "苏茜·沃尔夫：汉密尔顿在F1的影响力常被低估",
+      "summary": "F1学院CEO苏茜·沃尔夫认为，刘易斯·汉密尔顿的F1影响力常被低估。她赞扬汉密尔顿在FIA调查期间给予的支持，以及他利用平台推动积极改变、倡导多元化和包容性议题的努力，认为他已将F1推向更广阔的文化领域。",
+      "created_at": "2025-11-02 02:55:29"
+    },
+    {
+      "id": 416,
+      "slug": "hulkenberg-to-auction-special-mexico-gp-helmet-for-charity-2511201134",
+      "cover_url": "https://anna1994.oss-cn-shenzhen.aliyuncs.com/f1-history/1762022896493-c0e6x8gayd.jpeg",
+      "news_source": "motorsport",
+      "title": "霍肯伯格将拍卖墨西哥大奖赛头盔用于慈善",
+      "summary": "尼科·霍肯伯格将拍卖其2025年墨西哥大奖赛的特别版头盔，以支持Hahnair基金会，该基金会致力于帮助贫困妇女儿童。头盔设计独特，起拍价5000英镑，拍卖将于11月18日举行。",
+      "created_at": "2025-11-02 02:49:11"
+    },
+    {
+      "id": 415,
+      "slug": "analyst-taps-rookie-oliver-bearman-as-lewis-hamilton-s-future-heir-at-ferrari-25111221119",
+      "cover_url": "https://anna1994.oss-cn-shenzhen.aliyuncs.com/f1-history/1762022539163-z4aw7thcdif.jpeg",
+      "news_source": "GP Blog",
+      "title": "贝尔曼被视为汉密尔顿的法拉利“接班人”",
+      "summary": "F1分析师认为，法拉利学院出身的新秀车手奥利弗·熊曼，凭借其出色的新秀赛季表现，正迅速成长为刘易斯·汉密尔顿在法拉利的潜在未来“接班人”。",
+      "created_at": "2025-11-02 02:42:47"
+    },
+    {
+      "id": 414,
+      "slug": "mclaren-title-failure-would-be-biggest-surprise-in-f1-history-25111181123",
+      "cover_url": "https://anna1994.oss-cn-shenzhen.aliyuncs.com/f1-history/1762021942283-81w8jthateu.jpeg",
+      "news_source": "Racingnews365",
+      "title": "迈凯伦若失冠将成F1史最大“冷门”",
+      "summary": "前F1车手迪格拉西表示，若迈凯伦车队未能夺得本赛季F1车手总冠军，将是“F1历史上最大的惊喜之一”。尽管诺里斯目前领先，但维斯塔潘正强势追击，剩余四场比赛将充满变数。",
+      "created_at": "2025-11-02 02:32:32"
+    },
+    {
+      "id": 413,
+      "slug": "f1-considers-mandatory-two-stop-races-to-boost-strategy-25111211120",
+      "cover_url": "https://anna1994.oss-cn-shenzhen.aliyuncs.com/f1-history/1762021744510-pt6eyjdggy.jpeg",
+      "news_source": "Racingnews365",
+      "title": "F1考虑强制两停以增策略深度",
+      "summary": "F1正考虑强制比赛进行两次进站，以增加策略多样性和比赛观赏性，对抗单停策略的普遍化。新规可能要求使用全部三种干地胎，并限制单套轮胎使用里程。此举旨在提升比赛的不可预测性和娱乐性。",
+      "created_at": "2025-11-02 02:29:28"
+    },
+    {
+      "id": 412,
+      "slug": "lewis-hamilton-on-ferrari-move-aligning-our-brands-was-even-more-powerful-than-i-imagined-251031211049",
+      "cover_url": "https://anna1994.oss-cn-shenzhen.aliyuncs.com/f1-history/1761945120354-te8cvnwyxem.jpeg",
+      "news_source": "motorsport",
+      "title": "汉密尔顿谈加盟法拉利：品牌联名效应远超预期",
+      "summary": "汉密尔顿加盟法拉利后，坦言个人品牌与跃马的融合影响力远超预期。他强调需耐心适应，理解F1复杂性，并专注于准备，以期未来争夺第八个世界冠军。",
+      "created_at": "2025-11-01 05:12:19"
+    },
+    {
+      "id": 411,
+      "slug": "brad-pitt-calls-final-f1-filming-day-his-unhappiest-2511111156",
+      "cover_url": "https://anna1994.oss-cn-shenzhen.aliyuncs.com/f1-history/1761944658970-x7tet56kf2c.jpeg",
+      "news_source": "motorsport",
+      "title": "布拉德·皮特称《F1》最后拍摄日为“最不快乐的一天”",
+      "summary": "布拉德·皮特在拍摄F1电影时，因其对驾驶的热爱，将杀青日描述为“最不快乐的一天”。他深度体验了F1赛车的速度与激情，并表达了对这项运动的极致享受，这将为影片增色，并有望吸引全球观众。",
+      "created_at": "2025-11-01 05:07:54"
+    },
+    {
+      "id": 410,
+      "slug": "fia-clears-liam-lawson-after-mexican-federation-s-statement-2511111123",
+      "cover_url": "https://anna1994.oss-cn-shenzhen.aliyuncs.com/f1-history/1761944216445-z0aedwf2o0l.png",
+      "news_source": "The Race",
+      "title": "FIA为劳森澄清，驳斥墨西哥汽车运动协会声明",
+      "summary": "国际汽联（FIA）已为车手利亚姆·劳森在墨西哥大奖赛期间与赛道工作人员的近距离接触事件正名。此前，墨西哥汽车运动协会（OMDAI）曾发布声明质疑劳森。FIA的调查显示，劳森已适当减速并正确反应，对此事无责，目前FIA正就相关安全规程进行深入调查。",
+      "created_at": "2025-11-01 04:57:02"
+    },
+    {
+      "id": 409,
+      "slug": "lewis-hamilton-hints-at-new-tv-and-film-ventures-after-f1-movie-s-success-251031191053",
+      "cover_url": "https://anna1994.oss-cn-shenzhen.aliyuncs.com/f1-history/1761910346653-r69oitps5i.jpeg",
+      "news_source": "motorsport",
+      "title": "汉密尔顿透露新影视项目：F1电影成功后，他正放眼大银幕",
+      "summary": "刘易斯·汉密尔顿在执导的F1电影大获成功后，正积极拓展其在电视和电影领域的版图。他希望利用其在制作中的经验，打造高质量、有启发性的叙事项目，从喜剧到动画，开启其媒体帝国新篇章。",
+      "created_at": "2025-10-31 19:32:49"
+    },
+    {
+      "id": 408,
+      "slug": "red-bull-s-helmut-marko-warns-mick-schumacher-about-indycar-oval-dangers-251031191024",
+      "cover_url": "https://anna1994.oss-cn-shenzhen.aliyuncs.com/f1-history/1761909626067-dntab8m6nce.jpeg",
+      "news_source": "Racingnews365",
+      "title": "马尔科警告米克·舒马赫：印地赛车椭圆赛道危机四伏",
+      "summary": "红牛顾问马尔科认为印地赛车对米克·舒马赫是职业生涯的好一步，但同时严厉警告其椭圆赛道的高速危险性，指出可能发生严重事故。",
+      "created_at": "2025-10-31 19:20:42"
+    },
+    {
+      "id": 407,
+      "slug": "lance-stroll-s-aston-martin-salary-revealed-in-company-accounts-251031171059",
+      "cover_url": "https://anna1994.oss-cn-shenzhen.aliyuncs.com/f1-history/1761908876102-ig8cycsc3r.webp",
+      "news_source": "PlanetF1",
+      "title": "兰斯·斯特罗尔薪资细节曝光：阿斯顿·马丁公司账目揭秘",
+      "summary": "英国公司账目罕见披露F1车手兰斯·斯特罗尔在阿斯顿·马丁的薪资细节。2024年，其公司收到1230万美元，远超去年，该款项包含其个人团队费用。此数额处于中层，远低于顶尖车手。未来更多细节或将公开。",
+      "created_at": "2025-10-31 19:08:04"
+    },
+    {
+      "id": 406,
+      "slug": "ralf-schumacher-defends-lewis-hamilton-s-severe-mexico-gp-penalty-251031171031",
+      "cover_url": "https://anna1994.oss-cn-shenzhen.aliyuncs.com/f1-history/1761908486450-r34zoptn2bs.jpeg",
+      "news_source": "Racingnews365",
+      "title": "拉尔夫为汉密尔顿墨西哥站“严厉”判罚辩护",
+      "summary": "拉尔夫·舒马赫为汉密尔顿在墨西哥站受到的10秒罚时辩护，认为处罚过于严厉。他批评赛道重返设计不安全，并建议改进以兼顾安全与公平竞争。",
+      "created_at": "2025-10-31 19:03:04"
+    },
+    {
+      "id": 405,
+      "slug": "why-red-bull-s-mexico-f1-slump-shouldn-t-cause-alarm-251031151033",
+      "cover_url": "https://anna1994.oss-cn-shenzhen.aliyuncs.com/f1-history/1761907754503-tvtyeb99dd.jpeg",
+      "news_source": "Racingnews365",
+      "title": "技术评论：红牛墨西哥大奖赛表现不佳无需惊慌",
+      "summary": "红牛车队在墨西哥站遭遇低抓地力困境，主要归因于高海拔稀薄空气及底板改动，而非赛车根本问题。专家分析，此并非重大缺陷，车队有望在下站巴西重振雄风。",
+      "created_at": "2025-10-31 18:50:00"
+    },
+    {
+      "id": 404,
+      "slug": "ralf-schumacher-mocks-george-russell-for-classic-mexican-gp-outbursts-251030231037",
+      "cover_url": "https://anna1994.oss-cn-shenzhen.aliyuncs.com/f1-history/1761880959329-ou411mw65h.jpeg",
+      "news_source": "Racingnews365",
+      "title": "拉尔夫嘲讽拉塞尔在墨西哥大奖赛的“经典”抱怨",
+      "summary": "拉尔夫·舒马赫批评乔治·拉塞尔在墨西哥大奖赛上的无线电抱怨是“经典”爆发，认为其行为模式不可取，并庆幸抱怨未获回应。",
+      "created_at": "2025-10-31 11:24:17"
+    },
+    {
+      "id": 403,
+      "slug": "adrian-newey-names-two-best-f1-drivers-he-s-worked-with-senna-and-verstappen-25103131035",
+      "cover_url": "https://anna1994.oss-cn-shenzhen.aliyuncs.com/f1-history/1761880449509-0zpxhwzj26qn.jpeg",
+      "news_source": "GP Blog",
+      "title": "纽维：塞纳和维斯塔潘是我合作过的最强车手",
+      "summary": "F1传奇纽维认为，塞纳的技术好奇心与维斯塔潘的抗压能力，是其合作过的两位最伟大车手。这揭示了顶尖车手除天赋外，技术理解与心理素质亦是关键，为未来赛事定下基调。",
+      "created_at": "2025-10-31 11:15:41"
+    },
+    {
+      "id": 402,
+      "slug": "max-verstappen-launches-brazil-themed-merchandise-ahead-of-brazilian-gp-251030231049",
+      "cover_url": "https://anna1994.oss-cn-shenzhen.aliyuncs.com/f1-history/1761836004160-rp2xftv9khm.jpeg",
+      "news_source": "motorsport",
+      "title": "维斯塔潘在巴西大奖赛前推出巴西主题周边商品",
+      "summary": "维斯塔潘在巴西大奖赛前夕推出以巴西为灵感的全新系列周边商品，包括头盔和服饰。此举紧随他2024年在巴西赛道上从第17位逆袭夺冠的辉煌表现，进一步巩固了他的品牌影响力，并为即将在该赛道举行的2025年赛事预热。",
+      "created_at": "2025-10-30 22:54:07"
+    },
+    {
+      "id": 401,
+      "slug": "f1-fans-reject-felipe-massa-s-rightful-champion-claim-for-2008-title-251030221047",
+      "cover_url": "https://anna1994.oss-cn-shenzhen.aliyuncs.com/f1-history/1761835636825-iagoziua2nl.jpeg",
+      "news_source": "Racingnews365",
+      "title": "F1车迷反对马萨“名正言顺的冠军”主张",
+      "summary": "2008年F1赛季，尽管菲利佩·马萨因“撞车门”事件提起法律诉讼，要求承认其为“正当冠军”，但多数F1车迷（67%）在FIA民调中表示不应更改历史赛果，反映了对体育历史叙事稳定性的普遍认同。",
+      "created_at": "2025-10-30 22:48:56"
+    },
+    {
+      "id": 400,
+      "slug": "f1-champion-jenson-button-to-retire-from-professional-racing-after-bahrain-wec-race-25103017100",
+      "cover_url": "https://anna1994.oss-cn-shenzhen.aliyuncs.com/f1-history/1761813989136-kofgvbnlbmq.jpeg",
+      "news_source": "Racingnews365",
+      "title": "简森·巴顿将在巴林WEC赛事后退役",
+      "summary": "2009年F1世界冠军简森·巴顿宣布，将在明年巴林WEC赛事后结束职业赛车生涯，回归家庭，并可能继续担任赛车评论员。",
+      "created_at": "2025-10-30 16:46:32"
+    },
+    {
+      "id": 399,
+      "slug": "steiner-piastri-s-mexico-performance-not-world-champion-level-251030161039",
+      "cover_url": "https://anna1994.oss-cn-shenzhen.aliyuncs.com/f1-history/1761812879909-lhssdpeg7x.jpeg",
+      "news_source": "GP Blog",
+      "title": "斯泰纳：皮亚斯特里墨西哥表现“非世界冠军水准”",
+      "summary": "斯泰纳认为皮亚斯特里在墨西哥的表现“非世界冠军水准”，并指出他可能缺乏车队支持。皮亚斯特里近期失去积分榜领先，引发对其新秀赛季发展关键时刻的讨论。",
+      "created_at": "2025-10-30 16:28:28"
+    },
+    {
+      "id": 398,
+      "slug": "verstappen-s-silly-driving-in-mexico-deserved-harsher-penalty-says-brundle-25103011045",
+      "cover_url": "https://anna1994.oss-cn-shenzhen.aliyuncs.com/f1-history/1761783076320-o2b0pkqdyed.jpeg",
+      "news_source": "motorsport",
+      "title": "布伦德尔：维斯塔潘墨西哥“愚蠢驾驶”应受更严厉处罚",
+      "summary": "马丁·布伦德尔批评维斯塔潘在墨西哥大奖赛上的发车操作为“愚蠢驾驶”，认为应处以驶过维修区罚时，以遏制此类行为。他强调了清晰的驾驶标准和一致的判罚对F1的重要性，并讨论了墨西哥赛道1号弯的顽疾。",
+      "created_at": "2025-10-30 08:15:13"
+    },
+    {
+      "id": 397,
+      "slug": "mercedes-acknowledges-delay-in-russell-s-team-order-request-admits-w16-lacked-pace-in-mexico-25103051035",
+      "cover_url": "https://anna1994.oss-cn-shenzhen.aliyuncs.com/f1-history/1761782623733-o1gffuud6j.jpeg",
+      "news_source": "GP Blog",
+      "title": "梅赛德斯承认车队指令请求反应迟缓",
+      "summary": "梅赛德斯承认在墨西哥大奖赛中对拉塞尔的车队指令请求反应迟缓，且W16赛车速度不足。此次失误影响了比赛结果，并加剧了车队积分榜争夺的压力，车队亟需改进。",
+      "created_at": "2025-10-30 08:05:48"
+    },
+    {
+      "id": 396,
+      "slug": "fred-vasseur-s-podium-hopes-for-oliver-bearman-at-mexico-gp-25103001046",
+      "cover_url": "https://anna1994.oss-cn-shenzhen.aliyuncs.com/f1-history/1761780935606-s83zo93gsio.jpeg",
+      "news_source": "motorsport",
+      "title": "瓦塞尔一度以为贝尔曼墨西哥站能登上领奖台",
+      "summary": "法拉利领队瓦塞尔盛赞车手奥利弗·贝尔曼在墨西哥站的表现，曾一度看到他登上领奖台的希望。贝尔曼以第四名完赛，创造个人最佳成绩，并继续展现出成为F1未来之星的巨大潜力，也为哈斯车队注入了强劲势头。",
+      "created_at": "2025-10-30 07:43:48"
+    },
+    {
+      "id": 395,
+      "slug": "hamilton-i-can-t-let-those-who-aren-t-being-helpful-stop-me-trying-25103011031",
+      "cover_url": "https://anna1994.oss-cn-shenzhen.aliyuncs.com/f1-history/1761780531043-fhfqttegk04.jpeg",
+      "news_source": "GP Blog",
+      "title": "汉密尔顿：不让“帮倒忙”的人阻止我前进",
+      "summary": "汉密尔顿在艰难的2025赛季开局后，表达了不被负面因素干扰的决心。尽管在墨西哥城因赛道规则被罚，他仍寻求进步。他将以坚韧心态迎接巴西站，力争为法拉利带来首个领奖台。",
+      "created_at": "2025-10-30 07:30:39"
+    },
+    {
+      "id": 394,
+      "slug": "mercedes-secures-frederik-vesti-for-2026-test-and-reserve-role-25103001058",
+      "cover_url": "https://anna1994.oss-cn-shenzhen.aliyuncs.com/f1-history/1761780026462-licrbgwst3a.jpeg",
+      "news_source": "GP Blog",
+      "title": "梅赛德斯即将签下2026年储备车手维斯蒂",
+      "summary": "梅赛德斯车队预计与弗雷德里克·维斯蒂达成协议，担任2026年测试及储备车手。这位丹麦车手在模拟器和练习赛中表现出色，为车队研发提供关键支持，并将在参加IMSA锦标赛的同时履行职责。",
+      "created_at": "2025-10-30 07:24:26"
+    },
+    {
+      "id": 393,
+      "slug": "antonelli-surprised-by-mercedes-team-orders-in-mexico-25103001039",
+      "cover_url": "https://anna1994.oss-cn-shenzhen.aliyuncs.com/f1-history/1761779146580-bnwnv77m6zs.jpeg",
+      "news_source": "GP Blog",
+      "title": "安东内利对车队在墨西哥的指令感到“惊讶”",
+      "summary": "梅赛德斯车队在墨西哥大奖赛中对安东内利下达车队指令，要求他给队友拉塞尔让位，但事后拉塞尔又还回了位置。安东内利对此感到意外并质疑该策略，认为可能错失了更好的成绩机会。",
+      "created_at": "2025-10-30 07:09:06"
+    },
+    {
+      "id": 392,
+      "slug": "brundle-bearman-deserves-next-ferrari-f1-seat-251029231049",
+      "cover_url": "https://anna1994.oss-cn-shenzhen.aliyuncs.com/f1-history/1761749326814-lwr181ai5pa.jpeg",
+      "news_source": "Sky Sports",
+      "title": "布伦德尔：贝尔曼应获得下个法拉利F1席位",
+      "summary": "布伦德尔认为，在墨西哥大奖赛表现出色的法拉利学院车手贝尔曼有资格获得下一个法拉利F1席位。",
+      "created_at": "2025-10-29 22:50:20"
+    },
+    {
+      "id": 391,
+      "slug": "fia-presidential-candidate-sues-governing-body-over-election-rules-251029221041",
+      "cover_url": "https://anna1994.oss-cn-shenzhen.aliyuncs.com/f1-history/1761748992916-d27q0z3odar.jpeg",
+      "news_source": "GP Blog",
+      "title": "FIA主席候选人起诉管理机构 质疑选举规则",
+      "summary": "FIA主席候选人劳拉·维拉尔斯起诉管理机构，质疑选举规则不公，要求暂停12月12日的选举。此举旨在打破现有壁垒，为更具竞争性和民主性的FIA领导层选举铺平道路。",
+      "created_at": "2025-10-29 22:43:15"
+    },
+    {
+      "id": 390,
+      "slug": "fia-calls-felipe-massa-s-2008-f1-title-claim-torturous-and-overly-ambitious-251029201011",
+      "cover_url": "https://anna1994.oss-cn-shenzhen.aliyuncs.com/f1-history/1761748349728-9o2kbvhowhu.jpeg",
+      "news_source": "Racingnews365",
+      "title": "FIA对马萨2008年冠军诉求作出强硬回应：称其“牵强且过度野心”",
+      "summary": "F1国际汽联驳回马萨2008年冠军诉求，称其“痛苦”且“野心过大”。马萨因“撞车门”事件寻求赔偿与承认。FIA辩称其诉求不当，并归咎于马萨及法拉利自身失误。此案在英格兰启动，结果或重塑F1历史争议处理方式。",
+      "created_at": "2025-10-29 22:35:28"
+    },
+    {
+      "id": 389,
+      "slug": "red-bull-acknowledges-sacrificing-tsunoda-s-points-in-mexico-gp-yet-praises-his-performance-251029191047",
+      "cover_url": "https://anna1994.oss-cn-shenzhen.aliyuncs.com/f1-history/1761747504163-loa3qxihm6.jpeg",
+      "news_source": "motorsport",
+      "title": "红牛承认墨西哥牺牲角田积分，但仍赞扬其表现",
+      "summary": "红牛承认在墨西哥大奖赛中为维斯塔潘牺牲了角田裕毅的积分，但肯定了他的表现。车队正为2026赛季评估车手阵容，推迟了最终决定，并将密切关注内部及新秀车手。",
+      "created_at": "2025-10-29 22:21:47"
+    },
+    {
+      "id": 388,
+      "slug": "leclerc-doubts-ferrari-can-maintain-second-in-constructors-championship-25102918105",
+      "cover_url": "https://anna1994.oss-cn-shenzhen.aliyuncs.com/f1-history/1761746682150-crcofkr7w2e.jpeg",
+      "news_source": "Racingnews365",
+      "title": "勒克莱尔怀疑法拉利能否守住车队积分榜第二",
+      "summary": "勒克莱尔坦言法拉利保住车队积分榜第二“非常艰难”。目前梅赛德斯近在咫尺，红牛也紧随其后。车队需要在最后四场比赛中展现“完美执行”，才能实现目标。",
+      "created_at": "2025-10-29 22:06:18"
+    },
+    {
+      "id": 387,
+      "slug": "unpacking-piastri-s-sudden-f1-performance-dip-25102917100",
+      "cover_url": "https://anna1994.oss-cn-shenzhen.aliyuncs.com/f1-history/1761746211564-ez2xx3ry2zd.jpeg",
+      "news_source": "The Race",
+      "title": "皮亚斯特里：从领先到落后，原因何在？",
+      "summary": "皮亚斯特里在F1比赛中遭遇严重表现下滑，积分优势尽失。问题根源可能在于低抓地力赛道上驾驶风格的差异，而非车队偏袒。皮亚斯特里正积极调整，预计巴西站将恢复状态，但若持续低迷，其争冠前景堪忧。",
+      "created_at": "2025-10-29 21:57:35"
+    },
+    {
+      "id": 386,
+      "slug": "george-russell-max-verstappen-joining-mercedes-would-be-a-lose-lose-for-him-25102917106",
+      "cover_url": "https://anna1994.oss-cn-shenzhen.aliyuncs.com/f1-history/1761745349622-s0c1j9efdon.jpeg",
+      "news_source": "Racingnews365",
+      "title": "拉塞尔：维斯塔潘加盟梅奔对他本人是\"双输局面\"",
+      "summary": "拉塞尔认为维斯塔潘若加盟梅赛德斯，对他自己而言是“双输”局面。他已续约至2027年，并愿挑战维斯塔潘，认为顶级车手组合压力巨大。维斯塔潘形象风险大，拉塞尔则能借此提升。",
+      "created_at": "2025-10-29 21:42:31"
+    },
+    {
+      "id": 385,
+      "slug": "lando-norris-admits-championship-doubts-amidst-oscar-piastri-s-early-season-wins-251029151058",
+      "cover_url": "https://anna1994.oss-cn-shenzhen.aliyuncs.com/f1-history/1761744741330-5rvqwjprkrm.jpeg",
+      "news_source": "Racingnews365",
+      "title": "诺里斯坦言曾对争冠前景产生怀疑",
+      "summary": "诺里斯坦承今年初曾因队友皮亚斯特的亮眼表现而对总冠军产生怀疑。但在墨西哥站的统治级胜利后，他重回积分榜首，重燃争冠希望，并强调持续稳定的表现至关重要。",
+      "created_at": "2025-10-29 21:32:33"
+    },
+    {
       "id": 384,
       "slug": "cadillac-reveals-frightening-scale-of-f1-project-ahead-of-2026-debut-2510294107",
       "cover_url": "https://anna1994.oss-cn-shenzhen.aliyuncs.com/f1-history/1761683329357-e511fk107b.jpeg",
