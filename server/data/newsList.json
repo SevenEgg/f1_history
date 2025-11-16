@@ -1,6 +1,357 @@
 {
   "data": [
     {
+      "id": 575,
+      "slug": "lewis-hamilton-leads-f1-stars-earning-millions-from-fake-instagram-followers-251116191112",
+      "cover_url": "https://anna1994.oss-cn-shenzhen.aliyuncs.com/f1-history/1763308092456-se4ewgtu6uj.jpeg",
+      "news_source": "Racingnews365",
+      "title": "汉密尔顿领衔！F1车手巨额收入惊现“假粉”疑云",
+      "summary": "最新分析显示，F1车手如汉密尔顿等，通过社交媒体上的虚假（机器人）粉丝赚取巨额收入。这不仅模糊了网红营销的价值，也引发了对品牌真实性的质疑。车队账户也存在类似问题，未来预计将加强对粉丝真实性的审查。",
+      "created_at": "2025-11-16 23:48:17"
+    },
+    {
+      "id": 574,
+      "slug": "inside-f1-s-cutting-edge-broadcast-hq-in-biggin-hill-251116171117",
+      "cover_url": "https://anna1994.oss-cn-shenzhen.aliyuncs.com/f1-history/1763307784826-ugef8zhj8op.jpeg",
+      "news_source": "The Race",
+      "title": "揭秘F1大金山前沿转播中心：全球赛事指挥中枢",
+      "summary": "揭秘F1位于伦敦郊外的大金山媒体与技术中心。该中心已成为全球赛事转播的核心，通过虚拟化和远程操作，高效处理海量数据，显著提升转播质量并减少碳排放，为8.2亿观众带来极致F1体验。",
+      "created_at": "2025-11-16 23:43:43"
+    },
+    {
+      "id": 573,
+      "slug": "f1-fans-doubt-ferrari-s-bid-for-second-place-in-constructors-championship-25111616118",
+      "cover_url": "https://anna1994.oss-cn-shenzhen.aliyuncs.com/f1-history/1763307325413-aj9rmcwco84.jpeg",
+      "news_source": "Racingnews365",
+      "title": "车迷对法拉利争夺车队积分榜亚军前景持怀疑态度",
+      "summary": "巴西大奖赛的惨败让法拉利跌至车队积分榜第四，车迷对车队能否重夺亚军普遍不看好。RacingNews365的调查显示，仅13%的受访者相信法拉利能逆转。争夺第二名对法拉利至关重要，但目前积分差距巨大，未来任务艰巨。",
+      "created_at": "2025-11-16 23:35:36"
+    },
+    {
+      "id": 572,
+      "slug": "zak-brown-mclaren-focused-on-discipline-not-emotion-in-f1-title-fight-25111581151",
+      "cover_url": "https://anna1994.oss-cn-shenzhen.aliyuncs.com/f1-history/1763185608677-4tw4ad8v9pw.jpeg",
+      "news_source": "motorsport",
+      "title": "扎克·布朗：迈凯伦F1争冠靠纪律，而非情绪",
+      "summary": "迈凯伦CEO扎克·布朗表示，车队将在F1争冠关键时刻保持纪律，而非被情绪左右。目标是稳定发挥，减少失误，以挑战红牛的主导地位。",
+      "created_at": "2025-11-15 13:46:52"
+    },
+    {
+      "id": 571,
+      "slug": "ralf-schumacher-urges-ferrari-to-consider-bearman-over-hamilton-amid-performance-doubts-25111541148",
+      "cover_url": "https://anna1994.oss-cn-shenzhen.aliyuncs.com/f1-history/1763185299697-onkouhc1uic.jpg",
+      "news_source": "GP Blog",
+      "title": "拉尔夫质疑汉密尔顿表现，建议法拉利考虑贝尔曼",
+      "summary": "拉尔夫·舒马赫质疑汉密尔顿在法拉利的未来，因其表现平平且薪资过高，建议车队考虑成本更低、潜力更大的熊赛，为长期战略布局。",
+      "created_at": "2025-11-15 13:41:28"
+    },
+    {
+      "id": 570,
+      "slug": "was-hamilton-a-mistake-pissed-off-elkann-should-look-in-the-mirror-25111531110",
+      "cover_url": "https://anna1994.oss-cn-shenzhen.aliyuncs.com/f1-history/1763184988919-vt6y7qziko.jpeg",
+      "news_source": "GP Blog",
+      "title": "施泰纳：埃尔坎公开批评车手是领导不力",
+      "summary": "法拉利主席埃尔坎公开批评车手，前F1领队施泰纳认为这是领导力缺失的表现，并质疑其公开性及忽略领队瓦塞尔的做法。此言论或影响车队士气和汉密尔顿加盟前的稳定性。",
+      "created_at": "2025-11-15 13:36:53"
+    },
+    {
+      "id": 569,
+      "slug": "resta-difficult-to-draw-a-direct-guess-about-las-vegas-pace-25111521125",
+      "cover_url": "https://anna1994.oss-cn-shenzhen.aliyuncs.com/f1-history/1763184408970-ds4ct28p6tm.jpeg",
+      "news_source": "GP Blog",
+      "title": "梅赛德斯对拉斯维加斯赛道速度预测持谨慎态度",
+      "summary": "梅赛德斯代理技术总监西蒙·雷斯塔警告，拉斯维加斯赛道低温和独特性使得预测车队表现困难。尽管在车队积分榜上领先，但车队需要为最后三场比赛做好充分准备，适应低抓地力赛道。",
+      "created_at": "2025-11-15 13:27:10"
+    },
+    {
+      "id": 568,
+      "slug": "mclaren-did-not-question-red-bull-s-brazil-gp-engine-costs-at-f1-commission-25111521132",
+      "cover_url": "https://anna1994.oss-cn-shenzhen.aliyuncs.com/f1-history/1763183989020-al34z4v1ny5.jpeg",
+      "news_source": "GP Blog",
+      "title": "迈凯伦未在F1委员会质疑红牛巴西站引擎成本",
+      "summary": "迈凯伦就红牛巴西站新引擎成本是否计入F1成本帽向国际汽联（FIA）寻求澄清。在FIA确认符合规定后，迈凯伦未在F1委员会会议上对此提出质疑。此举表明各车队对成本帽合规性的持续关注。",
+      "created_at": "2025-11-15 13:20:27"
+    },
+    {
+      "id": 567,
+      "slug": "antonelli-calls-out-russell-he-isn-t-happy-finishing-behind-me-251114181127",
+      "cover_url": "https://anna1994.oss-cn-shenzhen.aliyuncs.com/f1-history/1763126158611-jes8f37kead.jpeg",
+      "news_source": "GP Blog",
+      "title": "安东内利谈拉塞尔：他很不高兴排在我后面",
+      "summary": "F1新秀安东内利在巴西站迎来生涯最佳表现，实现对队友拉塞尔的超越，并坦承两人竞争加剧。这次突破不仅是技术和个人层面的飞跃，也预示着他将成为梅赛德斯未来争冠的关键力量。",
+      "created_at": "2025-11-14 21:16:07"
+    },
+    {
+      "id": 566,
+      "slug": "lewis-hamilton-remains-defiant-amidst-ferrari-s-f1-woes-25111416118",
+      "cover_url": "https://anna1994.oss-cn-shenzhen.aliyuncs.com/f1-history/1763125903329-0ippwdls9vfv.jpeg",
+      "news_source": "Racingnews365",
+      "title": "汉密尔顿：无视法拉利困境，对2025赛季前景依然乐观",
+      "summary": "汉密尔顿在法拉利本赛季挣扎、多次遭遇“双零分”的情况下，仍保持坚韧与乐观。尽管面临职业生涯领奖台纪录的压力，他相信车队能充分发挥潜力，并对2026年新规寄予厚望，展现了克服困难、重拾竞争力的决心。",
+      "created_at": "2025-11-14 21:12:03"
+    },
+    {
+      "id": 565,
+      "slug": "vettel-addresses-red-bull-f1-comeback-rumors-in-managerial-role-251114171158",
+      "cover_url": "https://anna1994.oss-cn-shenzhen.aliyuncs.com/f1-history/1763125723467-0008i3jzo434l.jpeg",
+      "news_source": "GP Blog",
+      "title": "维特尔回应重返红牛F1的传闻",
+      "summary": "维特尔近日回应了重返红牛F1担任管理职务的传闻，称与马尔科的讨论“未取得进展”。他目前生活满足，但表示未来若有合适机会，可能考虑重回F1。红牛近期人事变动也可能促成此类可能性。",
+      "created_at": "2025-11-14 21:08:52"
+    },
+    {
+      "id": 564,
+      "slug": "what-we-learned-from-audi-s-big-f1-2026-reveal-25111491148",
+      "cover_url": "https://anna1994.oss-cn-shenzhen.aliyuncs.com/f1-history/1763125278784-f5uzbpslktd.jpeg",
+      "news_source": "motorsport",
+      "title": "从奥迪F1 2026发布会看奥迪的战略布局",
+      "summary": "奥迪正式公布2026年F1计划，将以制造商身份全面开发动力单元和底盘。目标2030年夺冠，并强调规则稳定性和技术转化。此举标志着F1新时代，也将重塑竞争格局。",
+      "created_at": "2025-11-14 21:01:34"
+    },
+    {
+      "id": 563,
+      "slug": "f1-fans-defend-hamilton-and-leclerc-after-ferrari-chairman-s-criticism-25111411121",
+      "cover_url": "https://anna1994.oss-cn-shenzhen.aliyuncs.com/f1-history/1763124455931-8hq6mhzy314.jpeg",
+      "news_source": "Racingnews365",
+      "title": "F1车迷力挺汉密尔顿和勒克莱尔，驳斥法拉利主席批评",
+      "summary": "法拉利主席埃尔坎批评车手“少说多做”，引发F1车迷广泛不满。汉密尔顿与勒克莱尔在社交媒体上发声力挺，超85%车迷支持车手。法拉利在车队积分榜上排名下滑，能否克服内部矛盾冲刺季末表现成焦点。",
+      "created_at": "2025-11-14 20:48:01"
+    },
+    {
+      "id": 562,
+      "slug": "civil-war-is-the-last-thing-ferrari-needs-2511140118",
+      "cover_url": "https://anna1994.oss-cn-shenzhen.aliyuncs.com/f1-history/1763124055087-msvi3yg8t17.jpeg",
+      "news_source": "Racingnews365",
+      "title": "法拉利主席批评激化与车手的矛盾",
+      "summary": "法拉利主席埃尔坎公开批评车手汉密尔顿和勒克莱尔“少说多做”，引发车队内部不满。在车队争夺制造商亚军并准备2026年规则变革的关键时刻，此番言论加剧了内部紧张，可能影响成绩，并招致外界批评。",
+      "created_at": "2025-11-14 20:41:38"
+    },
+    {
+      "id": 561,
+      "slug": "bizarre-break-in-at-alpine-f1-factory-leaves-thieves-empty-handed-251113231114",
+      "cover_url": "https://anna1994.oss-cn-shenzhen.aliyuncs.com/f1-history/1763045365532-f8536nw5sg.jpeg",
+      "news_source": "Racingnews365",
+      "title": "Alpine 遭遇离奇盗窃案：窃贼空手而归",
+      "summary": "Alpine F1法国工厂发生离奇闯入事件，窃贼虽进入但未盗走任何物品。当局正调查此案，并考虑工业间谍的可能性，以确定闯入者身份及目的。",
+      "created_at": "2025-11-13 22:49:34"
+    },
+    {
+      "id": 560,
+      "slug": "red-bull-faces-new-european-commission-investigation-25111321118",
+      "cover_url": "https://anna1994.oss-cn-shenzhen.aliyuncs.com/f1-history/1763045019518-nkvt43hxk0b.jpeg",
+      "news_source": "GP Blog",
+      "title": "红牛面临欧盟新的反垄断调查",
+      "summary": "欧盟对红牛展开新的反垄断调查，关注其限制竞争的行为，尤其是在大尺寸饮品方面。此举可能影响红牛在F1的投入，并关乎欧洲消费者选择权。",
+      "created_at": "2025-11-13 22:43:48"
+    },
+    {
+      "id": 559,
+      "slug": "marko-identifies-single-factor-to-revive-verstappen-s-title-hopes-25111319119",
+      "cover_url": "https://anna1994.oss-cn-shenzhen.aliyuncs.com/f1-history/1763044735916-phan8vurroj.jpeg",
+      "news_source": "Racingnews365",
+      "title": "马尔科认为唯有“意外”才能挽救维斯塔潘的冠军希望",
+      "summary": "马尔科认为，除非诺里斯遭遇退赛或碰撞等重大意外，否则维斯塔潘的冠军希望渺茫。迈凯伦的强劲表现与红牛近期的不稳定，让争冠形势变得复杂，未来赛道适应性和赛车调校将是关键。",
+      "created_at": "2025-11-13 22:39:28"
+    },
+    {
+      "id": 558,
+      "slug": "adrian-newey-addresses-major-fear-as-wife-complaint-revealed-25111317118",
+      "cover_url": "https://anna1994.oss-cn-shenzhen.aliyuncs.com/f1-history/1763044213953-h5a7uqfqrd4.jpeg",
+      "news_source": "Racingnews365",
+      "title": "纽维坦言“对失败的恐惧”是其最大动力",
+      "summary": "F1传奇纽维加盟阿斯顿·马丁，坦言“对失败的恐惧”是其最大动力。他正全情投入2026年赛车研发，妻子称其进入“设计‘出神’状态”。他强调团队合作，并承认车队尚处转型期，暂不预测成绩。",
+      "created_at": "2025-11-13 22:30:23"
+    },
+    {
+      "id": 557,
+      "slug": "mercedes-could-get-boost-if-antonelli-outperforms-hamilton-251113161115",
+      "cover_url": "https://anna1994.oss-cn-shenzhen.aliyuncs.com/f1-history/1763043730908-vgsq6o1owpr.jpeg",
+      "news_source": "Racingnews365",
+      "title": "安东内利若超越汉密尔顿，将获得巨大心理提振",
+      "summary": "奔驰车队可能因年轻车手安东内利在新秀赛季超越离队车手汉密尔顿而获得巨大的心理和士气提升。两人积分差距仅剩26分，若成真，将是对奔驰车队车手培养计划的有力证明。",
+      "created_at": "2025-11-13 22:22:37"
+    },
+    {
+      "id": 556,
+      "slug": "norris-rejects-mindset-change-i-ll-do-what-i-like-amid-vegas-doubts-251113151111",
+      "cover_url": "https://anna1994.oss-cn-shenzhen.aliyuncs.com/f1-history/1763043030559-xb9toshydhc.jpeg",
+      "news_source": "Racingnews365",
+      "title": "诺里斯拒绝改变心态：“我会按自己喜欢的方式行事”",
+      "summary": "诺里斯在F1拉斯维加斯大奖赛前，拒绝改变其直率的评估方式。他强调基于过往数据，承认赛道可能对迈凯伦不利，即便领先车手积分榜，也坚持诚实面对，而非盲目乐观。",
+      "created_at": "2025-11-13 22:12:27"
+    },
+    {
+      "id": 555,
+      "slug": "2025-f1-season-extended-all-teams-postpone-holidays-for-post-season-tests-25111316116",
+      "cover_url": "https://anna1994.oss-cn-shenzhen.aliyuncs.com/f1-history/1763041805114-y46u1ee359.jpeg",
+      "news_source": "GP Blog",
+      "title": "阿布扎比站后进行季后轮胎测试",
+      "summary": "2025赛季F1将延至12月9日进行季后轮胎测试，所有车队需推迟假期。此次测试旨在敲定2026年轮胎规格，并为新赛季研发收集关键数据。",
+      "created_at": "2025-11-13 21:50:19"
+    },
+    {
+      "id": 554,
+      "slug": "under-elkann-s-leadership-ferrari-s-f1-performance-raises-questions-2511130115",
+      "cover_url": "https://anna1994.oss-cn-shenzhen.aliyuncs.com/f1-history/1762963553285-78hpyhrpbmk.jpeg",
+      "news_source": "GP Blog",
+      "title": "埃尔坎领导下，法拉利在F1表现低迷引质疑",
+      "summary": "法拉利车队在埃尔坎任期内（2018年至今）F1表现持续不佳，八年间仅获15胜，未夺总冠军。领导层及车手频繁变动，仍未见起色。2025年汉密尔顿加盟，压力倍增，未来数季成关键。",
+      "created_at": "2025-11-13 00:06:15"
+    },
+    {
+      "id": 553,
+      "slug": "verstappen-notes-shift-in-brazilian-fan-sentiment-since-hamilton-rivalry-251112231123",
+      "cover_url": "https://anna1994.oss-cn-shenzhen.aliyuncs.com/f1-history/1762963027170-f5mg8lj8zb7.jpeg",
+      "news_source": "GP Blog",
+      "title": "维斯塔潘注意到巴西车迷态度转变",
+      "summary": "维斯塔潘表示，与2021年汉密尔顿竞争激烈时相比，巴西车迷对他的态度已显著转变。近期在因特拉格斯，他甚至听到了为自己而唱的歌曲，这标志着赛道氛围的积极变化。",
+      "created_at": "2025-11-12 23:57:38"
+    },
+    {
+      "id": 552,
+      "slug": "hamilton-s-race-engineer-told-your-time-will-come-amid-menacing-chants-251112231122",
+      "cover_url": "https://anna1994.oss-cn-shenzhen.aliyuncs.com/f1-history/1762960990359-f8svjzmnxbh.jpeg",
+      "news_source": "GP Blog",
+      "title": "汉密尔顿工程师阿达米在巴西站遭围堵骚扰",
+      "summary": "巴西大奖赛期间，部分车迷对汉密尔顿工程师阿达米进行围堵、辱骂及做出侮辱性手势，这与此前诺里斯遭嘘声事件类似，暴露出F1赛场不当行为日益严重的问题，威胁从业者安全，损害赛事形象，亟待组织者采取措施。",
+      "created_at": "2025-11-12 23:23:29"
+    },
+    {
+      "id": 551,
+      "slug": "f1-champion-jenson-button-hits-back-at-ferrari-chairman-s-driver-criticism-251112191155",
+      "cover_url": "https://anna1994.oss-cn-shenzhen.aliyuncs.com/f1-history/1762946265747-ygrwjp5qmwj.jpeg",
+      "news_source": "Racingnews365",
+      "title": "F1冠军巴顿回击法拉利主席对车手的批评",
+      "summary": "F1冠军简森·巴顿力挺汉密尔顿与勒克莱尔，回击法拉利主席埃尔坎“少说话”的批评。法拉利近期表现不佳，主席公开言论引发争议。巴顿认为主席应以身作则，此番内部不合恐加剧车队困境。",
+      "created_at": "2025-11-12 19:18:03"
+    },
+    {
+      "id": 550,
+      "slug": "racing-bulls-address-employee-s-booing-incident-involving-lando-norris-251112181118",
+      "cover_url": "https://anna1994.oss-cn-shenzhen.aliyuncs.com/f1-history/1762946118155-e581s3vmodk.jpeg",
+      "news_source": "Racingnews365",
+      "title": "红牛二队就员工参与嘘诺里斯事件发表声明",
+      "summary": "红牛二队就员工在圣保罗大奖赛赛后怂恿观众嘘诺里斯一事发布声明，强调不代表车队价值观，已内部处理。此举提醒车队和员工需维护体育精神与尊重。",
+      "created_at": "2025-11-12 19:15:26"
+    },
+    {
+      "id": 549,
+      "slug": "ferrari-feud-drivers-vs-chairman-after-s-o-paulo-gp-25111218119",
+      "cover_url": "https://anna1994.oss-cn-shenzhen.aliyuncs.com/f1-history/1762945891157-f1w1xdjv0q.jpeg",
+      "news_source": "Racingnews365",
+      "title": "法拉利内讧：谁才是对的？车手还是主席？",
+      "summary": "圣保罗站后，法拉利主席约翰·埃尔坎与车手刘易斯·汉密尔顿、查尔斯·勒克莱尔公开争执。埃尔坎批车手“少说多做”，车手则强调团结。此内斗引发关注，可能影响车队士气及汉密尔顿加盟后的未来。",
+      "created_at": "2025-11-12 19:12:00"
+    },
+    {
+      "id": 548,
+      "slug": "grill-d-burger-joint-apologizes-for-oscar-piastri-curse-251112181115",
+      "cover_url": "https://anna1994.oss-cn-shenzhen.aliyuncs.com/f1-history/1762945662851-ndzdozm6j59.jpeg",
+      "news_source": "Racingnews365",
+      "title": "Grill'd就“皮亚斯特里诅咒”幽默致歉",
+      "summary": "澳大利亚汉堡连锁店Grill'd因赞助F1车手奥斯卡·皮亚斯特里，并提供“领奖台即送汉堡”的促销活动，却恰逢皮亚斯特里遭遇五场比赛的领奖台荒。社交媒体上出现“汉堡诅咒”的玩笑，Grill'd遂在Instagram上发布幽默致歉声明，巧妙地将负面话题转化为品牌互动亮点。",
+      "created_at": "2025-11-12 19:07:53"
+    },
+    {
+      "id": 547,
+      "slug": "toto-wolff-s-mercedes-share-sale-eyes-record-f1-valuation-25111217115",
+      "cover_url": "https://anna1994.oss-cn-shenzhen.aliyuncs.com/f1-history/1762945357138-zsxol6iwkm.jpeg",
+      "news_source": "Racingnews365",
+      "title": "沃尔夫拟售部分股权 赛德斯F1车队估值或创纪录",
+      "summary": "托托·沃尔夫或将出售梅赛德斯F1车队部分股份，预计将创下约60亿美元的F1车队估值纪录，显示F1运动日益增长的商业价值和投资吸引力。",
+      "created_at": "2025-11-12 19:02:58"
+    },
+    {
+      "id": 546,
+      "slug": "lewis-hamilton-s-ferrari-struggles-defended-after-brazil-gp-nightmare-251112151159",
+      "cover_url": "https://anna1994.oss-cn-shenzhen.aliyuncs.com/f1-history/1762944972337-r6imuc94fu.jpeg",
+      "news_source": "Racingnews365",
+      "title": "车手为汉密尔顿巴西大奖赛遭遇“噩梦”般的表现辩护",
+      "summary": "汉密尔顿在巴西大奖赛遭遇“噩梦”般的表现，赛车损坏导致退赛。尽管如此，杰米·查德威克等为其辩护，称他并非为中游而战。法拉利车队整体挣扎，勒克莱尔也退赛，凸显了车队的深层问题。未来需快速解决速度与可靠性难题。",
+      "created_at": "2025-11-12 18:57:24"
+    },
+    {
+      "id": 545,
+      "slug": "red-bull-and-ford-reveal-2026-launch-plans-2511122119",
+      "cover_url": "https://anna1994.oss-cn-shenzhen.aliyuncs.com/f1-history/1762903471796-ygr2uwzu2e.jpg",
+      "news_source": "Racingnews365",
+      "title": "红牛与福特公布2026新引擎合作启动计划",
+      "summary": "红牛与福特公布2026 F1合作计划，将在底特律发布新涂装。红牛动力总成将自研首款引擎，福特提供技术支持。新规则将移除MGU-H，大幅提升电池功率，并降低燃油消耗。此次合作标志福特重返F1，项目前景备受瞩目。",
+      "created_at": "2025-11-12 07:24:13"
+    },
+    {
+      "id": 544,
+      "slug": "brundle-calls-piastri-s-brazil-crash-penalty-very-harsh-25111121112",
+      "cover_url": "https://anna1994.oss-cn-shenzhen.aliyuncs.com/f1-history/1762866782507-1o2bpejh05u.jpeg",
+      "news_source": "Racingnews365",
+      "title": "布伦德尔称皮亚斯特里巴西站的处罚“过于严厉”",
+      "summary": "布伦德尔认为皮亚斯特里在巴西赛的10秒罚时过重，指出安东内利的挤压是导致事故的关键因素，建议应考虑减轻处罚，而非严厉判罚。",
+      "created_at": "2025-11-11 21:13:46"
+    },
+    {
+      "id": 543,
+      "slug": "ferrari-s-vasseur-laments-double-penalty-after-leclerc-s-s-o-paulo-gp-wipeout-25111119112",
+      "cover_url": "https://anna1994.oss-cn-shenzhen.aliyuncs.com/f1-history/1762859021596-duik32aamo.jpeg",
+      "news_source": "Racingnews365",
+      "title": "法拉利遭遇双车退赛 瓦塞尔哀叹“艰难的周日”",
+      "summary": "圣保罗大奖赛，法拉利遭遇双车退赛。勒克莱尔因卷入事故无责退赛，汉密尔顿也因碰撞受损退赛。车队领队瓦塞尔称之为“双重打击”，对车队积分排名造成严重影响，争夺第三的形势更加严峻。",
+      "created_at": "2025-11-11 19:04:26"
+    },
+    {
+      "id": 542,
+      "slug": "hamilton-and-leclerc-respond-to-ferrari-chairman-s-criticism-25111117113",
+      "cover_url": "https://anna1994.oss-cn-shenzhen.aliyuncs.com/f1-history/1762858583448-frdba2m9j9f.jpeg",
+      "news_source": "Racingnews365",
+      "title": "汉密尔顿与勒克莱尔回应法拉利主席批评",
+      "summary": "法拉利主席埃尔坎批评汉密尔顿与勒克莱尔“少说多做”。在巴西大奖赛双双退赛后，两位车手在社交媒体回应，强调团结与专注，以应对争夺车队总冠军第二的压力。",
+      "created_at": "2025-11-11 18:56:29"
+    },
+    {
+      "id": 541,
+      "slug": "f1-fans-disagree-with-piastri-s-s-o-paulo-penalty-25111114118",
+      "cover_url": "https://anna1994.oss-cn-shenzhen.aliyuncs.com/f1-history/1762857987916-o6cmmg2ysvp.jpeg",
+      "news_source": "Racingnews365",
+      "title": "车迷认为皮亚斯特里在巴西站的处罚不公",
+      "summary": "车迷强烈质疑皮亚斯特里在圣保罗大奖赛上受到的10秒罚款，认为其不公。此判罚令他错失领奖台，并扩大了与队友的积分差距，引发了对裁判判罚标准的热议。",
+      "created_at": "2025-11-11 18:47:26"
+    },
+    {
+      "id": 540,
+      "slug": "hadjar-admits-mistake-in-lawson-battle-at-s-o-paulo-2511113110",
+      "cover_url": "https://anna1994.oss-cn-shenzhen.aliyuncs.com/f1-history/1762819852903-21xog03bi76.jpeg",
+      "news_source": "Racingnews365",
+      "title": "哈德贾承认圣保罗站与队友劳森缠斗中犯错",
+      "summary": "哈德贾承认在圣保罗大奖赛末段与队友劳森争夺时犯错，导致赛车发生接触。他承认“用力过猛”，这次事故险些让车队损失积分。所幸两人均完赛，车队获10分，但也暴露了队友间竞争的风险。",
+      "created_at": "2025-11-11 08:11:10"
+    },
+    {
+      "id": 539,
+      "slug": "ferrari-should-replace-fred-vasseur-with-andrea-stella-25111141128",
+      "cover_url": "https://anna1994.oss-cn-shenzhen.aliyuncs.com/f1-history/1762819500266-j0z7iu55lw.jpeg",
+      "news_source": "GP Blog",
+      "title": "意媒：法拉利应将瓦塞尔换成斯特拉",
+      "summary": "意媒呼吁法拉利用经验丰富的工程师安德烈亚·斯特拉取代领队瓦塞尔。在埃尔坎对车队表现不满之际，斯特拉被视为能带领法拉利重返F1巅峰的理想人选，尤其是在2026年新规背景下。",
+      "created_at": "2025-11-11 08:05:17"
+    },
+    {
+      "id": 538,
+      "slug": "mclaren-questions-red-bull-s-engine-swap-and-cost-cap-implications-25111021119",
+      "cover_url": "https://anna1994.oss-cn-shenzhen.aliyuncs.com/f1-history/1762784432486-3mc8lk3mrrp.jpeg",
+      "news_source": "The Race",
+      "title": "迈凯伦质疑红牛引擎更换是否触犯成本上限",
+      "summary": "迈凯伦就红牛在巴西大奖赛为维斯塔潘更换动力单元是否应计入成本上限向FIA提出质疑，凸显规则执行的潜在漏洞，将影响F1公平竞争。",
+      "created_at": "2025-11-10 22:20:39"
+    },
+    {
+      "id": 537,
+      "slug": "ferrari-chairman-criticizes-hamilton-and-leclerc-post-brazil-251110231158",
+      "cover_url": "https://anna1994.oss-cn-shenzhen.aliyuncs.com/f1-history/1762783977871-5bxuu0w841i.jpeg",
+      "news_source": "Racingnews365",
+      "title": "法拉利主席喊话汉密尔顿和勒克莱尔：少说多练",
+      "summary": "法拉利主席埃尔坎在巴西站赛后公开批评车手汉密尔顿和勒克莱尔“少说多练”，此前两人均退赛导致车队积分榜排名下滑。他强调车队需团结一致，专注于驾驶以提升表现。",
+      "created_at": "2025-11-10 22:12:59"
+    },
+    {
       "id": 536,
       "slug": "frustrated-hamilton-slams-joke-penalty-in-brazil-after-collision-251110191136",
       "cover_url": "https://anna1994.oss-cn-shenzhen.aliyuncs.com/f1-history/1762775770312-q1x1fvjst8b.jpeg",
