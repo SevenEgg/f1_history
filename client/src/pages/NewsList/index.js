@@ -309,36 +309,80 @@ const NewsList = () => {
     // 同步 newsList 到本地与 OSS
     const handleSync = async () => {
         setSyncLoading(true);
+        // 提示用户同步可能需要较长时间
+        message.info('开始同步，数据量较大时可能需要1-2分钟，请耐心等待...', 3);
+        
         try {
-            const resp = await fetch('http://localhost:3001/api/newList');
+            // 添加超时控制（120秒，因为后端处理大量数据可能需要较长时间）
+            const controller = new AbortController();
+            const timeoutId = setTimeout(() => controller.abort(), 120000);
+            
+            const resp = await fetch('http://localhost:3001/api/newList', {
+                signal: controller.signal
+            });
+            clearTimeout(timeoutId);
+            
+            if (!resp.ok) {
+                const errorText = await resp.text();
+                let errorData;
+                try {
+                    errorData = JSON.parse(errorText);
+                } catch {
+                    errorData = { error: errorText || `HTTP ${resp.status} ${resp.statusText}` };
+                }
+                throw new Error(errorData.error || `请求失败: ${resp.status}`);
+            }
+            
             const data = await resp.json();
             if (resp.ok && data && data.success) {
-                message.success('同步成功');
-                // 自动下载 JSON 到本地
-                const url = data.oss && data.oss.url ? data.oss.url : '';
-                if (url) {
-                    const absoluteUrl = url.startsWith('http') ? url : `http://localhost:3001${url}`;
-                    try {
-                        const fileResp = await fetch(absoluteUrl);
-                        const blob = await fileResp.blob();
-                        const blobUrl = window.URL.createObjectURL(blob);
-                        const a = document.createElement('a');
-                        a.href = blobUrl;
-                        a.download = 'newsList.json';
-                        document.body.appendChild(a);
-                        a.click();
-                        a.remove();
-                        window.URL.revokeObjectURL(blobUrl);
-                    } catch (e) {
-                        // 下载失败不阻塞成功提示
-                        console.error('下载 newsList.json 失败:', e);
+                // 检查 OSS 上传状态
+                if (data.oss && data.oss.success) {
+                    message.success(`同步成功！共 ${data.count || 0} 条新闻`);
+                    // 自动下载 JSON 到本地
+                    const url = data.oss.url;
+                    if (url) {
+                        const absoluteUrl = url.startsWith('http') ? url : `http://localhost:3001${url}`;
+                        try {
+                            const fileResp = await fetch(absoluteUrl);
+                            const blob = await fileResp.blob();
+                            const blobUrl = window.URL.createObjectURL(blob);
+                            const a = document.createElement('a');
+                            a.href = blobUrl;
+                            a.download = 'newsList.json';
+                            document.body.appendChild(a);
+                            a.click();
+                            a.remove();
+                            window.URL.revokeObjectURL(blobUrl);
+                        } catch (e) {
+                            // 下载失败不阻塞成功提示
+                            console.error('下载 newsList.json 失败:', e);
+                        }
                     }
+                } else {
+                    // OSS 上传失败，但本地文件已保存
+                    const ossError = data.oss && data.oss.error ? data.oss.error : '未知错误';
+                    message.warning(`本地文件已保存，但 OSS 上传失败: ${ossError}`);
+                    console.error('OSS上传失败详情:', data.oss);
                 }
             } else {
-                message.error((data && data.error) || '同步失败');
+                // 接口返回失败
+                const errorMsg = data && data.error ? data.error : '同步失败，请检查服务器日志';
+                message.error(errorMsg);
+                console.error('同步失败:', data);
             }
         } catch (e) {
-            message.error('同步失败');
+            // 处理各种错误类型
+            if (e.name === 'AbortError' || e.message === 'The user aborted a request.') {
+                message.error('同步请求超时（120秒），数据量可能较大，请稍后重试或联系管理员');
+            } else if (e.message && e.message.includes('Failed to fetch')) {
+                message.error('网络连接失败，请检查服务器是否正常运行');
+            } else if (e.message && e.message.includes('NetworkError')) {
+                message.error('网络错误，请检查网络连接');
+            } else {
+                const errorMsg = e.message || '未知错误';
+                message.error(`同步失败: ${errorMsg}`);
+            }
+            console.error('同步请求异常:', e);
         } finally {
             setSyncLoading(false);
         }

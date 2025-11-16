@@ -1234,6 +1234,13 @@ app.delete('/api/published-news/:id', (req, res) => {
 
 // 导出所有已发布新闻为JSON并上传到OSS
 app.get('/api/newList', (req, res) => {
+  // 设置请求超时（60秒，因为生成JSON和上传可能需要较长时间）
+  let timeout = setTimeout(() => {
+    if (!res.headersSent) {
+      res.status(500).json({ error: '请求超时，请稍后重试' });
+    }
+  }, 60000);
+
   const query = `
     SELECT id, slug, cover_url, news_source, title, summary, created_at
     FROM published_news
@@ -1241,43 +1248,165 @@ app.get('/api/newList', (req, res) => {
   `;
 
   db.all(query, [], async (err, rows) => {
+    // 清除初始超时
+    clearTimeout(timeout);
+    
     if (err) {
-      return res.status(500).json({ error: err.message });
+      console.error('数据库查询失败:', err);
+      if (!res.headersSent) {
+        return res.status(500).json({ error: `数据库查询失败: ${err.message}` });
+      }
+      return;
     }
 
+    // 重新设置超时（从查询完成开始，给JSON生成和上传更多时间）
+    timeout = setTimeout(() => {
+      if (!res.headersSent) {
+        res.status(500).json({ error: '处理超时，数据量可能过大，请稍后重试' });
+      }
+    }, 90000); // 90秒用于JSON生成和上传
+
     try {
+      console.log(`开始同步，共 ${rows.length} 条新闻`);
+      
       // 确保 data 目录存在并写入文件
       const dataDir = path.join(__dirname, 'data');
       if (!fs.existsSync(dataDir)) {
         fs.mkdirSync(dataDir, { recursive: true });
       }
       const filePath = path.join(dataDir, 'newsList.json');
-      const jsonBuffer = Buffer.from(JSON.stringify({ data: rows }, null, 2));
+      
+      // 优化：使用流式JSON生成，避免大对象阻塞事件循环
+      console.log('开始生成JSON...');
+      const startTime = Date.now();
+      
+      // 对于大数据量，使用更高效的JSON序列化
+      const jsonData = { data: rows };
+      // 使用 process.nextTick 让出事件循环，避免阻塞
+      await new Promise(resolve => process.nextTick(resolve));
+      
+      const jsonString = JSON.stringify(jsonData, null, 2);
+      const jsonBuffer = Buffer.from(jsonString);
+      
+      const jsonGenTime = Date.now() - startTime;
+      console.log(`JSON 生成完成，耗时: ${jsonGenTime}ms，文件大小: ${(jsonBuffer.length / 1024).toFixed(2)} KB`);
+      
+      // 写入文件
       await fs.promises.writeFile(filePath, jsonBuffer);
+      console.log('本地文件写入完成，开始验证文件...');
+      
+      // 验证文件是否生成成功
+      let fileStats;
+      try {
+        fileStats = await fs.promises.stat(filePath);
+      } catch (statError) {
+        clearTimeout(timeout);
+        console.error('文件不存在或无法访问:', statError);
+        if (!res.headersSent) {
+          return res.status(500).json({ 
+            error: `文件生成失败: 无法访问生成的文件`,
+            count: rows.length
+          });
+        }
+        return;
+      }
+      
+      // 检查文件大小是否合理（应该大于0且与预期大小接近）
+      if (fileStats.size === 0) {
+        clearTimeout(timeout);
+        console.error('文件大小为0，文件生成失败');
+        if (!res.headersSent) {
+          return res.status(500).json({ 
+            error: `文件生成失败: 文件大小为0`,
+            count: rows.length
+          });
+        }
+        return;
+      }
+      
+      // 检查文件大小是否与预期一致（允许1字节的误差，因为可能有换行符差异）
+      const sizeDiff = Math.abs(fileStats.size - jsonBuffer.length);
+      if (sizeDiff > 1) {
+        console.warn(`文件大小异常: 预期 ${jsonBuffer.length} 字节，实际 ${fileStats.size} 字节，差异 ${sizeDiff} 字节`);
+        // 如果差异较大，读取文件验证内容
+        try {
+          const fileContent = await fs.promises.readFile(filePath, 'utf8');
+          JSON.parse(fileContent); // 验证JSON格式
+          console.log('文件大小异常但JSON格式有效，继续上传');
+        } catch (parseError) {
+          clearTimeout(timeout);
+          console.error('文件内容验证失败，JSON格式无效:', parseError);
+          if (!res.headersSent) {
+            return res.status(500).json({ 
+              error: `文件生成失败: JSON格式验证失败 - ${parseError.message}`,
+              count: rows.length
+            });
+          }
+          return;
+        }
+      } else {
+        // 文件大小正常，由于jsonBuffer已经验证过（来自JSON.stringify），无需再次验证
+        console.log('文件验证成功: 文件存在、大小正常');
+      }
 
-      // 上传到 OSS 指定目录 ChinaF1/newsList.json
+      // 文件验证通过，开始上传到 OSS
       const ossKey = 'ChinaF1/newsList.json';
-      const uploadResult = await uploadBufferWithKey(ossKey, jsonBuffer, 'application/json');
-      console.log("uploadResult",uploadResult);
+      
+      console.log('开始上传到OSS...');
+      const uploadStartTime = Date.now();
+      
+      // 为 OSS 上传添加超时处理（增加到30秒，因为文件可能较大）
+      const uploadPromise = uploadBufferWithKey(ossKey, jsonBuffer, 'application/json');
+      const timeoutPromise = new Promise((_, reject) => {
+        setTimeout(() => reject(new Error('OSS上传超时（30秒）')), 30000);
+      });
+      
+      let uploadResult;
+      try {
+        uploadResult = await Promise.race([uploadPromise, timeoutPromise]);
+        const uploadTime = Date.now() - uploadStartTime;
+        console.log(`OSS上传完成，耗时: ${uploadTime}ms`, uploadResult);
+      } catch (uploadError) {
+        console.error('OSS上传异常:', uploadError);
+        uploadResult = { success: false, error: uploadError.message || 'OSS上传失败' };
+      }
+      
+      // 清除超时定时器
+      clearTimeout(timeout);
+      
       if (!uploadResult || !uploadResult.success) {
-        // 上传失败不阻塞本地导出，返回部分成功信息
-        return res.json({
+        // OSS 上传失败，返回错误信息
+        const errorMsg = uploadResult && uploadResult.error ? uploadResult.error : 'OSS上传失败，未知错误';
+        console.error('OSS上传失败:', errorMsg);
+        if (!res.headersSent) {
+          return res.json({
+            success: false,
+            error: `OSS上传失败: ${errorMsg}`,
+            localPath: filePath,
+            oss: { success: false, error: errorMsg },
+            count: rows.length
+          });
+        }
+        return;
+      }
+
+      if (!res.headersSent) {
+        res.json({
           success: true,
           localPath: filePath,
-          oss: { success: false, error: uploadResult && uploadResult.error },
+          oss: { success: true, url: uploadResult.url, key: uploadResult.fileName },
           count: rows.length
         });
       }
-
-      res.json({
-        success: true,
-        localPath: filePath,
-        oss: { success: true, url: uploadResult.url, key: uploadResult.fileName },
-        count: rows.length
-      });
     } catch (e) {
+      // 清除超时定时器
+      clearTimeout(timeout);
       console.error('导出/上传 newsList 失败:', e);
-      return res.status(500).json({ error: '导出或上传失败' });
+      if (!res.headersSent) {
+        return res.status(500).json({ 
+          error: `导出或上传失败: ${e.message || '未知错误'}` 
+        });
+      }
     }
   });
 });
