@@ -1353,6 +1353,8 @@ app.get('/api/newList', (req, res) => {
       const ossKey = 'ChinaF1/newsList.json';
       
       console.log('开始上传到OSS...');
+      console.log(`OSS Key: ${ossKey}`);
+      console.log(`文件大小: ${(jsonBuffer.length / 1024).toFixed(2)} KB`);
       const uploadStartTime = Date.now();
       
       // 为 OSS 上传添加超时处理（增加到30秒，因为文件可能较大）
@@ -1365,10 +1367,22 @@ app.get('/api/newList', (req, res) => {
       try {
         uploadResult = await Promise.race([uploadPromise, timeoutPromise]);
         const uploadTime = Date.now() - uploadStartTime;
-        console.log(`OSS上传完成，耗时: ${uploadTime}ms`, uploadResult);
+        console.log(`OSS上传完成，耗时: ${uploadTime}ms`);
+        if (uploadResult.success) {
+          console.log(`OSS上传成功: ${uploadResult.url}`);
+        } else {
+          console.error(`OSS上传失败: ${uploadResult.error}`);
+          if (uploadResult.details) {
+            console.error('错误详情:', uploadResult.details);
+          }
+        }
       } catch (uploadError) {
         console.error('OSS上传异常:', uploadError);
-        uploadResult = { success: false, error: uploadError.message || 'OSS上传失败' };
+        uploadResult = { 
+          success: false, 
+          error: uploadError.message || 'OSS上传失败',
+          details: uploadError.stack
+        };
       }
       
       // 清除超时定时器
@@ -1377,13 +1391,21 @@ app.get('/api/newList', (req, res) => {
       if (!uploadResult || !uploadResult.success) {
         // OSS 上传失败，返回错误信息
         const errorMsg = uploadResult && uploadResult.error ? uploadResult.error : 'OSS上传失败，未知错误';
+        const errorDetails = uploadResult && uploadResult.details ? uploadResult.details : undefined;
         console.error('OSS上传失败:', errorMsg);
+        if (errorDetails) {
+          console.error('详细错误信息:', errorDetails);
+        }
         if (!res.headersSent) {
           return res.json({
             success: false,
             error: `OSS上传失败: ${errorMsg}`,
             localPath: filePath,
-            oss: { success: false, error: errorMsg },
+            oss: { 
+              success: false, 
+              error: errorMsg,
+              details: errorDetails
+            },
             count: rows.length
           });
         }
