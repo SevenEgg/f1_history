@@ -29,11 +29,15 @@ if (USE_LOCAL_STORAGE) {
 
 // 创建OSS客户端（仅在非本地存储模式下）
 let ossClient = null;
+let ossClientError = null;
 if (!USE_LOCAL_STORAGE) {
   try {
     ossClient = new OSS(ossConfig);
+    console.log('✅ OSS客户端创建成功');
   } catch (error) {
-    console.error('OSS客户端创建失败，切换到本地存储模式:', error.message);
+    ossClientError = error;
+    console.error('❌ OSS客户端创建失败:', error.message);
+    console.error('错误详情:', error);
   }
 }
 
@@ -76,8 +80,9 @@ const ensureLocalDir = (targetPath) => {
 };
 
 const uploadBufferWithKey = async (key, buffer, contentType = 'application/octet-stream') => {
-  if (USE_LOCAL_STORAGE || !ossClient) {
-    // 保存到本地 uploads 目录，维持与线上Key一致的相对路径
+  // 如果配置了使用本地存储，直接使用本地存储
+  if (USE_LOCAL_STORAGE) {
+    console.log(`[本地存储模式] 保存文件到本地: ${key}`);
     const uploadsRoot = path.join(__dirname, '..', 'uploads');
     const localPath = path.join(uploadsRoot, key);
     ensureLocalDir(localPath);
@@ -89,18 +94,47 @@ const uploadBufferWithKey = async (key, buffer, contentType = 'application/octet
     };
   }
 
+  // 如果 OSS 客户端未创建成功，返回错误
+  if (!ossClient) {
+    const errorMsg = ossClientError 
+      ? `OSS客户端创建失败: ${ossClientError.message}` 
+      : 'OSS客户端未初始化';
+    console.error(`[OSS上传失败] ${errorMsg}`);
+    return { 
+      success: false, 
+      error: errorMsg,
+      details: ossClientError ? ossClientError.stack : undefined
+    };
+  }
+
+  // 尝试上传到 OSS
   try {
+    console.log(`[OSS上传] 开始上传文件: ${key}, 大小: ${(buffer.length / 1024).toFixed(2)} KB`);
     const putResult = await ossClient.put(key, buffer, {
       headers: { 'Content-Type': contentType }
     });
+    console.log(`[OSS上传成功] ${key} -> ${putResult.url}`);
     return {
       success: true,
       url: putResult.url,
       fileName: key
     };
   } catch (error) {
-    console.error('以指定Key上传到OSS失败:', error.message);
-    return { success: false, error: error.message };
+    const errorMsg = error.message || '未知错误';
+    const errorDetails = {
+      message: errorMsg,
+      code: error.code,
+      requestId: error.requestId,
+      status: error.status,
+      stack: error.stack
+    };
+    console.error(`[OSS上传失败] ${key}:`, errorMsg);
+    console.error('错误详情:', errorDetails);
+    return { 
+      success: false, 
+      error: errorMsg,
+      details: errorDetails
+    };
   }
 };
 

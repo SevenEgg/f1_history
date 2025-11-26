@@ -1,6 +1,51 @@
 {
   "data": [
     {
+      "id": 625,
+      "slug": "toto-wolff-f1-s-growth-trajectory-shows-no-signs-of-slowing-251126191147",
+      "cover_url": "https://anna1994.oss-cn-shenzhen.aliyuncs.com/f1-history/1764159464683-7l4k0c3lqgs.jpeg",
+      "news_source": "motorsport",
+      "title": "托托·沃尔夫：F1增长势头强劲，势不可挡",
+      "summary": "沃尔夫认为F1的爆炸式增长将持续，得益于预算帽带来的盈利和高估值。梅赛德斯团队估值达60亿美元，媲美顶级足球俱乐部，且在美国市场潜力巨大。未来增长依赖于持续提供精彩比赛。",
+      "created_at": "2025-11-26 20:17:47"
+    },
+    {
+      "id": 624,
+      "slug": "ferrari-urged-to-investigate-hamilton-s-las-vegas-tyre-struggles-25112621117",
+      "cover_url": "https://anna1994.oss-cn-shenzhen.aliyuncs.com/f1-history/1764159055604-ys6l5q22sy.jpeg",
+      "news_source": "Racingnews365",
+      "title": "法拉利被敦促彻查汉密尔顿在维加斯的轮胎挣扎问题",
+      "summary": "前F1策略师伯尼·柯林斯呼吁法拉利紧急调查汉密尔顿在拉斯维加斯大奖赛中，使用中性胎时出现的严重速度下降问题。这一表现远低于预期，引发了对车队轮胎管理和赛车设定的担忧，必须在新赛季开始前解决。",
+      "created_at": "2025-11-26 20:11:38"
+    },
+    {
+      "id": 623,
+      "slug": "f1-fans-predict-lando-norris-will-not-win-qatar-title-2511260115",
+      "cover_url": "https://anna1994.oss-cn-shenzhen.aliyuncs.com/f1-history/1764087572571-6r19czsm1zi.jpeg",
+      "news_source": "Racingnews365",
+      "title": "车迷预测：诺里斯无缘卡塔尔站加冕世界冠军",
+      "summary": "大多数F1车迷认为兰多·诺里斯将在卡塔尔站无缘世界冠军，受拉斯维加斯成绩取消影响，积分被大幅拉近。他面临维斯塔潘和皮亚斯特里的挑战，夺冠之路异常艰难，大部分人预测总冠军将延至最后一站决出。",
+      "created_at": "2025-11-26 00:19:44"
+    },
+    {
+      "id": 622,
+      "slug": "pirelli-scraps-c6-tyre-for-2026-after-f1-driver-criticism-25112517113",
+      "cover_url": "https://anna1994.oss-cn-shenzhen.aliyuncs.com/f1-history/1764071213028-01v84bnrzzdt.jpeg",
+      "news_source": "Racingnews365",
+      "title": "倍耐力因车手批评，2026赛季将弃用C6轮胎",
+      "summary": "倍耐力因F1车手对其性能和与C5轮胎缺乏区分度的批评，决定在2026赛季放弃C6轮胎。这一举措旨在提升赛道策略多样性，未来将根据模拟数据开发新轮胎。",
+      "created_at": "2025-11-25 19:46:57"
+    },
+    {
+      "id": 621,
+      "slug": "disgraced-f1-team-boss-appeals-lifetime-ban-2511254116",
+      "cover_url": "https://anna1994.oss-cn-shenzhen.aliyuncs.com/f1-history/1764013356044-wmkxtn1ew6.jpeg",
+      "news_source": "Racingnews365",
+      "title": "被禁赛车队老板就终身禁令提起上诉",
+      "summary": "16年前，弗拉维奥·布里亚托利因“撞车门”事件对F1终身禁令提起法律诉讼。该禁令后被法国法院推翻，布里亚托利得以重返恩斯通车队（现Alpine），近期更担任了事实上的车队领队，预示着车队可能迎来新动向。",
+      "created_at": "2025-11-25 03:42:37"
+    },
+    {
       "id": 620,
       "slug": "lewis-hamilton-s-mclaren-debut-rewriting-expectations-251124231118",
       "cover_url": "https://anna1994.oss-cn-shenzhen.aliyuncs.com/f1-history/1763994605006-tlt3ot5gol8.jpeg",
