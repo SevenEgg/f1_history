@@ -209,38 +209,81 @@ const NewsList = () => {
                             icon={<CloudSyncOutlined />}
                             onClick={async () => {
                                 try {
-                                    const resp = await fetch(`http://localhost:3001/api/newItem/${record.slug}`);
-                                    const data = await resp.json();
-                                    if (resp.ok && data && data.success) {
-                                        message.success('已同步并导出JSON');
-                                        // 自动下载该条 JSON
-                                        const url = data.oss && data.oss.url ? data.oss.url : '';
-                                        if (url) {
-                                            const absoluteUrl = url.startsWith('http') ? url : `http://localhost:3001${url}`;
-                                            try {
-                                                const fileResp = await fetch(absoluteUrl);
-                                                const blob = await fileResp.blob();
-                                                const blobUrl = window.URL.createObjectURL(blob);
-                                                const a = document.createElement('a');
-                                                a.href = blobUrl;
-                                                a.download = `${record.slug}.json`;
-                                                document.body.appendChild(a);
-                                                a.click();
-                                                a.remove();
-                                                window.URL.revokeObjectURL(blobUrl);
-                                            } catch (e) {
-                                                console.error('下载单条 JSON 失败:', e);
-                                            }
+                                    // 创建带超时的 fetch 请求
+                                    const controller = new AbortController();
+                                    const timeoutId = setTimeout(() => controller.abort(), 60000); // 60秒超时
+                                    
+                                    let resp;
+                                    try {
+                                        resp = await fetch(`http://localhost:3001/api/newItem/${record.slug}`, {
+                                            signal: controller.signal
+                                        });
+                                    } catch (fetchError) {
+                                        clearTimeout(timeoutId);
+                                        if (fetchError.name === 'AbortError') {
+                                            throw new Error('请求超时，请稍后重试');
                                         }
-                                        // 同步后刷新列表，拿到最新 syncSta
-                                        setTimeout(() => {
-                                            fetchPublishedNews(pagination.current, pagination.pageSize, searchText);
-                                        }, 500);
+                                        throw new Error(`网络错误: ${fetchError.message}`);
+                                    }
+                                    clearTimeout(timeoutId);
+                                    
+                                    let data;
+                                    try {
+                                        data = await resp.json();
+                                    } catch (jsonError) {
+                                        console.error('解析响应失败:', jsonError);
+                                        throw new Error('服务器响应格式错误');
+                                    }
+                                    
+                                    if (resp.ok && data) {
+                                        // 检查整体成功和 OSS 上传成功
+                                        if (data.success && data.oss && data.oss.success) {
+                                            message.success('已同步并导出JSON到OSS');
+                                            // 自动下载该条 JSON
+                                            const url = data.oss.url;
+                                            if (url) {
+                                                const absoluteUrl = url.startsWith('http') ? url : `http://localhost:3001${url}`;
+                                                try {
+                                                    const fileResp = await fetch(absoluteUrl);
+                                                    const blob = await fileResp.blob();
+                                                    const blobUrl = window.URL.createObjectURL(blob);
+                                                    const a = document.createElement('a');
+                                                    a.href = blobUrl;
+                                                    a.download = `${record.slug}.json`;
+                                                    document.body.appendChild(a);
+                                                    a.click();
+                                                    a.remove();
+                                                    window.URL.revokeObjectURL(blobUrl);
+                                                } catch (e) {
+                                                    console.error('下载单条 JSON 失败:', e);
+                                                }
+                                            }
+                                            // 同步后刷新列表，拿到最新 syncSta
+                                            setTimeout(() => {
+                                                fetchPublishedNews(pagination.current, pagination.pageSize, searchText);
+                                            }, 500);
+                                        } else {
+                                            // OSS 上传失败
+                                            const errorMsg = data.error || (data.oss && data.oss.error) || '同步失败';
+                                            message.warning(`本地文件已保存，但OSS上传失败: ${errorMsg}`);
+                                            console.error('同步失败详情:', data);
+                                        }
                                     } else {
                                         message.error((data && data.error) || '同步失败');
+                                        console.error('同步失败:', data);
                                     }
                                 } catch (e) {
-                                    message.error('同步失败');
+                                    const errorMsg = e.message || '同步失败';
+                                    message.error(errorMsg);
+                                    console.error('同步异常:', e);
+                                    // 如果是网络错误，提供更多信息
+                                    if (e.message.includes('Failed to fetch') || e.message.includes('网络错误')) {
+                                        console.error('可能的原因:');
+                                        console.error('1. 服务器未运行或无法访问');
+                                        console.error('2. 网络连接问题');
+                                        console.error('3. CORS 配置问题');
+                                        console.error('4. 服务器处理时间过长导致超时');
+                                    }
                                 }
                             }}
                             size="small"

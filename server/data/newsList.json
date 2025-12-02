@@ -1,6 +1,339 @@
 {
   "data": [
     {
+      "id": 662,
+      "slug": "antonelli-responds-to-norris-incident-in-qatar-gp-25122201216",
+      "cover_url": "https://anna1994.oss-cn-shenzhen.aliyuncs.com/f1-history/1764686460364-d14xaz0hfkd.jpeg",
+      "news_source": "Racingnews365",
+      "title": "安东内利回应卡塔尔站诺里斯争议事件",
+      "summary": "卡塔尔大奖赛，安东内利失误让诺里斯超车，红牛指责其“故意让车”引发死亡威胁。安东内利坚称凭实力可守住位置，强调进步显著，望为2026赛季蓄力。",
+      "created_at": "2025-12-02 22:41:30"
+    },
+    {
+      "id": 661,
+      "slug": "mercedes-amg-petronas-f1-team-secures-multi-year-global-partnership-with-pepsico-25122201239",
+      "cover_url": "https://anna1994.oss-cn-shenzhen.aliyuncs.com/f1-history/1764686287903-xua9te86leo.jpeg",
+      "news_source": "Blackbook",
+      "title": "梅赛德斯F1车队与百事公司达成多年全球合作",
+      "summary": "梅赛德斯F1车队与百事公司达成多年全球合作，旗下佳得乐、激浪、多力多滋将深度整合。此举标志百事重返F1车队赞助，看好F1的全球商业潜力和巨大观众群体。",
+      "created_at": "2025-12-02 22:38:11"
+    },
+    {
+      "id": 660,
+      "slug": "vasseur-sets-podium-target-for-ferrari-in-abu-dhabi-after-qatar-struggles-25122231253",
+      "cover_url": "https://anna1994.oss-cn-shenzhen.aliyuncs.com/f1-history/1764686042869-et78v2u9gnb.jpeg",
+      "news_source": "GP Blog",
+      "title": "瓦塞尔设定法拉利阿布扎比目标：力争领奖台，摆脱卡塔尔低迷",
+      "summary": "法拉利车队主管瓦塞尔宣布，在卡塔尔站遭遇困境后，车队将在阿布扎比大奖赛中力争登上领奖台。尽管赛季起伏不定，但 瓦塞尔 对 亚斯码头 赛道表现充满信心，认为充分准备下有望重现过往佳绩，为赛季画上圆满句号。",
+      "created_at": "2025-12-02 22:34:32"
+    },
+    {
+      "id": 659,
+      "slug": "mclaren-to-conduct-internal-review-after-significant-qatar-penalty-25121181212",
+      "cover_url": "https://anna1994.oss-cn-shenzhen.aliyuncs.com/f1-history/1764598325469-jns236t1uxn.jpeg",
+      "news_source": "Racingnews365",
+      "title": "迈凯伦因卡塔尔赛严重策略失误进行内部审查",
+      "summary": "迈凯伦在卡塔尔大奖赛中因未能在安全车时进站而犯下重大策略失误，导致车手错失胜利和领奖台。车队领队斯特拉已宣布进行内部审查，找出决策过程中的根本原因和潜在偏见，以避免未来重蹈覆辙。",
+      "created_at": "2025-12-01 22:12:18"
+    },
+    {
+      "id": 658,
+      "slug": "lewis-hamilton-urges-ferrari-to-implement-his-improvement-suggestions-2512119124",
+      "cover_url": "https://anna1994.oss-cn-shenzhen.aliyuncs.com/f1-history/1764597426267-pcliv9g31xi.jpeg",
+      "news_source": "Racingnews365",
+      "title": "汉密尔顿敦促法拉利采纳其改进建议",
+      "summary": "汉密尔顿呼吁法拉利“行动”起来，落实他提出的改进建议。他拥有大量笔记，指出车队亟需解决的问题。本赛季至今，七冠王表现不佳，积分大幅落后队友，他认为车队若将他的建议付诸行动，完全可以解决现有困境。",
+      "created_at": "2025-12-01 21:57:14"
+    },
+    {
+      "id": 657,
+      "slug": "verstappen-s-qatar-next-level-drive-sets-up-shock-title-shot-25121211210",
+      "cover_url": "https://anna1994.oss-cn-shenzhen.aliyuncs.com/f1-history/1764596878190-pptiw0pd39.jpeg",
+      "news_source": "Racingnews365",
+      "title": "维斯塔潘卡塔尔“超凡”表现，为意外的冠军争夺战铺平道路",
+      "summary": "马克斯·维斯塔潘在卡塔尔大奖赛上以“超凡”表现实现惊人逆转，从巨大积分劣势中脱颖而出，有望争夺第五个F1总冠军。麦凯伦的车队策略失误成为关键转折点，为赛季收官战阿布扎比站留下了悬念。",
+      "created_at": "2025-12-01 21:54:03"
+    },
+    {
+      "id": 656,
+      "slug": "helmut-marko-apologizes-for-kimi-antonelli-abuse-after-qatar-gp-accusation-2512121120",
+      "cover_url": "https://anna1994.oss-cn-shenzhen.aliyuncs.com/f1-history/1764596524674-hv1puspnlt6.jpeg",
+      "news_source": "Racingnews365",
+      "title": "红牛顾问马尔科就卡塔尔大奖赛争议言论致歉",
+      "summary": "红牛顾问马尔科为卡塔尔大奖赛上对车手 基米·安东内利 的错误指控及其引发的网络暴力道歉。他承认 安东内利 的失误是驾驶行为而非故意，并对年轻车手遭受的死亡威胁等严重骚扰深感遗憾。",
+      "created_at": "2025-12-01 21:42:32"
+    },
+    {
+      "id": 655,
+      "slug": "verstappen-wins-qatar-gp-title-race-heads-to-abu-dhabi-finale-2512121247",
+      "cover_url": "https://anna1994.oss-cn-shenzhen.aliyuncs.com/f1-history/1764524342863-8hzlhgt7bl4.jpeg",
+      "news_source": "The Race",
+      "title": "维斯塔潘夺卡塔尔站冠军，总冠军争夺战延至阿布扎比",
+      "summary": "维斯塔潘在卡塔尔大奖赛获胜，F1 2025赛季车手总冠军的争夺悬念被带到阿布扎比的最后一场比赛。积分榜领头羊诺里斯以第四完赛，但领先优势被缩小，皮亚斯特里紧随其后，决赛将极度激烈。",
+      "created_at": "2025-12-01 01:39:14"
+    },
+    {
+      "id": 654,
+      "slug": "max-verstappen-s-red-bull-receives-new-power-unit-ahead-of-qatar-gp-251210126",
+      "cover_url": "https://anna1994.oss-cn-shenzhen.aliyuncs.com/f1-history/1764516886898-8efw6s7y03h.jpeg",
+      "news_source": "Racingnews365",
+      "title": "红牛为维斯塔潘更换了赛车动力单元",
+      "summary": "马克斯·维斯塔潘的红牛赛车在卡塔尔大奖赛前更换了动力单元，旨在提升性能与可靠性，且无发车位惩罚。此举对维斯塔潘追赶榜首的诺里斯至关重要。",
+      "created_at": "2025-11-30 23:36:18"
+    },
+    {
+      "id": 653,
+      "slug": "f1-teams-face-extreme-strategy-conundrum-at-qatar-gp-25113022112",
+      "cover_url": "https://anna1994.oss-cn-shenzhen.aliyuncs.com/f1-history/1764511814074-3dagsawg1se.jpeg",
+      "news_source": "Racingnews365",
+      "title": "卡塔尔大奖赛：车队面临极端策略难题",
+      "summary": "卡塔尔站因25圈轮胎限制而策略复杂。车队需至少进站两次，需精心规划轮胎配方和进站时机。诺里斯的夺冠机会也受此影响，策略将是获胜关键。",
+      "created_at": "2025-11-30 22:10:37"
+    },
+    {
+      "id": 652,
+      "slug": "charles-leclerc-admits-ferrari-s-dire-situation-at-qatar-gp-25113019112",
+      "cover_url": "https://anna1994.oss-cn-shenzhen.aliyuncs.com/f1-history/1764510567682-ocirz6i1tni.jpeg",
+      "news_source": "Racingnews365",
+      "title": "勒克莱尔坦承法拉利在卡塔尔站处境堪忧",
+      "summary": "勒克莱尔坦承法拉利在卡塔尔站表现“糟糕”，赛车“不够快”且“极难驾驭”。他承认为取得第10名冒了极大风险，对正赛不抱希望，显示出车队在赛季末面临严峻挑战。",
+      "created_at": "2025-11-30 21:50:19"
+    },
+    {
+      "id": 651,
+      "slug": "verstappen-rebuffs-norris-s-nonsense-claim-in-f1-title-war-of-words-251130201145",
+      "cover_url": "https://anna1994.oss-cn-shenzhen.aliyuncs.com/f1-history/1764509485976-t443qwrjk2o.jpeg",
+      "news_source": "motorsport",
+      "title": "维斯塔潘回应诺里斯“胡言乱语”论调：“事实如此”",
+      "summary": "维斯塔潘反驳诺里斯关于其在迈凯伦能更早夺冠的“胡言乱语”论，称自己只陈述事实。诺里斯则指责红牛“攻击性太强且常说废话”，凸显了F1冠军争夺战中紧张的心理博弈。",
+      "created_at": "2025-11-30 21:31:57"
+    },
+    {
+      "id": 650,
+      "slug": "colapinto-to-start-qatar-gp-from-pit-lane-after-setup-changes-251130211111",
+      "cover_url": "https://anna1994.oss-cn-shenzhen.aliyuncs.com/f1-history/1764508428507-u3mk0r90v0r.jpeg",
+      "news_source": "Racingnews365",
+      "title": "科拉平托因赛车调整将从卡塔尔大奖赛维修区发车",
+      "summary": "弗兰克·科拉平托因 Alpine 车队在卡塔尔大奖赛期间违反封闭区规则进行赛车设定调整，连续第二次从维修区发车。这暴露了车队在赛车性能和策略上的挑战，并可能影响车手的比赛结果和发展。",
+      "created_at": "2025-11-30 21:14:14"
+    },
+    {
+      "id": 649,
+      "slug": "lando-norris-qatar-gp-approach-amidst-first-f1-title-challenge-251130161117",
+      "cover_url": "https://anna1994.oss-cn-shenzhen.aliyuncs.com/f1-history/1764493571030-f4msejsu5ua.jpeg",
+      "news_source": "Racingnews365",
+      "title": "卡塔尔大奖赛，诺里斯首夺F1冠军的关键之战",
+      "summary": "兰多·诺里斯迎来首个F1总冠军机会，正以平常心备战卡塔尔站。虽排位赛失误，但仍与队友皮亚斯特里积分胶着。他强调专注于起步，不惧挑战，迈凯伦车队的崛起是最大亮点。",
+      "created_at": "2025-11-30 17:07:48"
+    },
+    {
+      "id": 648,
+      "slug": "lando-norris-slams-media-bullshit-in-tense-exchange-with-george-russell-251130171112",
+      "cover_url": "https://anna1994.oss-cn-shenzhen.aliyuncs.com/f1-history/1764493361385-z3unm9ks77.jpeg",
+      "news_source": "Racingnews365",
+      "title": "诺里斯和拉塞尔接受采访时痛斥“媒体胡说八道”",
+      "summary": "在卡塔尔排位赛后，诺里斯因媒体报道失误归咎于拉塞尔而对其进行激烈驳斥。双方在简短交锋后迅速澄清误会，展现了车手间的互相尊重与对媒体歪曲报道的无奈。",
+      "created_at": "2025-11-30 17:02:45"
+    },
+    {
+      "id": 647,
+      "slug": "red-bull-confirms-floor-change-for-max-verstappen-s-car-in-qatar-25113017110",
+      "cover_url": "https://anna1994.oss-cn-shenzhen.aliyuncs.com/f1-history/1764492915262-x6v2ihcimc.jpeg",
+      "news_source": "Racingnews365",
+      "title": "红牛确认对维斯塔潘赛车进行关键调整",
+      "summary": "红牛承认在卡塔尔大奖赛中，维斯塔潘使用了RB21的旧款底板。此举旨在解决车手抱怨的转向不足和颠簸问题，凸显了车手反馈对赛车性能和信心在争冠中的重要性。",
+      "created_at": "2025-11-30 16:55:33"
+    },
+    {
+      "id": 646,
+      "slug": "lewis-hamilton-eliminated-in-q1-for-third-consecutive-qualifying-session-at-qatar-grand-prix-25113031113",
+      "cover_url": "https://cdn.racingnews365.com/2025/Hamilton/_1092x683_crop_center-center_85_none/XPB_1388567_HiRes.jpg?v=1764433225",
+      "news_source": "Racingnews365",
+      "title": "汉密尔顿卡塔尔大奖赛三连Q1出局，陷入职业生涯低谷",
+      "summary": "卡塔尔大奖赛排位赛，汉密尔顿继拉斯维加斯后再次Q1出局，创下职业生涯连续Q1淘汰新纪录，表现令人担忧。他从P18发车，与队友差距明显，凸显了法拉利车队需紧急解决的性能问题。",
+      "created_at": "2025-11-30 03:08:49"
+    },
+    {
+      "id": 645,
+      "slug": "hamilton-details-ferrari-s-snapping-issues-after-qatar-sprint-disaster-25113001153",
+      "cover_url": "https://anna1994.oss-cn-shenzhen.aliyuncs.com/f1-history/1764432197211-3fsjrug06rm.jpeg",
+      "news_source": "motorsport",
+      "title": "汉密尔顿详述法拉利赛车“失控”难题",
+      "summary": "法拉利在卡塔尔冲刺赛遭遇重大危机。汉密尔顿和勒克莱尔均表示赛车后部稳定性极差，操控困难，表现与预期严重不符，车队面临严峻挑战。",
+      "created_at": "2025-11-30 00:03:46"
+    },
+    {
+      "id": 644,
+      "slug": "lando-norris-responds-to-max-verstappen-s-aggressive-title-fight-comments-25113001116",
+      "cover_url": "https://anna1994.oss-cn-shenzhen.aliyuncs.com/f1-history/1764431992983-ae7p0f3spt7.jpeg",
+      "news_source": "Racingnews365",
+      "title": "诺里斯回击维斯塔潘“激进”言论",
+      "summary": "诺里斯反击维斯塔潘关于其若驾驶迈凯伦便能提前锁定总冠军的说法，称维斯塔潘“并非全知晓”，并批评红牛“激进”。他强调迈凯伦将专注于赛道，让成绩说话。",
+      "created_at": "2025-11-30 00:00:17"
+    },
+    {
+      "id": 643,
+      "slug": "aston-martin-confirms-christian-horner-not-joining-team-25112922113",
+      "cover_url": "https://anna1994.oss-cn-shenzhen.aliyuncs.com/f1-history/1764425707601-aggxl7tkgf.jpeg",
+      "news_source": "Racingnews365",
+      "title": "阿斯顿·马丁否认霍纳加盟传闻",
+      "summary": "阿斯顿·马丁正式否认了前红牛领队克里斯蒂安·霍纳将加盟的传闻。霍纳目前处于待业期，且车队领队安迪·考威尔将转任新职，由阿德里安·纽维接任。此举为车队2026赛季的战略重点提供了清晰方向。",
+      "created_at": "2025-11-29 22:15:09"
+    },
+    {
+      "id": 642,
+      "slug": "fernando-alonso-s-experience-powers-qatar-sprint-quali-success-251129211159",
+      "cover_url": "https://anna1994.oss-cn-shenzhen.aliyuncs.com/f1-history/1764423078166-2se92s3fdgi.jpeg",
+      "news_source": "motorsport",
+      "title": "经验铸就辉煌！阿隆索卡塔尔冲刺赛排位赛强势获第四",
+      "summary": "44岁的F1老将费尔南多·阿隆索在卡塔尔冲刺赛排位赛中以第四名惊艳全场，这是他本赛季最佳发车位。在车队挣扎之际，他凭借丰富经验和高超技巧，为阿斯顿·马丁注入希望，并着眼于2026年规则变革。",
+      "created_at": "2025-11-29 21:31:22"
+    },
+    {
+      "id": 641,
+      "slug": "norris-admits-sprint-qualifying-error-ends-pole-streak-251129211158",
+      "cover_url": "https://r.testifier.nl/Acbs8526SDKI/resizing_type:fill/width:1200/height:630/plain/https%3A%2F%2Fs3-newsifier.ams3.digitaloceanspaces.com%2Fgpblog.com%2Fimages%2F2025-11%2Fnorris-qatar-692ae1f9cc9d8.jpg",
+      "news_source": "GP Blog",
+      "title": "诺里斯承认冲刺排位赛失误，连胜纪录终结",
+      "summary": "兰多·诺里斯在卡塔尔冲刺排位赛中因一次出圈失误和最后一个弯道的错误，终结了其杆位连胜纪录，仅获第三。队友皮亚斯特里夺得杆位。这一失误可能影响其在超车艰难的冲刺赛表现，也让迈凯伦内部竞争更加激烈。",
+      "created_at": "2025-11-29 20:59:28"
+    },
+    {
+      "id": 640,
+      "slug": "red-bull-pinpoints-max-verstappen-s-soft-tire-problem-after-rare-qatar-setback-251129201112",
+      "cover_url": "https://anna1994.oss-cn-shenzhen.aliyuncs.com/f1-history/1764420648928-67xhqbmzesm.jpeg",
+      "news_source": "Racingnews365",
+      "title": "红牛找到维斯塔潘软胎“症结”，罕见失利引关注",
+      "summary": "卡塔尔大奖赛上，红牛车队在冲刺赛排位中遭遇罕见挑战，维斯塔潘因软胎颠簸问题仅获第六。车队正积极寻找原因，力求在正赛前解决这一影响其统治地位的“症结”。",
+      "created_at": "2025-11-29 20:51:20"
+    },
+    {
+      "id": 639,
+      "slug": "leclerc-frustrated-with-sainz-after-qatar-sprint-qualifying-incident-251129211117",
+      "cover_url": "https://anna1994.oss-cn-shenzhen.aliyuncs.com/f1-history/1764420423747-md3wjlvp6ue.jpeg",
+      "news_source": "Racingnews365",
+      "title": "勒克莱尔对塞恩斯在冲刺排位赛事件表示不满",
+      "summary": "勒克莱尔在卡塔尔冲刺排位赛中，因前队友塞恩斯刻意拉大车距，导致他最后一圈受阻，未能取得预期成绩，对此表示不满。",
+      "created_at": "2025-11-29 20:47:37"
+    },
+    {
+      "id": 638,
+      "slug": "four-f1-drivers-including-lewis-hamilton-to-start-qatar-sprint-from-pit-lane-251129211117",
+      "cover_url": "https://anna1994.oss-cn-shenzhen.aliyuncs.com/f1-history/1764419809573-pcs0fgdmnti.jpeg",
+      "news_source": "Racingnews365",
+      "title": "汉密尔顿等四名F1车手将从维修区发车",
+      "summary": "汉密尔顿等四名F1车手因违反“围场封锁”规则，在卡塔尔冲刺赛中被罚从维修区起步。此举严格了赛事规则执行，增加了车队优化设置的难度，并使车手们争取积分的前景更加严峻。",
+      "created_at": "2025-11-29 20:37:10"
+    },
+    {
+      "id": 637,
+      "slug": "hamilton-s-qatar-sprint-qualifying-disaster-adds-to-ferrari-woes-2511293119",
+      "cover_url": "https://anna1994.oss-cn-shenzhen.aliyuncs.com/f1-history/1764353605598-bjkurv1s6v.jpeg",
+      "news_source": "Racingnews365",
+      "title": "汉密尔顿卡塔尔冲刺排位赛遭遇法拉利最新羞辱",
+      "summary": "汉密尔顿在卡塔尔冲刺排位赛中再次遭遇重大挫折，仅获第18名，这与其即将加盟的法拉利车队面临的挑战息息相关，引发对其近期状态的担忧。",
+      "created_at": "2025-11-29 02:13:42"
+    },
+    {
+      "id": 636,
+      "slug": "max-verstappen-s-blunt-verdict-on-mclaren-s-las-vegas-disqualification-2511292116",
+      "cover_url": "https://anna1994.oss-cn-shenzhen.aliyuncs.com/f1-history/1764351144593-3yys74rg85l.jpeg",
+      "news_source": "Racingnews365",
+      "title": "维斯塔潘：麦队拉斯维加斯取消成绩毫无借口",
+      "summary": "维斯塔潘对麦队在拉斯维加斯赛后因地板磨损超标被取消资格一事表示“毫无借口”。此判罚缩小了积分差距，使维斯塔潘的争冠希望大增。他承认赛季尚存变数，将全力以赴。严格的技术规则执行对公平竞赛至关重要。",
+      "created_at": "2025-11-29 01:32:50"
+    },
+    {
+      "id": 635,
+      "slug": "f1-drivers-united-on-racing-protocols-after-critical-fia-meeting-in-qatar-25112901151",
+      "cover_url": "https://anna1994.oss-cn-shenzhen.aliyuncs.com/f1-history/1764350400712-rcpqbi0o2pi.jpeg",
+      "news_source": "Racingnews365",
+      "title": "卡塔尔FIA会议后，车手就赛车规程达成一致",
+      "summary": "F1车手在卡塔尔与FIA会议后，就赛车规程和判罚标准达成一致。车手强调应在考虑情境和意图的基础上进行判罚，而非死板套用规则。此次对话预示着未来判罚将更灵活、更公平。",
+      "created_at": "2025-11-29 01:20:11"
+    },
+    {
+      "id": 634,
+      "slug": "max-verstappen-considers-f1-exit-if-2026-rules-aren-t-enjoyable-25112901147",
+      "cover_url": "https://anna1994.oss-cn-shenzhen.aliyuncs.com/f1-history/1764349886123-rnpu4f7whx.jpeg",
+      "news_source": "motorsport",
+      "title": "维斯塔潘：若2026规则不有趣，考虑退出F1",
+      "summary": "卫冕F1世界冠军维斯塔潘表示，若2026年新赛车规则令其感到不有趣，他将考虑提前结束F1生涯。他合同至2028年，但个人满意度是关键。他明确表示“一旦停下，就真的停下”，并有意向转向耐力赛。",
+      "created_at": "2025-11-29 01:11:35"
+    },
+    {
+      "id": 633,
+      "slug": "red-bull-s-2026-f1-driver-lineup-decision-nears-post-qatar-gp-2511291117",
+      "cover_url": "https://anna1994.oss-cn-shenzhen.aliyuncs.com/f1-history/1764349406753-odozzslmv3s.jpeg",
+      "news_source": "Racingnews365",
+      "title": "红牛：2026赛季车手阵容将在卡塔尔站后敲定",
+      "summary": "红牛F1将在卡塔尔站后敲定2026赛季车手阵容。除维斯塔潘已确定外，哈贾尔有望升入主队，而林德布拉德或加盟姊妹队，引发劳森与角田裕毅的竞争。此举关乎车队规划及车手未来。",
+      "created_at": "2025-11-29 01:03:32"
+    },
+    {
+      "id": 632,
+      "slug": "verstappen-demands-perfection-from-red-bull-in-title-chase-251128151112",
+      "cover_url": "https://anna1994.oss-cn-shenzhen.aliyuncs.com/f1-history/1764332180446-6b2rosmi84x.jpeg",
+      "news_source": "Racingnews365",
+      "title": "维斯塔潘要求红牛在争冠路上做到完美",
+      "summary": "维斯塔潘要求红牛在接下来的两场比赛中做到完美，以缩小与积分领头羊诺里斯的24分差距。卡塔尔冲刺赛周末和强制两停策略增加了比赛难度。红牛正全力以赴，争夺本赛季车手总冠军。",
+      "created_at": "2025-11-28 20:16:33"
+    },
+    {
+      "id": 631,
+      "slug": "verstappen-s-comeback-from-checked-out-to-title-contender-251128201150",
+      "cover_url": "https://anna1994.oss-cn-shenzhen.aliyuncs.com/f1-history/1764330525036-plkzq6torr.jpeg",
+      "news_source": "motorsport",
+      "title": "维斯塔潘强势回归：从“心灰意冷”到争冠热门",
+      "summary": "荷兰站后一度自认无望争冠的维斯塔潘，凭借红牛的升级和自身出色表现，已重回积分榜第二，仅落后领跑者24分。他正经历一场戏剧性逆转，为第五个F1世界冠军发起强劲冲刺。",
+      "created_at": "2025-11-28 19:48:49"
+    },
+    {
+      "id": 630,
+      "slug": "helmut-marko-surprised-by-adrian-newey-s-promotion-to-aston-martin-team-principal-role-251128181115",
+      "cover_url": "https://anna1994.oss-cn-shenzhen.aliyuncs.com/f1-history/1764328069707-ws6b38goip.jpeg",
+      "news_source": "Racingnews365",
+      "title": "马尔科对纽维晋升领队表示震惊：这并非他的强项",
+      "summary": "马尔科霍对纽维升任阿斯顿·马丁车队领队感到意外。纽维以设计闻名，管理能力存疑。这一转变是阿斯顿·马丁的大胆赌博，其成败取决于纽维能否平衡领导与技术开发。",
+      "created_at": "2025-11-28 19:08:15"
+    },
+    {
+      "id": 629,
+      "slug": "piastri-reveals-mclaren-ruled-out-team-orders-in-title-fight-251127211115",
+      "cover_url": "https://anna1994.oss-cn-shenzhen.aliyuncs.com/f1-history/1764258110422-4wcfw7eh768.jpeg",
+      "news_source": "Racingnews365",
+      "title": "皮亚斯特里确认：迈凯伦放弃车队指令，允许车手自由争冠",
+      "summary": "迈凯伦证实不设车队指令，允许皮亚斯特里和诺里斯自由争冠。尽管拉斯维加斯站双重取消资格，皮亚斯特里仍认为这是“净负面”，因其拉近了与维斯塔潘的积分差距。剩余两站，三位车手将展开激烈角逐。",
+      "created_at": "2025-11-27 23:41:58"
+    },
+    {
+      "id": 628,
+      "slug": "mclaren-reveals-cause-of-double-las-vegas-disqualification-25112716110",
+      "cover_url": "https://anna1994.oss-cn-shenzhen.aliyuncs.com/f1-history/1764243267768-q67t578kvn.jpeg",
+      "news_source": "Racingnews365",
+      "title": "迈凯伦揭晓拉斯维加斯双车退赛原因",
+      "summary": "迈凯伦因底板防滑块磨损超标被取消拉斯维加斯大奖赛成绩。车队称是因赛道上意想不到的剧烈“海豚跳”导致。尽管有安全余量，但赛况超出了预期。车队相信此问题不会影响后续比赛。",
+      "created_at": "2025-11-27 19:34:38"
+    },
+    {
+      "id": 627,
+      "slug": "sebastian-vettel-s-key-advice-to-lewis-hamilton-on-joining-ferrari-251127161111",
+      "cover_url": "https://anna1994.oss-cn-shenzhen.aliyuncs.com/f1-history/1764242716259-ne37t1rfry.jpeg",
+      "news_source": "Racingnews365",
+      "title": "维特尔向汉密尔顿支招：加盟法拉利，语言和文化是关键",
+      "summary": "塞巴斯蒂安·维特尔向即将加盟法拉利的刘易斯·汉密尔顿提供了关键建议，强调学习意大利语和沉浸在当地文化的重要性。他分享了自身经验，指出这是理解车队精神、实现职业生涯巅峰的必由之路。",
+      "created_at": "2025-11-27 19:25:37"
+    },
+    {
+      "id": 626,
+      "slug": "mclaren-urged-to-prioritize-norris-to-combat-verstappen-s-charge-251127181144",
+      "cover_url": "https://anna1994.oss-cn-shenzhen.aliyuncs.com/f1-history/1764241512837-gb3a0nf58yf.jpeg",
+      "news_source": "GP Blog",
+      "title": "斯泰纳建议迈凯伦全力支持车手诺里斯，以对抗维斯塔潘",
+      "summary": "前F1车队领队斯泰纳建议迈凯伦全力支持车手诺里斯，以对抗维斯塔潘。拉斯维加斯赛后，诺里斯的领先优势大幅缩水至24分，车队指令将成为关键。车队如何处理车手之间的平衡，将直接影响诺里斯的争冠前景。",
+      "created_at": "2025-11-27 19:05:32"
+    },
+    {
       "id": 625,
       "slug": "toto-wolff-f1-s-growth-trajectory-shows-no-signs-of-slowing-251126191147",
       "cover_url": "https://anna1994.oss-cn-shenzhen.aliyuncs.com/f1-history/1764159464683-7l4k0c3lqgs.jpeg",

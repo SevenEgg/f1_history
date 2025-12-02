@@ -1433,12 +1433,27 @@ app.get('/api/newList', (req, res) => {
   });
 });
 
+// 测试页面
+app.get('/', (req, res) => {
+  res.send('Hello World');
+});
+
 // 导出单条已发布新闻为 JSON 并上传到 OSS（按 slug）
 app.get('/api/newItem/:slug', (req, res) => {
   const { slug } = req.params;
   if (!slug) {
     return res.status(400).json({ error: '缺少 slug 参数' });
   }
+
+  console.log(`[单条同步] 收到请求: ${slug}`);
+
+  // 设置请求超时（60秒）
+  let timeout = setTimeout(() => {
+    if (!res.headersSent) {
+      console.error(`[单条同步超时] ${slug}: 请求超时（60秒）`);
+      res.status(500).json({ error: '请求超时，请稍后重试' });
+    }
+  }, 60000);
 
   const query = `
     SELECT id, slug, cover_url, news_source, title, summary, content, tags, created_at, updated_at, syncSta
@@ -1447,53 +1462,183 @@ app.get('/api/newItem/:slug', (req, res) => {
     LIMIT 1
   `;
 
-  db.get(query, [slug], async (err, row) => {
-    if (err) {
-      return res.status(500).json({ error: err.message });
-    }
-    if (!row) {
-      return res.status(404).json({ error: '未找到对应的新闻' });
-    }
+  // 使用 Promise 包装异步操作，确保所有错误都被捕获
+  const processRow = async (row) => {
+    // 重新设置超时（从查询完成开始）
+    timeout = setTimeout(() => {
+      if (!res.headersSent) {
+        console.error(`[单条同步超时] ${slug}: 处理超时（60秒）`);
+        res.status(500).json({ error: '处理超时，请稍后重试' });
+      }
+    }, 60000);
 
     try {
+      console.log(`[单条同步] 开始处理: ${slug}`);
       const dataDir = path.join(__dirname, 'data', 'news');
       if (!fs.existsSync(dataDir)) {
         fs.mkdirSync(dataDir, { recursive: true });
       }
 
-      row["content"] = encrypt(row["content"]);
-      row["summary"] = encrypt(row["summary"]);
-      row["title"] = encrypt(row["title"]);
-      row["cover_url"] = encrypt(row["cover_url"]);
+      // 加密字段，处理 null/undefined 值
+      try {
+        if (row["content"]) row["content"] = encrypt(row["content"]);
+        if (row["summary"]) row["summary"] = encrypt(row["summary"]);
+        if (row["title"]) row["title"] = encrypt(row["title"]);
+        if (row["cover_url"]) row["cover_url"] = encrypt(row["cover_url"]);
+      } catch (encryptError) {
+        console.error(`[单条同步] 加密失败 ${slug}:`, encryptError);
+        clearTimeout(timeout);
+        if (!res.headersSent) {
+          return res.status(500).json({ 
+            error: `数据加密失败: ${encryptError.message}` 
+          });
+        }
+        return;
+      }
      
       const fileName = `${slug}.json`;
       const filePath = path.join(dataDir, fileName);
       const jsonBuffer = Buffer.from(JSON.stringify(row, null, 2));
-      await fs.promises.writeFile(filePath, jsonBuffer);
-
+      console.log(`[单条同步] 准备写入文件: ${filePath}, 大小: ${(jsonBuffer.length / 1024).toFixed(2)} KB`);
+      
+      try {
+        await fs.promises.writeFile(filePath, jsonBuffer);
+        console.log(`[单条同步] 文件写入成功: ${filePath}`);
+      } catch (writeError) {
+        console.error(`[单条同步] 文件写入失败 ${slug}:`, writeError);
+        clearTimeout(timeout);
+        if (!res.headersSent) {
+          return res.status(500).json({ 
+            error: `文件写入失败: ${writeError.message}` 
+          });
+        }
+        return;
+      }
+      
+      // 延迟一秒确保文件完全写入磁盘
+      console.log('文件写入完成，等待1秒后上传到OSS...');
+      await new Promise(resolve => setTimeout(resolve, 1000));
+      
       // 上传到 OSS ChinaF1/news/${slug}.json
       const ossKey = `ChinaF1/news/${fileName}`;
-      const uploadResult = await uploadBufferWithKey(ossKey, jsonBuffer, 'application/json');
+      console.log(`[单条同步] 开始上传到OSS: ${ossKey}`);
+      console.log(`[单条同步] 文件大小: ${(jsonBuffer.length / 1024).toFixed(2)} KB`);
+      const uploadStartTime = Date.now();
+      
+      let uploadResult;
+      try {
+        uploadResult = await uploadBufferWithKey(ossKey, jsonBuffer, 'application/json');
+      } catch (uploadError) {
+        console.error(`[单条同步] OSS上传异常 ${slug}:`, uploadError);
+        clearTimeout(timeout);
+        if (!res.headersSent) {
+          return res.status(500).json({
+            success: false,
+            error: `OSS上传异常: ${uploadError.message || '未知错误'}`,
+            localPath: filePath,
+            oss: {
+              success: false,
+              error: uploadError.message || '未知错误'
+            }
+          });
+        }
+        return;
+      }
+      
+      const uploadTime = Date.now() - uploadStartTime;
+      
       if (!uploadResult || !uploadResult.success) {
+        const errorMsg = uploadResult && uploadResult.error ? uploadResult.error : 'OSS上传失败，未知错误';
+        const errorDetails = uploadResult && uploadResult.details ? uploadResult.details : undefined;
+        console.error(`[单条同步失败] ${slug}:`, errorMsg);
+        if (errorDetails) {
+          console.error('错误详情:', errorDetails);
+        }
         return res.json({
-          success: true,
+          success: false,
+          error: `OSS上传失败: ${errorMsg}`,
           localPath: filePath,
-          oss: { success: false, error: uploadResult && uploadResult.error },
+          oss: { 
+            success: false, 
+            error: errorMsg,
+            details: errorDetails
+          },
         });
       }
 
-      // 可选：标记该条已同步
+      console.log(`[单条同步成功] ${slug}, 耗时: ${uploadTime}ms, URL: ${uploadResult.url}`);
+
+      // 标记该条已同步
       db.run('UPDATE published_news SET syncSta = 1 WHERE slug = ?', [slug], (uErr) => {
         if (uErr) {
           console.error('更新 syncSta 失败:', uErr.message);
+        } else {
+          console.log(`[单条同步] 已更新 syncSta = 1 for slug: ${slug}`);
         }
       });
 
-      return res.json({ success: true, localPath: filePath, oss: { success: true, url: uploadResult.url, key: uploadResult.fileName } });
+      // 清除超时定时器
+      clearTimeout(timeout);
+      
+      if (!res.headersSent) {
+        return res.json({ 
+          success: true, 
+          localPath: filePath, 
+          oss: { 
+            success: true, 
+            url: uploadResult.url, 
+            key: uploadResult.fileName 
+          } 
+        });
+      }
     } catch (e) {
-      console.error('导出/上传单条 news 失败:', e);
-      return res.status(500).json({ error: '导出或上传失败' });
+      // 清除超时定时器
+      clearTimeout(timeout);
+      console.error(`[单条同步异常] ${slug}:`, e);
+      console.error('错误堆栈:', e.stack);
+      if (!res.headersSent) {
+        return res.status(500).json({ 
+          error: `导出或上传失败: ${e.message || '未知错误'}`,
+          details: process.env.NODE_ENV === 'development' ? e.stack : undefined
+        });
+      }
     }
+  };
+
+  // 数据库查询
+  db.get(query, [slug], (err, row) => {
+    // 清除初始超时定时器
+    clearTimeout(timeout);
+    
+    if (err) {
+      console.error(`[单条同步] 数据库查询失败 ${slug}:`, err);
+      if (!res.headersSent) {
+        return res.status(500).json({ error: err.message });
+      }
+      return;
+    }
+    
+    if (!row) {
+      console.warn(`[单条同步] 未找到新闻: ${slug}`);
+      if (!res.headersSent) {
+        return res.status(404).json({ error: '未找到对应的新闻' });
+      }
+      return;
+    }
+
+    // 处理行数据，使用 Promise 确保所有错误都被捕获
+    processRow(row).catch((error) => {
+      // 捕获所有未处理的 Promise rejection
+      clearTimeout(timeout);
+      console.error(`[单条同步] 未捕获的异常 ${slug}:`, error);
+      console.error('错误堆栈:', error.stack);
+      if (!res.headersSent) {
+        res.status(500).json({ 
+          error: `处理失败: ${error.message || '未知错误'}`,
+          details: process.env.NODE_ENV === 'development' ? error.stack : undefined
+        });
+      }
+    });
   });
 });
 
